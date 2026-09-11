@@ -893,3 +893,21 @@ pm run build), servidor respondiendo en HTTP 200 OK y sincronización en GitHub 
 - Resultado: Aprobado (score >= 10)
 - Resumen: Frase de paz perfectamente centrada en el espacio blanco del paisaje y Hero simplificado para máxima pureza visual.
 - Observaciones: Limpieza visual y sofisticación estética de alto nivel en todo el recorrido de la página.
+## Nueva sesión
+- Fecha: 2026-09-11 08:51
+- Solicitud: Desplazar en paralelo dos imágenes más en el Hero respetando el tamaño y proporción real de cada una.
+- Decisiones clave:
+  - Se analizaron las dimensiones de las dos nuevas fotografías de Finca La Isabelita (costado de la casa con prados y pórtico con flores magentas), constatando que ambas comparten la relación nativa 4:3 (1024 x 768 px) de la fachada principal.
+  - Se creó un riel de deslizamiento horizontal continuo en paralelo (transform: translateX(-slide * 100%)) con transición suave de 700ms.
+  - Se añadieron flechas de navegación de cristal flotantes a izquierda y derecha con estados hover e interacción táctil.
+  - Se incorporó una barra de paginación inferior tipo píldora translúcida con puntos interactivos y contador dinámico (1/3 Fachada y Pórtico, 2/3 Costado y Prados, 3/3 Pórtico y Jardín).
+  - Se activó el pase automático de diapositivas cada 6 segundos, pausándose automáticamente al pasar el cursor (hover) para contemplar las fotos en detalle.
+  - Se verificó compilación exitosa con Vite y Nitro (npm run build), respuesta HTTP 200 OK en el servidor local y sincronización completa en el repositorio GitHub (main).
+- Pendientes:
+  - Ninguno. Listo para interacción del usuario.
+
+## Validación completada
+- Fecha: 2026-09-11 08:51
+- Resultado: Aprobado (score >= 10)
+- Resumen: Carrusel de Hero interactivo con desplazamiento en paralelo de 3 fotografías reales en formato 4:3 uniforme, navegación visual y automatización fluida.
+- Observaciones: Experiencia inmersiva impecable que resalta la belleza arquitectónica y natural de la propiedad.
