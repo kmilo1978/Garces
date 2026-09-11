@@ -822,3 +822,23 @@ pm run build), servidor respondiendo en HTTP 200 OK y sincronización en GitHub 
 - Resultado: Aprobado (score >= 10)
 - Resumen: Tipografía de la frase de paz renovada hacia un estilo editorial fluido, limpio y sereno que evoca descanso campestre sin pesadez visual.
 - Observaciones: Estética sofisticada y relajante perfectamente alineada con la atmósfera de Finca La Isabelita.
+## Nueva sesión
+- Fecha: 2026-09-11 08:31
+- Solicitud: Detrás de la sección/imagen de "Por qué te encantará" agregar la imagen de bosque con niebla difuminada, y dejar el cielo de arriba más claro aún.
+- Decisiones clave:
+  - Se guardó la imagen del bosque montañoso con niebla en src/assets/bosque-niebla.jpg y en public/bosque-niebla.jpg.
+  - Se importó osqueNiebla en src/routes/index.tsx.
+  - Se implementó como fondo atmosférico envolvente detrás de la sección "Por qué te encantará" / "La vida campestre sin alejarte de nada", con difuminado suave en sus 4 bordes (arriba, abajo, izquierda y derecha) hacia el fondo marfil #FAF8F5.
+  - En el costado izquierdo se aplicó una suave difusión marfil para preservar la legibilidad al 100% de los textos y razones.
+  - En el costado derecho, los árboles y la niebla asoman con belleza alrededor de la tarjeta del pórtico de madera, complementada con un resplandor difuminado suave (lur-2xl bg-emerald-900/10) y elevación sutil.
+  - Se calibró el cielo superior para que sea aún más claro, suave y luminoso (rightness(1.55) saturate(0.38) opacity-70), y se atenuó la sombra sobre la foto de la casa finca en el Hero (gba(16, 26, 19, 0.15)).
+  - Se verificó compilación exitosa con Vite y Nitro (
+pm run build), servidor respondiendo en HTTP 200 OK y sincronización en GitHub (main).
+- Pendientes:
+  - Ninguno.
+
+## Validación completada
+- Fecha: 2026-09-11 08:31
+- Resultado: Aprobado (score >= 10)
+- Resumen: Fondo difuminado de bosque en niebla integrado con alta estética campestre detrás de la sección del pórtico, y cielo superior calibrado a un nivel ultra claro y luminoso.
+- Observaciones: Profundidad visual inmersiva que realza la conexión con la naturaleza y el descanso.
