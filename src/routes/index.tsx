@@ -55,6 +55,7 @@ import costadoFincaPrados from "@/assets/costado-finca-prados.jpg";
 import aboutImg from "@/assets/portico-deck.jpg";
 import cieloHero from "@/assets/cielo-hero.jpg";
 import ardillaCampo from "@/assets/ardilla-campo.png";
+import bosqueNiebla from "@/assets/bosque-niebla.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -788,10 +789,10 @@ function Index() {
         <img
           src={cieloHero}
           alt=""
-          className="h-full w-full object-cover object-top [filter:brightness(1.30)_saturate(0.70)_contrast(0.96)_hue-rotate(10deg)]"
+          className="h-full w-full object-cover object-top [filter:brightness(1.55)_saturate(0.38)_contrast(0.92)_hue-rotate(12deg)] opacity-70"
         />
-        {/* Capa de difusión gradual para que el azul claro se aprecie nítido arriba y se desvanezca suavemente a blanco abajo */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-20% to-white/95" />
+        {/* Capa de difusión gradual para que el cielo celeste muy claro y luminoso se desvanezca suavemente a blanco */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/10 via-20% to-white/95" />
         <div className="absolute inset-x-0 bottom-0 h-64 sm:h-80 md:h-96 bg-gradient-to-b from-transparent via-white/85 to-[#FAF8F5]" />
       </div>
 
@@ -1032,7 +1033,7 @@ function Index() {
         <div
           className="relative min-h-[620px] sm:min-h-[680px] lg:min-h-[720px] w-full overflow-hidden rounded-[2.5rem] bg-cover bg-[position:75%_center] lg:bg-center p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col lg:flex-row items-start justify-between gap-8 shadow-2xl"
           style={{
-            backgroundImage: `linear-gradient(to right, rgba(16, 26, 19, 0.30) 0%, rgba(16, 26, 19, 0.06) 28%, rgba(0, 0, 0, 0) 38%, rgba(0, 0, 0, 0) 62%, rgba(16, 26, 19, 0.40) 72%, rgba(16, 26, 19, 0.82) 100%), url(${heroImg})`,
+            backgroundImage: `linear-gradient(to right, rgba(16, 26, 19, 0.15) 0%, rgba(16, 26, 19, 0.02) 28%, rgba(0, 0, 0, 0) 38%, rgba(0, 0, 0, 0) 62%, rgba(16, 26, 19, 0.40) 72%, rgba(16, 26, 19, 0.82) 100%), url(${heroImg})`,
           }}
         >
           {/* Costado Izquierdo: Título y descripción elevados sobre el cielo abierto y despejado */}
@@ -1438,44 +1439,71 @@ function Index() {
         </div>
       </section>
 
-      {/* Por qué te encantará */}
-      <section id="por-que" className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <div>
-            <SectionLabel>{t.whyLove.tag}</SectionLabel>
-            <h2 className="mt-4 text-3xl font-bold uppercase leading-tight md:text-5xl text-[#1C261F]">
-              {t.whyLove.title}
-            </h2>
-            <div className="mt-8 space-y-6 sm:space-y-7">
-              {razonesData.map((r, i) => (
-                <div key={i} className="flex gap-5">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#243A2C] text-[#FAF8F5]">
-                    <r.icon className="h-5 w-5" />
+      {/* Por qué te encantará con fondo difuminado de bosque en niebla */}
+      <section id="por-que" className="relative w-full overflow-hidden py-16 lg:py-24">
+        {/* Fondo atmosférico de bosque con niebla difuminado */}
+        <div
+          className="pointer-events-none absolute inset-0 z-0 overflow-hidden"
+          aria-hidden="true"
+        >
+          <img
+            src={bosqueNiebla}
+            alt=""
+            className="h-full w-full object-cover object-right-bottom lg:object-center opacity-75"
+          />
+          {/* Capas de difuminado suave superior, inferior y lateral para fundirse armónicamente con el fondo marfil #FAF8F5 */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#FAF8F5]/90 via-[#FAF8F5]/60 to-transparent" />
+          <div className="absolute inset-x-0 top-0 h-24 sm:h-32 bg-gradient-to-b from-[#FAF8F5] via-[#FAF8F5]/70 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-24 sm:h-32 bg-gradient-to-b from-transparent via-[#FAF8F5]/70 to-[#FAF8F5]" />
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-6">
+          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+            <div>
+              <SectionLabel>{t.whyLove.tag}</SectionLabel>
+              <h2 className="mt-4 text-3xl font-bold uppercase leading-tight md:text-5xl text-[#1C261F]">
+                {t.whyLove.title}
+              </h2>
+              <div className="mt-8 space-y-6 sm:space-y-7">
+                {razonesData.map((r, i) => (
+                  <div key={i} className="flex gap-5">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#243A2C] text-[#FAF8F5] shadow-sm">
+                      <r.icon className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold uppercase text-[#1C261F]">
+                        {lang === "es" ? r.titleEs : r.titleEn}
+                      </h3>
+                      <p className="mt-1 text-sm leading-relaxed text-[#1C261F]/75">
+                        {lang === "es" ? r.textEs : r.textEn}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-lg font-bold uppercase text-[#1C261F]">
-                      {lang === "es" ? r.titleEs : r.titleEn}
-                    </h3>
-                    <p className="mt-1 text-sm leading-relaxed text-[#1C261F]/70">
-                      {lang === "es" ? r.textEs : r.textEn}
-                    </p>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-          <div className="overflow-hidden rounded-3xl border border-[#E2DDD0] shadow-md">
-            <img
-              src={aboutImg}
-              alt={
-                lang === "es"
-                  ? "Pórtico de madera y entorno natural de Finca La Isabelita en Las Lomitas, La Ceja, Oriente Antioqueño"
-                  : "Rustic wooden porch and peaceful countryside surroundings at Finca La Isabelita in Las Lomitas, La Ceja"
-              }
-              loading="lazy"
-              decoding="async"
-              className="h-full w-full object-cover"
-            />
+
+            {/* Contenedor de la imagen con halo difuminado elegante */}
+            <div className="relative group">
+              {/* Resplandor difuminado suave de niebla detrás de la tarjeta */}
+              <div
+                className="absolute -inset-4 rounded-3xl bg-emerald-900/10 blur-2xl transition-all duration-500 group-hover:bg-emerald-900/15"
+                aria-hidden="true"
+              />
+              <div className="relative overflow-hidden rounded-3xl border border-white/80 bg-white/40 shadow-2xl backdrop-blur-[2px]">
+                <img
+                  src={aboutImg}
+                  alt={
+                    lang === "es"
+                      ? "Pórtico de madera y entorno natural de Finca La Isabelita en Las Lomitas, La Ceja, Oriente Antioqueño"
+                      : "Rustic wooden porch and peaceful countryside surroundings at Finca La Isabelita in Las Lomitas, La Ceja"
+                  }
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
