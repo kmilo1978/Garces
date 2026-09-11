@@ -862,28 +862,46 @@ function Index() {
             alt="Logotipo de Finca La Isabelita"
             className="h-10 w-10 rounded-full shadow-sm transition-transform duration-300 group-hover:scale-105"
           />
-          <span className="text-2xl font-black uppercase tracking-tight text-[#1C261F]">
+          <span className="text-2xl font-black uppercase tracking-tight text-[#1C261F] transition-colors duration-200 group-hover:text-white group-hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)]">
             La Isabelita
           </span>
         </a>
 
-        <nav className="hidden items-center gap-7 text-sm font-medium uppercase tracking-wide text-[#28382C] lg:flex">
-          <a href="#ofrecemos" className="hover:text-[#3D5E49] transition-colors">
+        <nav className="hidden items-center gap-7 text-sm font-semibold uppercase tracking-wide text-[#1C261F] lg:flex">
+          <a
+            href="#ofrecemos"
+            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
+          >
             {t.nav.offer}
           </a>
-          <a href="#caracteristicas" className="hover:text-[#3D5E49] transition-colors">
+          <a
+            href="#caracteristicas"
+            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
+          >
             {t.nav.details}
           </a>
-          <a href="#galeria" className="hover:text-[#3D5E49] transition-colors">
+          <a
+            href="#galeria"
+            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
+          >
             {t.nav.gallery}
           </a>
-          <a href="#testimonios" className="hover:text-[#3D5E49] transition-colors">
+          <a
+            href="#testimonios"
+            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
+          >
             {t.nav.testimonials}
           </a>
-          <a href="#ubicacion" className="hover:text-[#3D5E49] transition-colors">
+          <a
+            href="#ubicacion"
+            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
+          >
             {t.nav.location}
           </a>
-          <a href="#faq" className="hover:text-[#3D5E49] transition-colors">
+          <a
+            href="#faq"
+            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
+          >
             {t.nav.faq}
           </a>
         </nav>
