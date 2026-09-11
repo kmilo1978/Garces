@@ -34,6 +34,8 @@ import {
   Sun,
   Menu,
   X,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 import {
   Accordion,
@@ -56,6 +58,8 @@ import aboutImg from "@/assets/portico-deck.jpg";
 import cieloHero from "@/assets/cielo-hero.jpg";
 import ardillaCampo from "@/assets/ardilla-campo.png";
 import bosqueNiebla from "@/assets/bosque-niebla.jpg";
+import heroCostado from "@/assets/hero-costado.jpg";
+import heroPorticoFlores from "@/assets/hero-portico-flores.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -762,7 +766,48 @@ function Index() {
   const [lang, setLang] = useState<Lang>("es");
   const [heroTextVisible, setHeroTextVisible] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [heroSlide, setHeroSlide] = useState(0);
+  const [heroPaused, setHeroPaused] = useState(false);
   const t = translations[lang];
+
+  const heroSlides = [
+    {
+      src: heroImg,
+      alt:
+        lang === "es"
+          ? "Fachada principal y pórtico de madera de Finca La Isabelita"
+          : "Main facade and rustic porch of Finca La Isabelita",
+      titleEs: "Fachada & Pórtico",
+      titleEn: "Facade & Porch",
+    },
+    {
+      src: heroCostado,
+      alt:
+        lang === "es"
+          ? "Costado de la casa, tejado tradicional y amplios prados verdes"
+          : "Side of the house, traditional roof, and green lawns",
+      titleEs: "Costado & Prados",
+      titleEn: "Side & Lawns",
+    },
+    {
+      src: heroPorticoFlores,
+      alt:
+        lang === "es"
+          ? "Vista panorámica al jardín y flores desde el pórtico de madera"
+          : "Panoramic garden and flower view from the wooden porch",
+      titleEs: "Pórtico & Jardín",
+      titleEn: "Porch & Garden",
+    },
+  ];
+
+  // Desplazamiento en paralelo automático cada 5.5 segundos (se pausa si el usuario posa el cursor)
+  useEffect(() => {
+    if (heroPaused) return;
+    const interval = setInterval(() => {
+      setHeroSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 5500);
+    return () => clearInterval(interval);
+  }, [heroPaused, heroSlides.length]);
 
   useEffect(() => {
     // Permite que la imagen de la finca se aprecie primero y luego entra suavemente el texto
@@ -1031,11 +1076,76 @@ function Index() {
       {/* Hero: Casa 100% despejada en el centro, título en el cielo izquierdo, y métricas/botones en los árboles oscuros de la derecha */}
       <section className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-2 pb-12">
         <div
-          className="relative min-h-[620px] sm:min-h-[680px] lg:min-h-[720px] w-full overflow-hidden rounded-[2.5rem] bg-cover bg-[position:75%_center] lg:bg-center p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col lg:flex-row items-start justify-between gap-8 shadow-2xl"
-          style={{
-            backgroundImage: `linear-gradient(to right, rgba(16, 26, 19, 0.15) 0%, rgba(16, 26, 19, 0.02) 28%, rgba(0, 0, 0, 0) 38%, rgba(0, 0, 0, 0) 62%, rgba(16, 26, 19, 0.40) 72%, rgba(16, 26, 19, 0.82) 100%), url(${heroImg})`,
-          }}
+          className="group/hero relative min-h-[620px] sm:min-h-[680px] lg:min-h-[720px] w-full overflow-hidden rounded-[2.5rem] p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col lg:flex-row items-start justify-between gap-8 shadow-2xl select-none"
+          onMouseEnter={() => setHeroPaused(true)}
+          onMouseLeave={() => setHeroPaused(false)}
         >
+          {/* Pista de deslizamiento en paralelo para las 3 imágenes reales con su aspecto 4:3 natural */}
+          <div
+            className="absolute inset-0 flex transition-transform duration-700 ease-out"
+            style={{ transform: `translateX(-${heroSlide * 100}%)` }}
+          >
+            {heroSlides.map((slide, idx) => (
+              <div key={idx} className="relative h-full w-full shrink-0 overflow-hidden">
+                <img
+                  src={slide.src}
+                  alt={slide.alt}
+                  className="h-full w-full object-cover object-[center_35%] lg:object-center transition-transform duration-1000"
+                  loading={idx === 0 ? "eager" : "lazy"}
+                  decoding="async"
+                />
+                {/* Degradados translúcidos sutiles para asegurar legibilidad a la izquierda y contraste de tarjeta a la derecha */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#101A13]/25 via-transparent via-40% to-[#101A13]/70" />
+              </div>
+            ))}
+          </div>
+
+          {/* Flechas de desplazamiento en paralelo para navegar entre las fotos */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setHeroSlide((prev) => (prev === 0 ? heroSlides.length - 1 : prev - 1));
+            }}
+            className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-black/40 hover:bg-black/70 text-white backdrop-blur-md border border-white/25 transition-all shadow-xl hover:scale-110 active:scale-95"
+            aria-label="Ver fotografía anterior de la finca"
+          >
+            <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
+          </button>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setHeroSlide((prev) => (prev + 1) % heroSlides.length);
+            }}
+            className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-black/40 hover:bg-black/70 text-white backdrop-blur-md border border-white/25 transition-all shadow-xl hover:scale-110 active:scale-95"
+            aria-label="Ver siguiente fotografía de la finca"
+          >
+            <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
+          </button>
+
+          {/* Indicador inferior con selector de diapositivas en paralelo y nombre de foto */}
+          <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2.5 rounded-full bg-[#121E16]/80 px-4 py-2 backdrop-blur-md border border-white/20 shadow-lg">
+            <span className="text-[11px] font-medium text-stone-200 tracking-wider uppercase">
+              {heroSlide + 1} / {heroSlides.length} · {lang === "es" ? heroSlides[heroSlide].titleEs : heroSlides[heroSlide].titleEn}
+            </span>
+            <div className="flex items-center gap-1.5 ml-1">
+              {heroSlides.map((_, dotIdx) => (
+                <button
+                  key={dotIdx}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setHeroSlide(dotIdx);
+                  }}
+                  aria-label={`Ir a fotografía ${dotIdx + 1}`}
+                  className={cn(
+                    "h-2 rounded-full transition-all duration-300",
+                    heroSlide === dotIdx
+                      ? "w-6 bg-emerald-400 shadow-sm"
+                      : "w-2 bg-white/40 hover:bg-white/70"
+                  )}
+                />
+              ))}
+            </div>
+          </div>
           {/* Costado Izquierdo: Título y descripción elevados sobre el cielo abierto y despejado */}
           <div className="relative z-10 flex w-full max-w-md flex-col items-start gap-3 sm:gap-3.5 lg:self-start lg:pt-1">
             {/* Badges superiores: ubicación y trato directo */}
