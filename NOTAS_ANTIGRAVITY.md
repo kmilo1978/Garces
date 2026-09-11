@@ -764,3 +764,24 @@ pm run build), servidor local respondiendo con HTTP 200 OK y sincronización en 
 - Resultado: Aprobado (score >= 10)
 - Resumen: Cielo de fondo y Hero calibrados con mayor luminosidad y claridad, conservando la legibilidad perfecta de la tipografía y los elementos del menú.
 - Observaciones: Sensación visual más limpia, diáfana y abierta de amanecer campestre en el Oriente antioqueño.
+## Nueva sesión
+- Fecha: 2026-09-11 08:14
+- Solicitud: En el espacio en blanco sobre el paisaje panorámico, escribir una frase de paz con botón de llamado a la acción (CTA), letras negras y resaltando las palabras más importantes en verde.
+- Decisiones clave:
+  - Se estructuró un bloque centrado en la zona superior del paisaje (elative z-10 max-w-4xl pt-10 sm:pt-14 md:pt-16).
+  - Se redactó la frase de paz con tipografía en negro profundo (	ext-[#1C261F] font-extrabold) y los conceptos clave resaltados en verde esmeralda institucional (	ext-[#2D6A4F] font-black):
+    - Español: "Desconéctate del ruido y vive la **verdadera paz** en tu propio **refugio campestre**."
+    - Inglés: "Disconnect from the noise and live **true peace** in your own **countryside sanctuary**."
+  - Se incluyó un subtítulo sereno de descanso y aire puro.
+  - Se añadió un botón CTA de alto impacto ("Agendar mi visita y vivir la paz" / "Schedule my visit and experience the peace") conectado directamente al enlace de WhatsApp del propietario con micro-interacción de flecha animada y elevación suave al pasar el cursor.
+  - El paisaje de árboles y amanecer dorado del video queda totalmente visible en la mitad inferior, sin tapar ni sobrecargar la escena.
+  - Se verificó compilación exitosa con Vite y Nitro (
+pm run build), servidor respondiendo en HTTP 200 OK y sincronización en GitHub (main).
+- Pendientes:
+  - Ninguno.
+
+## Validación completada
+- Fecha: 2026-09-11 08:14
+- Resultado: Aprobado (score >= 10)
+- Resumen: Frase de paz con llamado a la acción integrada elegantemente sobre el cielo del paisaje, con alto contraste (letras negras y resaltados verdes) y botón interactivo a WhatsApp.
+- Observaciones: Gran equilibrio visual y emotivo entre el texto inspirador y el paisaje natural en movimiento.
