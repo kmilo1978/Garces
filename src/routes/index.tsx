@@ -32,6 +32,8 @@ import {
   Car,
   WashingMachine,
   Sun,
+  Menu,
+  X,
 } from "lucide-react";
 import {
   Accordion,
@@ -757,6 +759,7 @@ const faqsData = [
 function Index() {
   const [lang, setLang] = useState<Lang>("es");
   const [heroTextVisible, setHeroTextVisible] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = translations[lang];
 
   useEffect(() => {
@@ -906,13 +909,13 @@ function Index() {
           </a>
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5 sm:gap-3">
           {/* Botón Switcher Idioma en Header */}
           <div className="inline-flex items-center rounded-full border border-[#DCD5C5] bg-[#EFEAE0] p-1 shadow-inner">
             <button
               onClick={() => setLang("es")}
               className={cn(
-                "rounded-full px-3 py-1 text-xs font-bold uppercase transition-all",
+                "rounded-full px-2.5 sm:px-3 py-1 text-xs font-bold uppercase transition-all",
                 lang === "es"
                   ? "bg-[#243A2C] text-[#FAF8F5] shadow-sm"
                   : "text-[#3D5E49] hover:text-[#18281E]"
@@ -924,7 +927,7 @@ function Index() {
             <button
               onClick={() => setLang("en")}
               className={cn(
-                "rounded-full px-3 py-1 text-xs font-bold uppercase transition-all",
+                "rounded-full px-2.5 sm:px-3 py-1 text-xs font-bold uppercase transition-all",
                 lang === "en"
                   ? "bg-[#243A2C] text-[#FAF8F5] shadow-sm"
                   : "text-[#3D5E49] hover:text-[#18281E]"
@@ -935,17 +938,93 @@ function Index() {
             </button>
           </div>
 
+          {/* Botón CTA visible en pantallas medianas y grandes */}
           <a
-            href="#contacto"
-            className="group inline-flex items-center gap-2 rounded-full bg-[#243A2C] px-6 py-3 text-xs font-semibold uppercase tracking-widest text-[#FAF8F5] transition-all hover:bg-[#1C2E23] shadow-sm"
+            href={waCustomLink}
+            target="_blank"
+            rel="noreferrer"
+            className="hidden sm:inline-flex group items-center gap-2 rounded-full bg-[#243A2C] px-5 sm:px-6 py-2.5 sm:py-3 text-xs font-semibold uppercase tracking-widest text-[#FAF8F5] transition-all hover:bg-[#1C2E23] shadow-sm"
           >
             <span>{t.nav.bookVisit}</span>
             <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#FAF8F5] text-[#243A2C] transition-transform group-hover:rotate-45">
               <ArrowUpRight className="h-3 w-3" />
             </div>
           </a>
+
+          {/* Botón Hamburguesa Móvil */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#1C261F]/20 bg-white/85 text-[#1C261F] shadow-sm backdrop-blur-md transition-all hover:bg-white hover:text-black lg:hidden"
+            aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú de navegación"}
+            aria-expanded={mobileMenuOpen}
+          >
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
       </header>
+
+      {/* Menú Desplegable Móvil tipo Hamburguesa */}
+      {mobileMenuOpen && (
+        <div className="relative z-30 mx-4 mb-4 overflow-hidden rounded-3xl border border-[#2D4535] bg-[#121E16]/95 p-6 text-[#FAF8F5] shadow-2xl backdrop-blur-xl lg:hidden">
+          <nav className="flex flex-col gap-3.5 text-sm font-semibold uppercase tracking-wider">
+            <a
+              href="#ofrecemos"
+              onClick={() => setMobileMenuOpen(false)}
+              className="border-b border-white/10 pb-2.5 text-stone-200 transition-colors hover:text-emerald-300"
+            >
+              {t.nav.offer}
+            </a>
+            <a
+              href="#caracteristicas"
+              onClick={() => setMobileMenuOpen(false)}
+              className="border-b border-white/10 pb-2.5 text-stone-200 transition-colors hover:text-emerald-300"
+            >
+              {t.nav.details}
+            </a>
+            <a
+              href="#galeria"
+              onClick={() => setMobileMenuOpen(false)}
+              className="border-b border-white/10 pb-2.5 text-stone-200 transition-colors hover:text-emerald-300"
+            >
+              {t.nav.gallery}
+            </a>
+            <a
+              href="#testimonios"
+              onClick={() => setMobileMenuOpen(false)}
+              className="border-b border-white/10 pb-2.5 text-stone-200 transition-colors hover:text-emerald-300"
+            >
+              {t.nav.testimonials}
+            </a>
+            <a
+              href="#ubicacion"
+              onClick={() => setMobileMenuOpen(false)}
+              className="border-b border-white/10 pb-2.5 text-stone-200 transition-colors hover:text-emerald-300"
+            >
+              {t.nav.location}
+            </a>
+            <a
+              href="#faq"
+              onClick={() => setMobileMenuOpen(false)}
+              className="border-b border-white/10 pb-2.5 text-stone-200 transition-colors hover:text-emerald-300"
+            >
+              {t.nav.faq}
+            </a>
+          </nav>
+
+          <div className="mt-5">
+            <a
+              href={waCustomLink}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex w-full items-center justify-center gap-2 rounded-full bg-[#FAF8F5] py-3 text-xs font-bold uppercase tracking-widest text-[#18281E] shadow-lg transition-all hover:bg-white"
+            >
+              <span>{t.nav.bookVisit}</span>
+              <ArrowUpRight className="h-4 w-4" />
+            </a>
+          </div>
+        </div>
+      )}
 
       {/* Hero: Casa 100% despejada en el centro, título en el cielo izquierdo, y métricas/botones en los árboles oscuros de la derecha */}
       <section className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-2 pb-12">
