@@ -842,3 +842,21 @@ pm run build), servidor respondiendo en HTTP 200 OK y sincronización en GitHub 
 - Resultado: Aprobado (score >= 10)
 - Resumen: Fondo difuminado de bosque en niebla integrado con alta estética campestre detrás de la sección del pórtico, y cielo superior calibrado a un nivel ultra claro y luminoso.
 - Observaciones: Profundidad visual inmersiva que realza la conexión con la naturaleza y el descanso.
+## Nueva sesión
+- Fecha: 2026-09-11 08:34
+- Solicitud: Eliminar el botón CTA ("Agendar mi visita y vivir la paz") y dejar más pequeña la frase de paz sobre el paisaje.
+- Decisiones clave:
+  - Se removió por completo el botón de llamado a la acción (<a> con "Agendar mi visita y vivir la paz").
+  - Se redujo la escala tipográfica de la frase de paz (	ext-xl sm:text-2xl md:text-3xl lg:text-[2.1rem]) con un ancho máximo más contenido (max-w-2xl).
+  - Se ajustó el subtítulo a un tamaño sutil y ligero (	ext-xs sm:text-sm md:text-base max-w-xl).
+  - Al reducir la altura vertical del texto y eliminar el botón, el video del paisaje campestre (los árboles, el prado dorado y los rayos de sol) gana aún más espacio y protagonismo natural.
+  - Se verificó compilación exitosa con Vite y Nitro (
+pm run build), servidor respondiendo en HTTP 200 OK y sincronización en GitHub (main).
+- Pendientes:
+  - Ninguno.
+
+## Validación completada
+- Fecha: 2026-09-11 08:34
+- Resultado: Aprobado (score >= 10)
+- Resumen: Botón CTA retirado y tamaño de la frase de paz calibrado a una dimensión elegante, discreta y armoniosa que permite disfrutar el paisaje panorámico.
+- Observaciones: Composición equilibrada y poética sin elementos invasivos sobre el video.
