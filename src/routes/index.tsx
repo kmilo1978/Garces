@@ -51,6 +51,7 @@ import cocinaReal from "@/assets/cocina-real.jpg";
 import habitacionGemelas from "@/assets/habitacion-gemelas.jpg";
 import costadoFincaPrados from "@/assets/costado-finca-prados.jpg";
 import aboutImg from "@/assets/portico-deck.jpg";
+import cieloHero from "@/assets/cielo-hero.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -774,7 +775,22 @@ function Index() {
   const waCustomLink = `https://wa.me/?text=${encodeURIComponent(waCustomMessage)}`;
 
   return (
-    <div className="min-h-screen bg-[#FAF8F5] font-sans text-[#1C261F] selection:bg-[#D5E3D8] selection:text-[#18281E]">
+    <div className="relative min-h-screen bg-[#FAF8F5] font-sans text-[#1C261F] selection:bg-[#D5E3D8] selection:text-[#18281E] overflow-x-hidden">
+      {/* Fondo de cielo atmosférico detrás del Hero que se va difuminando suavemente hasta volverse blanco */}
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 h-[920px] sm:h-[1040px] md:h-[1140px] lg:h-[1250px] overflow-hidden z-0"
+        aria-hidden="true"
+      >
+        <img
+          src={cieloHero}
+          alt=""
+          className="h-full w-full object-cover object-top brightness-[1.01] contrast-[1.02]"
+        />
+        {/* Capa de difusión gradual para que parezca un cielo que se desvanece suavemente a blanco */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 via-40% to-white/95" />
+        <div className="absolute inset-x-0 bottom-0 h-64 sm:h-80 md:h-96 bg-gradient-to-b from-transparent via-white/85 to-[#FAF8F5]" />
+      </div>
+
       {/* Schema.org Structured Data: VacationRental / SingleFamilyResidence para SEO Rich Snippets */}
       <script
         type="application/ld+json"
@@ -826,7 +842,7 @@ function Index() {
         }}
       />
       {/* Top Announcement Bar: Sobrio, elegante y sin emoticones ni selector redundante de idioma */}
-      <div className="bg-[#18281E] text-stone-200 text-xs py-2 px-4 border-b border-[#253D2F]">
+      <div className="relative z-20 bg-[#18281E] text-stone-200 text-xs py-2 px-4 border-b border-[#253D2F]">
         <div className="mx-auto max-w-7xl flex items-center justify-center text-center">
           <div className="flex flex-wrap items-center justify-center text-center gap-x-4 gap-y-1 text-stone-300 font-light tracking-wide text-xs">
             <span>{t.topBar.noBroker}</span>
@@ -839,7 +855,7 @@ function Index() {
       </div>
 
       {/* Nav */}
-      <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
+      <header className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
         <a href="#" className="flex items-center gap-3 group">
           <img
             src="/favicon.svg"
@@ -914,7 +930,7 @@ function Index() {
       </header>
 
       {/* Hero: Casa 100% despejada en el centro, título en el cielo izquierdo, y métricas/botones en los árboles oscuros de la derecha */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 pt-2 pb-12">
+      <section className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-2 pb-12">
         <div
           className="relative min-h-[620px] sm:min-h-[680px] lg:min-h-[720px] w-full overflow-hidden rounded-[2.5rem] bg-cover bg-[position:75%_center] lg:bg-center p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col lg:flex-row items-start justify-between gap-8 shadow-2xl"
           style={{
