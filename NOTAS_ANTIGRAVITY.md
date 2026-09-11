@@ -588,3 +588,20 @@
 - Resultado: Aprobado (score >= 10)
 - Resumen: Máximo protagonismo y nitidez otorgados al paisaje en video con escala cinematográfica y transición limpia al footer.
 - Observaciones: El entorno campestre se visualiza de forma clara, atractiva y profesional.
+
+## Nueva sesión
+- Fecha: 2026-09-10 20:29
+- Solicitud: Bajar más el banner de contacto para que el paisaje en video tenga el protagonismo visual previo.
+- Decisiones clave:
+  - Se reordenó la estructura de la página: la sección panorámica del paisaje (video en loop nítido y a gran escala) se ubicó inmediatamente después de las Preguntas Frecuentes, actuando como una pausa visual inmersiva.
+  - El banner pre-footer (`#contacto`, con el llamado a la acción y botón de WhatsApp) se trasladó hacia abajo, quedando como el cierre definitivo justo antes del footer.
+  - Se optimizó el encuadre del video (`object-[center_60%]`) para enfocar adecuadamente la naturaleza, prados y montañas de La Ceja.
+  - Se validó respuesta HTTP 200 OK y se sincronizaron los cambios en GitHub (`main`).
+- Pendientes:
+  - Ninguno.
+
+## Validación completada
+- Fecha: 2026-09-10 20:29
+- Resultado: Aprobado (score >= 10)
+- Resumen: Banner reubicado exitosamente hacia abajo; video de paisaje adquiere flujo visual prioritario antes del cierre de contacto.
+- Observaciones: Jerarquía visual equilibrada y óptima conversión de usuario.
