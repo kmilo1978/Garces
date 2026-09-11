@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#243A2C" />
+      <stop offset="100%" stop-color="#121E16" />
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#527D60" />
+      <stop offset="50%" stop-color="#E2DDD0" />
+      <stop offset="100%" stop-color="#2D4D38" />
+    </linearGradient>
+  </defs>
+
+  <!-- Circulo exterior verde bosque -->
+  <circle cx="256" cy="256" r="248" fill="url(#bgGrad)" />
+
+  <!-- Anillo exterior con reflejo -->
+  <circle cx="256" cy="256" r="236" fill="none" stroke="url(#ringGrad)" stroke-width="12" stroke-opacity="0.9" />
+
+  <!-- Anillo interior sutil marfil -->
+  <circle cx="256" cy="256" r="218" fill="none" stroke="#FAF8F5" stroke-width="2.5" stroke-opacity="0.3" />
+
+  <!-- Detalle botanico superior (hojitas campestres) -->
+  <path d="M256 86 C274 104 280 126 274 146 C256 142 242 130 238 110 C242 98 248 90 256 86 Z" fill="#4ADE80" opacity="0.95" />
+  <path d="M256 86 C238 104 232 126 238 146 C256 142 270 130 274 110 C270 98 264 90 256 86 Z" fill="#22C55E" opacity="0.8" />
+
+  <!-- Monograma 'I' estilizado y con alta visibilidad en 16x16 y 32x32 -->
+  <g fill="#FAF8F5">
+    <!-- Remate superior -->
+    <rect x="168" y="160" width="176" height="32" rx="10" />
+    
+    <!-- Fuste central -->
+    <rect x="228" y="176" width="56" height="168" rx="8" />
+    
+    <!-- Remate inferior -->
+    <rect x="168" y="328" width="176" height="32" rx="10" />
+
+    <!-- Acento central verde esmeralda -->
+    <polygon points="256,244 268,260 256,276 244,260" fill="#4ADE80" />
+  </g>
+</svg>

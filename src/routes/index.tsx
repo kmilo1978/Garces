@@ -838,7 +838,12 @@ function Index() {
 
       {/* Nav */}
       <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-        <a href="#" className="flex items-center gap-3">
+        <a href="#" className="flex items-center gap-3 group">
+          <img
+            src="/favicon.svg"
+            alt="Logotipo de Finca La Isabelita"
+            className="h-10 w-10 rounded-full shadow-sm transition-transform duration-300 group-hover:scale-105"
+          />
           <span className="text-2xl font-black uppercase tracking-tight text-[#1C261F]">
             La Isabelita
           </span>
@@ -1639,9 +1644,16 @@ function Index() {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
             {/* Columna 1: Marca e info */}
             <div className="space-y-4">
-              <span className="text-2xl font-black uppercase tracking-wider text-[#FAF8F5]">
-                Finca La Isabelita
-              </span>
+              <div className="flex items-center gap-3">
+                <img
+                  src="/favicon.svg"
+                  alt="Emblema oficial de Finca La Isabelita"
+                  className="h-10 w-10 rounded-full border border-white/20 shadow-sm"
+                />
+                <span className="text-2xl font-black uppercase tracking-wider text-[#FAF8F5]">
+                  Finca La Isabelita
+                </span>
+              </div>
               <p className="text-sm leading-relaxed text-stone-300">
                 {t.footer.brandDesc}
               </p>

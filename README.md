@@ -1,24 +1,32 @@
-# Visualize This Page
+# Finca La Isabelita | Casa Campestre en La Ceja, Antioquia
 
-visualiza esta pagina
+Sitio web oficial de Finca La Isabelita, una propiedad campestre amoblada ubicada en el sector Las Lomitas, La Ceja (Oriente Antioqueño). Alquiler directo con el propietario, sin intermediarios ni comisiones de agencia.
 
-This project was built with [Lovable](https://lovable.dev).
+## Características de la Propiedad
+- **Distribución:** 3 habitaciones, 4 camas, 1 baño completo, cocina, comedor y pórtico campestre.
+- **Terreno:** Lote privado de 500 m² con prados verdes y vegetación nativa.
+- **Servicios:** Parqueadero privado, zona de lavandería, agua continua, internet módem prepago.
+- **Políticas:** 100% Pet Friendly (mascotas bienvenidas).
+- **Pagos flexibles:** Pesos Colombianos (COP), Dólares (USD vía Zelle/wire) y Criptomonedas (USDT/BTC).
+- **Atención:** Anfitrión 100% bilingüe (Español & English).
 
-## Build with Lovable
+## Stack Tecnológico
+- **Frontend:** React + TypeScript
+- **Enrutamiento y SSR:** TanStack Router / TanStack Start
+- **Diseño y Estilos:** Tailwind CSS con paleta campestre orgánica
+- **Iconografía:** Lucide React
+- **SEO & Metadatos:** Schema.org (JSON-LD), OpenGraph, Twitter Cards y optimización de atributos alt
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/6840dd0a-8fa7-4c9b-9b79-8e231dc21c47).
+## Desarrollo Local
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Instalar dependencias y ejecutar en local:
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+bun install
+bun run dev
 ```
+
+El servidor estará disponible en `http://localhost:8080/`.
+
+## Despliegue
+Listo para desplegar en cualquier plataforma moderna (Vercel, Netlify, Cloudflare Pages o VPS).

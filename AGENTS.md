@@ -1,10 +1,11 @@
-<!-- LOVABLE:BEGIN -->
-> [!IMPORTANT]
-> This project is connected to [Lovable](https://lovable.dev). Avoid rewriting
-> published git history — force pushing, or rebasing/amending/squashing commits
-> that are already pushed — as it rewrites history on Lovable's side and the
-> user will likely lose their project history.
->
-> Commits you push to the connected branch sync back to Lovable and show up in
-> the editor, so keep the branch in a working state.
-<!-- LOVABLE:END -->
+# Finca La Isabelita - Guía de Proyecto
+
+Sitio web oficial de Finca La Isabelita, casa campestre en Las Lomitas, La Ceja (Oriente Antioqueño).
+
+## Arquitectura y Tecnologías
+- **Framework:** React con TanStack Router / TanStack Start
+- **Estilos:** Tailwind CSS con paleta campestre (#FAF8F5, #18281E, #2D6A4F)
+- **Iconos:** Lucide React
+- **Idioma:** Soporte bilingüe interactivo (Español / Inglés)
+- **Contacto:** Integración directa con WhatsApp para reservas sin intermediarios
+
