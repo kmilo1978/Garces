@@ -54,6 +54,7 @@ import habitacionGemelas from "@/assets/habitacion-gemelas.jpg";
 import costadoFincaPrados from "@/assets/costado-finca-prados.jpg";
 import aboutImg from "@/assets/portico-deck.jpg";
 import cieloHero from "@/assets/cielo-hero.jpg";
+import ardillaCampo from "@/assets/ardilla-campo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -1297,61 +1298,74 @@ function Index() {
         </div>
       </section>
 
-      {/* Intro */}
-      <section className="mx-auto max-w-7xl px-6 py-12">
-        <SectionLabel>
-          {lang === "es" ? "La propiedad" : "The Property"}
-        </SectionLabel>
-        <p className="mt-6 max-w-4xl text-2xl font-medium leading-snug md:text-4xl text-[#1C261F]">
-          {lang === "es" ? (
-            <>
-              Disfruta de la{" "}
-              <span className="text-[#2D6A4F] font-semibold">
-                tranquilidad del Oriente antioqueño
-              </span>{" "}
-              en{" "}
-              <span className="text-[#2D6A4F] font-semibold">
-                Finca La Isabelita
-              </span>
-              , una propiedad que combina el{" "}
-              <span className="text-[#2D6A4F] font-semibold">encanto rural</span>{" "}
-              con la comodidad de estar cerca de todo. En el sector Las Lomitas, te
-              ofrece{" "}
-              <span className="text-[#2D6A4F] font-semibold">
-                3 habitaciones, 4 camas, pórtico y parqueadero
-              </span>{" "}
-              para descansar, teletrabajar o{" "}
-              <span className="text-[#2D6A4F] font-semibold">
-                conectar con la naturaleza
-              </span>
-              .
-            </>
-          ) : (
-            <>
-              Experience the{" "}
-              <span className="text-[#2D6A4F] font-semibold">
-                pristine countryside of Eastern Antioquia
-              </span>{" "}
-              at{" "}
-              <span className="text-[#2D6A4F] font-semibold">
-                Finca La Isabelita
-              </span>
-              , combining{" "}
-              <span className="text-[#2D6A4F] font-semibold">
-                pure rural charm
-              </span>{" "}
-              with close town proximity. Located in Las Lomitas, it offers{" "}
-              <span className="text-[#2D6A4F] font-semibold">
-                3 bedrooms, 4 beds, porch, and parking
-              </span>{" "}
-              to relax, work remotely, or{" "}
-              <span className="text-[#2D6A4F] font-semibold">
-                reconnect with nature
-              </span>
-              .
-            </>
-          )}
-        </p>
+      {/* Intro con Ardilla Campestre */}
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:py-16">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+          <div className="max-w-3xl xl:max-w-4xl flex-1">
+            <SectionLabel>
+              {lang === "es" ? "La propiedad" : "The Property"}
+            </SectionLabel>
+            <p className="mt-6 text-2xl font-medium leading-snug md:text-4xl text-[#1C261F]">
+              {lang === "es" ? (
+                <>
+                  Disfruta de la{" "}
+                  <span className="text-[#2D6A4F] font-semibold">
+                    tranquilidad del Oriente antioqueño
+                  </span>{" "}
+                  en{" "}
+                  <span className="text-[#2D6A4F] font-semibold">
+                    Finca La Isabelita
+                  </span>
+                  , una propiedad que combina el{" "}
+                  <span className="text-[#2D6A4F] font-semibold">encanto rural</span>{" "}
+                  con la comodidad de estar cerca de todo. En el sector Las Lomitas, te
+                  ofrece{" "}
+                  <span className="text-[#2D6A4F] font-semibold">
+                    3 habitaciones, 4 camas, pórtico y parqueadero
+                  </span>{" "}
+                  para descansar, teletrabajar o{" "}
+                  <span className="text-[#2D6A4F] font-semibold">
+                    conectar con la naturaleza
+                  </span>
+                  .
+                </>
+              ) : (
+                <>
+                  Experience the{" "}
+                  <span className="text-[#2D6A4F] font-semibold">
+                    pristine countryside of Eastern Antioquia
+                  </span>{" "}
+                  at{" "}
+                  <span className="text-[#2D6A4F] font-semibold">
+                    Finca La Isabelita
+                  </span>
+                  , combining{" "}
+                  <span className="text-[#2D6A4F] font-semibold">
+                    pure rural charm
+                  </span>{" "}
+                  with close town proximity. Located in Las Lomitas, it offers{" "}
+                  <span className="text-[#2D6A4F] font-semibold">
+                    3 bedrooms, 4 beds, porch, and parking
+                  </span>{" "}
+                  to relax, work remotely, or{" "}
+                  <span className="text-[#2D6A4F] font-semibold">
+                    reconnect with nature
+                  </span>
+                  .
+                </>
+              )}
+            </p>
+          </div>
+          <div className="relative shrink-0 flex items-center justify-center self-center lg:self-end">
+            <img
+              src={ardillaCampo}
+              alt={lang === "es" ? "Ardilla campestre en Finca La Isabelita" : "Country squirrel at Finca La Isabelita"}
+              className="w-48 sm:w-56 md:w-64 lg:w-72 xl:w-80 h-auto object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-transform duration-500 hover:scale-105"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
       </section>
 
       {/* Características */}
