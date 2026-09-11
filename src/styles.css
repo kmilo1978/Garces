@@ -147,3 +147,16 @@
 .font-peace-heading {
   font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, Cambria, serif;
 }
+
+@keyframes floatBird {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-1.5deg);
+  }
+}
+
+.animate-float-bird {
+  animation: floatBird 5s ease-in-out infinite;
+}

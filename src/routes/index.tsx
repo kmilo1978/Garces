@@ -60,6 +60,7 @@ import ardillaCampo from "@/assets/ardilla-campo.png";
 import bosqueNiebla from "@/assets/bosque-niebla.jpg";
 import heroCostado from "@/assets/hero-costado.jpg";
 import heroPorticoFlores from "@/assets/hero-portico-flores.jpg";
+import aveHero from "@/assets/ave-hero.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -902,6 +903,18 @@ function Index() {
             <span className="hidden lg:inline">{t.topBar.payments}</span>
           </div>
         </div>
+      </div>
+
+      {/* Ave volando sobre el cielo campestre del Hero (Barranquero / Quetzal) */}
+      <div
+        className="pointer-events-none absolute top-28 2xl:top-24 right-3 xl:right-10 2xl:right-24 z-20 hidden min-[1320px]:block"
+        aria-hidden="true"
+      >
+        <img
+          src={aveHero}
+          alt="Ave del paraíso volando sobre el cielo campestre de Finca La Isabelita"
+          className="w-36 xl:w-44 2xl:w-52 h-auto object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.16)] select-none animate-float-bird"
+        />
       </div>
 
       {/* Nav */}
