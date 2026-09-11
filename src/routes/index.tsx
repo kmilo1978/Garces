@@ -1073,18 +1073,6 @@ function Index() {
                 {lang === "es" ? "en La Ceja, Antioquia" : "in La Ceja, Antioquia"}
               </span>
             </h1>
-
-            {/* Subtítulo más grueso, nítido y con sombra para máxima legibilidad sobre el fondo */}
-            <p
-              className={cn(
-                "text-sm sm:text-base font-normal sm:font-medium leading-relaxed text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.85)] [text-shadow:_0_1px_2px_rgba(0,0,0,0.9),_0_2px_6px_rgba(0,0,0,0.7)] transition-all duration-700 ease-out delay-300",
-                heroTextVisible
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-5"
-              )}
-            >
-              {t.hero.subtitle}
-            </p>
           </div>
 
           {/* Costado Derecho: Información de características y botones distribuida sobre los árboles oscuros para dejar la casa 100% despejada */}
@@ -1829,10 +1817,10 @@ function Index() {
           {/* Desvanecimiento inferior suave que desciende al color del footer (#121E16) */}
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-36 sm:h-52 md:h-64 bg-gradient-to-b from-transparent via-[#121E16]/65 to-[#121E16]" />
 
-          {/* Contenido en el espacio del cielo: Frase de paz con fuente elegante, limpia y fluida en tamaño más discreto */}
-          <div className="relative z-10 mx-auto max-w-3xl px-6 pt-8 sm:pt-12 md:pt-14 pb-4 text-center flex flex-col items-center">
-            {/* Frase de paz: Tamaño más pequeño, refinado y poético */}
-            <h2 className="font-peace-heading text-xl sm:text-2xl md:text-3xl lg:text-[2.1rem] font-normal tracking-wide text-[#1C261F] leading-[1.3] sm:leading-[1.28] max-w-2xl drop-shadow-sm">
+          {/* Contenido centrado vertical y horizontalmente en el espacio blanco del cielo */}
+          <div className="relative z-10 mx-auto w-full max-w-4xl px-6 h-[220px] sm:h-[260px] md:h-[300px] lg:h-[330px] flex items-center justify-center text-center">
+            {/* Frase de paz: Tamaño refinado, fluido y perfectamente centrado */}
+            <h2 className="font-peace-heading text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-normal tracking-wide text-[#1C261F] leading-[1.35] sm:leading-[1.3] max-w-3xl drop-shadow-sm">
               {lang === "es" ? (
                 <>
                   Desconéctate del ruido y vive la{" "}
