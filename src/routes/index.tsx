@@ -1857,19 +1857,6 @@ function Index() {
                 </>
               )}
             </h2>
-
-            {/* Subtítulo complementario de tranquilidad: limpio, ligero y sutil */}
-            <p className="mt-2.5 sm:mt-3 text-xs sm:text-sm md:text-base font-light tracking-wide text-[#2B382E]/90 max-w-xl leading-relaxed">
-              {lang === "es" ? (
-                <>
-                  Respira aire puro, contempla la naturaleza y dale a tu vida el descanso y la tranquilidad que mereces.
-                </>
-              ) : (
-                <>
-                  Breathe fresh air, embrace nature, and give your life the restful serenity you truly deserve.
-                </>
-              )}
-            </p>
           </div>
         </div>
       </section>
