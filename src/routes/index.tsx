@@ -235,14 +235,28 @@ const translations = {
       title: "Historias Reales en La Isabelita",
       subtitle: "Huéspedes, familias y profesionales que han disfrutado de la paz rural, el pórtico y la comodidad de esta finca.",
     },
+    ctaFeatures: {
+      tag: "Agenda tu visita directa",
+      title: "¿Listo para conocer Finca La Isabelita en persona?",
+      desc: "Coordina una visita personalizada sin intermediarios. Recorre los 500 m² de prados privados, el acogedor pórtico con flores y sus 3 habitaciones amobladas listas para habitar.",
+      btnWhatsapp: "Agendar visita por WhatsApp",
+      btnCall: "Llamar al propietario",
+      phone: "+57 310 446 8056",
+      perks: [
+        "Trato directo con el propietario (Cero comisión)",
+        "Disponibilidad inmediata para mudanza",
+        "A 10–12 min de Viva La Ceja y Éxito",
+        "Atención 100% personalizada y bilingüe",
+      ],
+    },
     location: {
       tag: "Ubicación privilegiada",
       title: "Cómo llegar a Finca La Isabelita",
       openMaps: "Abrir en Google Maps",
       refTitle: "Dirección de referencia",
       refDesc: "Sector Las Lomitas, La Ceja, Antioquia. En las inmediaciones de la Casa de Oración La Providencia.",
-      timeTitle: "Distancia y tiempo",
-      timeDesc: "A solo 5 minutos del casco urbano y parque principal de La Ceja, con vía de acceso fácil y directa para cualquier vehículo.",
+      timeTitle: "Ubicación estratégica",
+      timeDesc: "A tan solo 5 minutos del parque principal de La Ceja, a aproximadamente 10–12 minutos del Centro Comercial Viva La Ceja y Éxito, y a 15 minutos del Hospital de La Ceja, supermercados, droguerías y demás servicios del casco urbano.",
       quietTitle: "Tranquilidad & Entorno",
       quietDesc: "Zona campestre segura, con aire puro, hermosas vistas verdes y alta valorización en el Oriente Antioqueño.",
       visitPrompt: "¿Planeas tu visita a La Isabelita?",
@@ -357,14 +371,28 @@ const translations = {
       title: "Real Stories at Finca La Isabelita",
       subtitle: "Guests, families, and remote workers who have enjoyed the peaceful countryside and porch living at La Isabelita.",
     },
+    ctaFeatures: {
+      tag: "Schedule Your Direct Tour",
+      title: "Ready to Experience Finca La Isabelita in Person?",
+      desc: "Book a private walkthrough directly with the owner. Tour the 500 m² private lawns, the scenic wooden porch with flowers, and the 3 fully furnished bedrooms ready for immediate move-in.",
+      btnWhatsapp: "Schedule Visit via WhatsApp",
+      btnCall: "Call Owner Directly",
+      phone: "+57 310 446 8056",
+      perks: [
+        "Direct deal with owner (Zero broker fee)",
+        "Immediate move-in availability",
+        "10–12 min from Viva La Ceja Mall & Éxito",
+        "100% bilingual communication (EN/ES)",
+      ],
+    },
     location: {
       tag: "Prime Location",
       title: "How to Get to Finca La Isabelita",
       openMaps: "Open in Google Maps",
       refTitle: "Reference Address",
       refDesc: "Las Lomitas sector, La Ceja, Antioquia. Near Casa de Oración La Providencia.",
-      timeTitle: "Distance & Travel Time",
-      timeDesc: "Only 5 minutes away from downtown La Ceja and main square via paved, easy-access road for any vehicle.",
+      timeTitle: "Strategic Location",
+      timeDesc: "Just 5 minutes away from downtown La Ceja and main square, approx. 10–12 minutes from Viva La Ceja Shopping Mall & Éxito, and 15 minutes from La Ceja Hospital, supermarkets, pharmacies, and all urban amenities.",
       quietTitle: "Peaceful & Safe Setting",
       quietDesc: "Safe residential countryside neighborhood with crisp fresh air, mountain views, and high appreciation in Eastern Antioquia.",
       visitPrompt: "Planning your tour to La Isabelita?",
@@ -484,8 +512,8 @@ const razonesData = [
     icon: Clock3,
     titleEs: "Ubicación estratégica",
     titleEn: "Strategic Location",
-    textEs: "En Las Lomitas, a tan solo 5 minutos del parque principal de La Ceja, supermercados y restaurantes.",
-    textEn: "Located in Las Lomitas, just 5 minutes from La Ceja main town square, shops, and dining.",
+    textEs: "En Las Lomitas, a tan solo 5 minutos del parque principal, a aproximadamente 10–12 minutos del Centro Comercial Viva La Ceja y Éxito, y a 15 minutos del Hospital de La Ceja, supermercados, droguerías y demás servicios del casco urbano.",
+    textEn: "In Las Lomitas, just 5 minutes from the main town square, approx. 10–12 minutes from Viva La Ceja Shopping Mall & Éxito, and 15 minutes from La Ceja Hospital, supermarkets, pharmacies, and all urban amenities.",
   },
   {
     icon: Briefcase,
@@ -939,17 +967,22 @@ function Index() {
       <header className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
         <a href="#" className="flex items-center gap-3 group">
           <img
-            src="/favicon.svg"
+            src="/colibri-logo.png"
             alt={
               lang === "es"
-                ? "Logotipo de Finca La Isabelita con silueta de cabeza de pajarito en círculo verde"
-                : "Finca La Isabelita logo with bird head silhouette in green circle"
+                ? "Logotipo oficial de Finca La Isabelita con cabeza de colibrí"
+                : "Official Finca La Isabelita logo with hummingbird head"
             }
-            className="h-10 w-10 rounded-full shadow-sm transition-transform duration-300 group-hover:scale-105"
+            className="h-12 w-12 sm:h-14 sm:w-14 object-contain drop-shadow-md transition-transform duration-300 group-hover:scale-110"
           />
-          <span className="text-2xl font-black uppercase tracking-tight text-[#1C261F] transition-colors duration-200 group-hover:text-white group-hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)]">
-            La Isabelita
-          </span>
+          <div className="flex flex-col">
+            <span className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#243A2C]/85 drop-shadow-[0_1px_1px_rgba(255,255,255,0.7)]">
+              Casa Campestre
+            </span>
+            <span className="text-xl sm:text-2xl font-black uppercase tracking-tight text-[#1C261F] transition-colors duration-200 group-hover:text-white group-hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)]">
+              Finca La Isabelita
+            </span>
+          </div>
         </a>
 
         <nav className="hidden items-center gap-7 text-sm font-semibold uppercase tracking-wide text-[#1C261F] lg:flex">
@@ -1500,6 +1533,64 @@ function Index() {
         </div>
       </section>
 
+      {/* Bloque CTA tras Características */}
+      <section className="mx-auto max-w-7xl px-6 py-6">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#243A2C] via-[#1C2E23] to-[#14231A] p-8 md:p-12 text-[#FAF8F5] shadow-xl border border-[#3E5D47]/40">
+          {/* Acentos de luz sutil en fondo */}
+          <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-emerald-500/10 blur-3xl" />
+          <div className="pointer-events-none absolute -left-20 -bottom-20 h-72 w-72 rounded-full bg-[#4ADE80]/10 blur-3xl" />
+
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-7 space-y-4">
+              <div className="inline-flex items-center gap-2 rounded-full bg-emerald-900/60 border border-emerald-500/30 px-3.5 py-1 text-xs font-semibold uppercase tracking-widest text-emerald-300">
+                <Sparkles className="h-3.5 w-3.5 text-emerald-300" />
+                <span>{t.ctaFeatures.tag}</span>
+              </div>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight text-[#FAF8F5] leading-tight">
+                {t.ctaFeatures.title}
+              </h3>
+              <p className="text-sm sm:text-base leading-relaxed text-stone-200/90 max-w-2xl">
+                {t.ctaFeatures.desc}
+              </p>
+
+              {/* Lista de beneficios destacados */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
+                {t.ctaFeatures.perks.map((perk, idx) => (
+                  <div key={idx} className="flex items-center gap-2.5 text-xs sm:text-sm text-stone-200">
+                    <CheckCircle2 className="h-4 w-4 text-emerald-400 flex-shrink-0" />
+                    <span>{perk}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="lg:col-span-5 flex flex-col sm:flex-row lg:flex-col gap-3.5 justify-center lg:items-end">
+              <a
+                href={
+                  lang === "es"
+                    ? "https://wa.me/?text=Hola%2C%20quisiera%20agendar%20una%20visita%20para%20conocer%20Finca%20La%20Isabelita%20en%20Las%20Lomitas%2C%20La%20Ceja"
+                    : "https://wa.me/?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20visit%20to%20see%20Finca%20La%20Isabelita%20in%20Las%20Lomitas%2C%20La%20Ceja"
+                }
+                target="_blank"
+                rel="noreferrer"
+                className="w-full sm:w-auto lg:w-full inline-flex items-center justify-center gap-3 rounded-full bg-[#25D366] px-6 py-4 text-sm font-bold uppercase tracking-wider text-white shadow-lg transition-all duration-300 hover:bg-[#20ba5a] hover:scale-[1.02]"
+              >
+                <WhatsAppIcon className="h-5 w-5" />
+                <span>{t.ctaFeatures.btnWhatsapp}</span>
+              </a>
+
+              <a
+                href="tel:+573104468056"
+                className="w-full sm:w-auto lg:w-full inline-flex items-center justify-center gap-3 rounded-full border border-stone-400/40 bg-white/10 px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:bg-white/20"
+              >
+                <Phone className="h-4 w-4 text-emerald-300" />
+                <span>{t.ctaFeatures.btnCall}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Galería (9 imágenes seleccionadas) */}
       <section id="galeria" className="mx-auto max-w-7xl px-6 py-16">
         <div className="mb-10 flex flex-wrap items-end justify-between gap-6">
@@ -1978,17 +2069,22 @@ function Index() {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <img
-                  src="/favicon.svg"
+                  src="/colibri-logo.png"
                   alt={
                     lang === "es"
-                      ? "Emblema oficial de Finca La Isabelita con cabeza de pajarito en círculo verde"
-                      : "Official emblem of Finca La Isabelita with bird head in green circle"
+                      ? "Logotipo oficial de Finca La Isabelita con cabeza de colibrí"
+                      : "Official Finca La Isabelita logo with hummingbird head"
                   }
-                  className="h-10 w-10 rounded-full border border-white/20 shadow-sm"
+                  className="h-11 w-11 object-contain drop-shadow-md"
                 />
-                <span className="text-2xl font-black uppercase tracking-wider text-[#FAF8F5]">
-                  Finca La Isabelita
-                </span>
+                <div className="flex flex-col">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.24em] text-emerald-400">
+                    Casa Campestre
+                  </span>
+                  <span className="text-2xl font-black uppercase tracking-wider text-[#FAF8F5]">
+                    Finca La Isabelita
+                  </span>
+                </div>
               </div>
               <p className="text-sm leading-relaxed text-stone-300">
                 {t.footer.brandDesc}
