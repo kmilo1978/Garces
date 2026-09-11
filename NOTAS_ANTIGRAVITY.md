@@ -727,3 +727,23 @@
 - Resultado: Aprobado (score >= 10)
 - Resumen: Menú hamburguesa interactivo para móvil completamente integrado, funcional y desplegado en producción.
 - Observaciones: Navegación móvil fluida, moderna y accesible en cualquier tamaño de pantalla.
+
+## Nueva sesión
+- Fecha: 2026-09-11 08:08
+- Solicitud: En el espacio blanco a la derecha del párrafo de la sección "La propiedad", agregar la imagen de la ardilla enviada por el usuario para darle un toque más campestre y natural a la página.
+- Decisiones clave:
+  - Se procesó y guardó la imagen PNG con fondo transparente de la ardilla campestre en src/assets/ardilla-campo.png y en public/ardilla-campo.png.
+  - Se importó rdillaCampo en src/routes/index.tsx.
+  - Se transformó la sección "La propiedad" en un contenedor flexible adaptable (lex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12).
+  - El texto descriptivo se mantiene con formato amplio y legible a la izquierda (max-w-3xl xl:max-w-4xl flex-1).
+  - La ardilla campestre se ubicó a la derecha, orientada naturalmente con su mirada hacia el texto, con tamaño responsivo (w-48 en móvil hasta xl:w-80 en escritorio), sombra suave de elevación (drop-shadow-[0_12px_24px_rgba(0,0,0,0.12)]) y micro-interacción suave al pasar el cursor (hover:scale-105).
+  - Se verificó compilación exitosa con Vite y Nitro (
+pm run build), respuesta HTTP 200 OK en el servidor local y se sincronizó en GitHub (main).
+- Pendientes:
+  - Ninguno.
+
+## Validación completada
+- Fecha: 2026-09-11 08:08
+- Resultado: Aprobado (score >= 10)
+- Resumen: Imagen de la ardilla campestre integrada armónicamente en el espacio en blanco de la sección "La propiedad", con diseño responsivo, alta resolución y carga optimizada.
+- Observaciones: Aporte estético campestre y cálido que refuerza el concepto de naturaleza y tranquilidad de Finca La Isabelita.
