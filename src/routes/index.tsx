@@ -975,10 +975,10 @@ function Index() {
               </span>
             </h1>
 
-            {/* Subtítulo ligero y legible */}
+            {/* Subtítulo más grueso, nítido y con sombra para máxima legibilidad sobre el fondo */}
             <p
               className={cn(
-                "text-sm sm:text-base font-light leading-relaxed text-white/85 drop-shadow transition-all duration-700 ease-out delay-300",
+                "text-sm sm:text-base font-normal sm:font-medium leading-relaxed text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.85)] [text-shadow:_0_1px_2px_rgba(0,0,0,0.9),_0_2px_6px_rgba(0,0,0,0.7)] transition-all duration-700 ease-out delay-300",
                 heroTextVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-5"
