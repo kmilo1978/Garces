@@ -91,7 +91,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "es_CO" },
+      { property: "og:image", content: "https://kmilo1978.github.io/Garces/og-image.jpg" },
+      { property: "og:image:secure_url", content: "https://kmilo1978.github.io/Garces/og-image.jpg" },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://kmilo1978.github.io/Garces/og-image.jpg" },
     ],
     links: [
       {
@@ -113,7 +119,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
       { rel: "icon", href: "/favicon.ico", sizes: "any" },
-      { rel: "apple-touch-icon", href: "/favicon.svg" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
     ],
   }),
   shellComponent: RootShell,

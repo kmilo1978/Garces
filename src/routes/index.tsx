@@ -92,7 +92,12 @@ export const Route = createFileRoute("/")({
         content:
           "Casa campestre amoblada en arriendo directo en Las Lomitas, La Ceja. 3 habitaciones, 4 camas, pórtico con vista a montañas, 500 m² de prado, 100% Pet Friendly y anfitrión bilingüe. $2.9M COP/mes.",
       },
-      { property: "og:image", content: "https://kmilo1978.github.io/Garces/hero-finca.jpg" },
+      { property: "og:image", content: "https://kmilo1978.github.io/Garces/og-image.jpg" },
+      { property: "og:image:secure_url", content: "https://kmilo1978.github.io/Garces/og-image.jpg" },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Finca La Isabelita - Casa Campestre Amoblada en Las Lomitas, La Ceja, Antioquia" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Finca La Isabelita | Casa Campestre en La Ceja" },
       {
@@ -100,10 +105,14 @@ export const Route = createFileRoute("/")({
         content:
           "Finca amoblada en Las Lomitas, La Ceja: 3 habitaciones, 4 camas, pórtico, lote de 500 m², pet friendly y trato directo. $2.9M COP.",
       },
-      { name: "twitter:image", content: "https://kmilo1978.github.io/Garces/hero-finca.jpg" },
+      { name: "twitter:image", content: "https://kmilo1978.github.io/Garces/og-image.jpg" },
+      { name: "twitter:image:alt", content: "Finca La Isabelita en La Ceja, Antioquia" },
     ],
     links: [
       { rel: "canonical", href: "https://kmilo1978.github.io/Garces/" },
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
     ],
   }),
   component: Index,
@@ -776,8 +785,8 @@ function Index() {
       src: heroImg,
       alt:
         lang === "es"
-          ? "Fachada principal y pórtico de madera de Finca La Isabelita"
-          : "Main facade and rustic porch of Finca La Isabelita",
+          ? "Fotografía real de la fachada principal de Finca La Isabelita con pórtico de madera, flores y prados en Las Lomitas, La Ceja"
+          : "Real photograph of the main facade of Finca La Isabelita with wooden porch, flowers, and open lawn in Las Lomitas, La Ceja",
       titleEs: "Fachada & Pórtico",
       titleEn: "Facade & Porch",
     },
@@ -785,8 +794,8 @@ function Index() {
       src: heroCostado,
       alt:
         lang === "es"
-          ? "Costado de la casa, tejado tradicional y amplios prados verdes"
-          : "Side of the house, traditional roof, and green lawns",
+          ? "Costado de la casa finca campestre, tejado tradicional en teja de barro y prados verdes de 500 m²"
+          : "Side view of the countryside house, traditional clay-tiled roof, and 500 m² green lawns",
       titleEs: "Costado & Prados",
       titleEn: "Side & Lawns",
     },
@@ -794,8 +803,8 @@ function Index() {
       src: heroPorticoFlores,
       alt:
         lang === "es"
-          ? "Vista panorámica al jardín y flores desde el pórtico de madera"
-          : "Panoramic garden and flower view from the wooden porch",
+          ? "Vista panorámica al jardín, flores veraneras y montañas desde el pórtico de madera en La Ceja"
+          : "Panoramic view of the garden, bougainvillea flowers, and mountains from the wooden deck in La Ceja",
       titleEs: "Pórtico & Jardín",
       titleEn: "Porch & Garden",
     },
@@ -834,7 +843,11 @@ function Index() {
       >
         <img
           src={cieloHero}
-          alt=""
+          alt={
+            lang === "es"
+              ? "Cielo azul luminoso y despejado sobre el paisaje campestre de La Ceja, Antioquia"
+              : "Bright clear blue sky over the countryside landscape of La Ceja, Antioquia"
+          }
           className="h-full w-full object-cover object-top [filter:brightness(1.55)_saturate(0.38)_contrast(0.92)_hue-rotate(12deg)] opacity-70"
         />
         {/* Capa de difusión gradual para que el cielo celeste muy claro y luminoso se desvanezca suavemente a blanco */}
@@ -854,6 +867,7 @@ function Index() {
               "Casa campestre amoblada en alquiler directo con el propietario en Las Lomitas, La Ceja, Oriente Antioqueño. Cuenta con 3 habitaciones, 4 camas, 1 baño completo, cocina, comedor, pórtico exterior, zona de lavandería, parqueadero y lote privado de 500 m². 100% Pet Friendly.",
             url: "https://kmilo1978.github.io/Garces/",
             image: [
+              "https://kmilo1978.github.io/Garces/og-image.jpg",
               "https://kmilo1978.github.io/Garces/hero-finca.jpg",
               "https://kmilo1978.github.io/Garces/portico-deck.jpg",
               "https://kmilo1978.github.io/Garces/vista-portico-jardin.jpg",
@@ -912,7 +926,11 @@ function Index() {
       >
         <img
           src={aveHero}
-          alt="Ave del paraíso volando sobre el cielo campestre de Finca La Isabelita"
+          alt={
+            lang === "es"
+              ? "Barranquero andino en pleno vuelo sobre el cielo campestre de Finca La Isabelita"
+              : "Andean motmot bird flying gracefully over the countryside sky at Finca La Isabelita"
+          }
           className="w-36 xl:w-44 2xl:w-52 h-auto object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.16)] select-none animate-float-bird"
         />
       </div>
@@ -922,7 +940,11 @@ function Index() {
         <a href="#" className="flex items-center gap-3 group">
           <img
             src="/favicon.svg"
-            alt="Logotipo de Finca La Isabelita"
+            alt={
+              lang === "es"
+                ? "Logotipo de Finca La Isabelita con silueta de cabeza de pajarito en círculo verde"
+                : "Finca La Isabelita logo with bird head silhouette in green circle"
+            }
             className="h-10 w-10 rounded-full shadow-sm transition-transform duration-300 group-hover:scale-105"
           />
           <span className="text-2xl font-black uppercase tracking-tight text-[#1C261F] transition-colors duration-200 group-hover:text-white group-hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)]">
@@ -1471,7 +1493,11 @@ function Index() {
           <div className="relative shrink-0 flex items-center justify-center self-center lg:self-end">
             <img
               src={ardillaCampo}
-              alt={lang === "es" ? "Ardilla campestre en Finca La Isabelita" : "Country squirrel at Finca La Isabelita"}
+              alt={
+                lang === "es"
+                  ? "Ardilla campestre nativa observando el entorno natural en Finca La Isabelita, Las Lomitas, La Ceja"
+                  : "Native countryside squirrel enjoying the peaceful natural environment at Finca La Isabelita in Las Lomitas, La Ceja"
+              }
               className="w-48 sm:w-56 md:w-64 lg:w-72 xl:w-80 h-auto object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-transform duration-500 hover:scale-105"
               loading="lazy"
               decoding="async"
@@ -1559,7 +1585,11 @@ function Index() {
         >
           <img
             src={bosqueNiebla}
-            alt=""
+            alt={
+              lang === "es"
+                ? "Atmósfera campestre de bosque andino con niebla matutina en el Oriente Antioqueño"
+                : "Atmospheric Andean mountain forest with morning mist in Eastern Antioquia"
+            }
             className="h-full w-full object-cover object-right-bottom lg:object-center opacity-75"
           />
           {/* Capas de difuminado suave superior, inferior y lateral para fundirse armónicamente con el fondo marfil #FAF8F5 */}
@@ -1981,7 +2011,11 @@ function Index() {
               <div className="flex items-center gap-3">
                 <img
                   src="/favicon.svg"
-                  alt="Emblema oficial de Finca La Isabelita"
+                  alt={
+                    lang === "es"
+                      ? "Emblema oficial de Finca La Isabelita con cabeza de pajarito en círculo verde"
+                      : "Official emblem of Finca La Isabelita with bird head in green circle"
+                  }
                   className="h-10 w-10 rounded-full border border-white/20 shadow-sm"
                 />
                 <span className="text-2xl font-black uppercase tracking-wider text-[#FAF8F5]">
