@@ -1551,7 +1551,43 @@ function Index() {
         </div>
       </section>
 
-      {/* Banner Pre-Footer: Tarjeta panorámica con fotografía real de la vista del pórtico al jardín */}
+      {/* Sección Panorámica del Paisaje: Gran protagonismo visual después de FAQs */}
+      <section
+        className="relative w-full overflow-hidden bg-[#FAF8F5]"
+        aria-label={lang === "es" ? "Paisaje y entorno natural de Finca La Isabelita" : "Natural landscape and scenery of Finca La Isabelita"}
+      >
+        <div className="relative h-[480px] sm:h-[580px] md:h-[680px] lg:h-[780px] w-full overflow-hidden">
+          {/* Video en loop continuo con total nitidez y protagonismo del paisaje */}
+          <video
+            src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260815_040604_c8ace780-37e9-4f61-bc5c-8b1712b4640b.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            ref={(el) => {
+              if (el) {
+                el.muted = true;
+                el.loop = true;
+                el.play().catch(() => {});
+              }
+            }}
+            onEnded={(e) => {
+              e.currentTarget.currentTime = 0;
+              e.currentTarget.play().catch(() => {});
+            }}
+            className="h-full w-full object-cover object-[center_60%] brightness-[0.98] contrast-[1.02] transition-all duration-700"
+          />
+
+          {/* Transición superior suave desde el fondo marfil */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-24 sm:h-32 bg-gradient-to-b from-[#FAF8F5] via-[#FAF8F5]/40 to-transparent" />
+
+          {/* Transición inferior suave hacia el fondo marfil */}
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 sm:h-36 bg-gradient-to-b from-transparent to-[#FAF8F5]" />
+        </div>
+      </section>
+
+      {/* Banner Pre-Footer: Ahora ubicado más abajo, después del paisaje y como llamado final antes del footer */}
       <section id="contacto" className="mx-auto max-w-7xl px-4 sm:px-6 py-12 md:py-16">
         <div
           className="relative overflow-hidden rounded-[2.5rem] border border-[#2D4535] bg-cover bg-center p-8 sm:p-12 md:p-16 text-center text-white shadow-2xl"
@@ -1638,55 +1674,8 @@ function Index() {
         </div>
       </section>
 
-      {/* Sección Panorámica del Paisaje: Gran protagonismo visual antes del Footer */}
-      <section
-        className="relative w-full overflow-hidden bg-[#121E16]"
-        aria-label={lang === "es" ? "Paisaje y entorno natural de Finca La Isabelita" : "Natural landscape and scenery of Finca La Isabelita"}
-      >
-        <div className="relative h-[480px] sm:h-[580px] md:h-[680px] lg:h-[760px] w-full overflow-hidden">
-          {/* Video en loop continuo con total nitidez y protagonismo del paisaje */}
-          <video
-            src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260815_040604_c8ace780-37e9-4f61-bc5c-8b1712b4640b.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-            ref={(el) => {
-              if (el) {
-                el.muted = true;
-                el.loop = true;
-                el.play().catch(() => {});
-              }
-            }}
-            onEnded={(e) => {
-              e.currentTarget.currentTime = 0;
-              e.currentTarget.play().catch(() => {});
-            }}
-            className="h-full w-full object-cover object-center brightness-[0.98] contrast-[1.02] transition-all duration-700"
-          />
-
-          {/* Transición superior suave desde el fondo marfil de la página */}
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-20 sm:h-28 bg-gradient-to-b from-[#FAF8F5] via-[#FAF8F5]/30 to-transparent" />
-
-          {/* Desvanecimiento inferior suave que desciende al color del footer (#121E16) */}
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 sm:h-48 md:h-56 bg-gradient-to-b from-transparent via-[#121E16]/60 to-[#121E16]" />
-
-          {/* Sello sutil en la parte inferior para no tapar el centro del paisaje */}
-          <div className="pointer-events-none absolute inset-x-0 bottom-8 sm:bottom-12 flex justify-center px-4">
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-[#121E16]/75 px-5 py-2 text-xs sm:text-sm font-light uppercase tracking-[0.2em] text-[#FAF8F5] backdrop-blur-md shadow-2xl">
-              <span>
-                {lang === "es"
-                  ? "Entorno y Naturaleza Real · Finca La Isabelita"
-                  : "Authentic Countryside Living · Finca La Isabelita"}
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer integrado fluidamente con el mismo fondo #121E16 */}
-      <footer className="bg-[#121E16] text-[#E5EAE5]">
+      {/* Footer */}
+      <footer className="border-t border-[#1E3024] bg-[#121E16] text-[#E5EAE5]">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
             {/* Columna 1: Marca e info */}
