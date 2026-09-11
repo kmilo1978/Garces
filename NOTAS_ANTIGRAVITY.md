@@ -486,3 +486,27 @@
 - Resultado: Aprobado (score >= 10)
 - Resumen: Repositorio GitHub https://github.com/kmilo1978/Garces sincronizado al 100% en la rama main con árbol de trabajo limpio.
 - Observaciones: Código fuente, activos y documentación respaldados en la nube.
+
+## Nueva sesión
+- Fecha: 2026-09-10 20:09
+- Solicitud: Realizar todo el SEO On-Page y una optimización completa de los textos alternativos (alt) en todas las imágenes.
+- Decisiones clave:
+  - Meta Tags & Head:
+    - Se depuró `__root.tsx`, retirando referencias genéricas ("Lovable App") y configurando idioma predeterminado `lang="es"`, color de tema `#18281E` y metadatos base.
+    - En `src/routes/index.tsx`, se configuró un conjunto integral de etiquetas SEO: `title` optimizado para intención de búsqueda, `description` persuasiva, `keywords`, etiquetas geográficas para La Ceja (`geo.region`, `geo.placename`, `geo.position`, `ICBM`), meta robots (`index, follow, max-image-preview:large`), URL canónica y tarjetas sociales completas para Open Graph y Twitter Cards.
+  - Datos Estructurados Schema.org (JSON-LD):
+    - Se integró el esquema oficial `VacationRental` / `SingleFamilyResidence` con geolocalización, dirección en Las Lomitas (La Ceja), precio oficial ($2.900.000 COP / mes), especificaciones de 3 habitaciones, 4 camas, 1 baño, lote de 500 m², pet friendly y amenidades para rich snippets en Google.
+  - Optimización de Imágenes (`alt` text) y Core Web Vitals:
+    - Se añadieron descripciones bilingües (`altEs` y `altEn`) ricas en palabras clave semánticas en las 9 fotos de la galería y en las 3 ofertas destacadas.
+    - Se optimizó el `alt` del pórtico en "Por qué te encantará" y de las fotos de perfil en los testimonios.
+    - Se habilitó `decoding="async"` junto con `loading="lazy"` en todas las imágenes para mejorar el rendimiento de carga y Core Web Vitals (LCP/CLS).
+  - Jerarquía semántica de encabezados:
+    - Título H1 único y protagónico ("Finca La Isabelita en La Ceja, Antioquia"), seguido de H2s temáticos para cada sección (Comodidades, Galería, Testimonios, Ubicación, Preguntas Frecuentes y Pre-footer).
+- Pendientes:
+  - Ninguno.
+
+## Validación completada
+- Fecha: 2026-09-10 20:09
+- Resultado: Aprobado (score >= 10)
+- Resumen: SEO On-Page exhaustivo implementado con Schema.org JSON-LD, metadatos geográficos y 100% de imágenes con textos alternativos optimizados. Respuesta HTTP 200 OK en http://localhost:8080/.
+- Observaciones: Preparado para alta indexación orgánica en Google para búsquedas de alquiler de fincas en La Ceja y Oriente Antioqueño.

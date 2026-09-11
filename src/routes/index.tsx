@@ -55,26 +55,45 @@ import aboutImg from "@/assets/portico-deck.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Finca La Isabelita | Casa Campestre en La Ceja, Oriente Antioqueño" },
+      { title: "Finca La Isabelita | Alquiler Casa Campestre Amoblada en La Ceja, Antioquia" },
       {
         name: "description",
         content:
-          "Finca La Isabelita: Casa campestre amoblada de 3 habitaciones, 4 camas, 1 baño, cocina, comedor, pórtico, lavandería y parqueadero en lote de 500 m² en La Ceja (Las Lomitas). $2.900.000 COP.",
+          "Arriendo de Finca La Isabelita en Las Lomitas, La Ceja (Oriente Antioqueño). Casa campestre amoblada de 3 habitaciones, 4 camas, pórtico, lote privado de 500 m², 100% Pet Friendly y parqueadero. Trato directo con el propietario por $2.900.000 COP/mes.",
       },
+      {
+        name: "keywords",
+        content:
+          "Finca La Isabelita, alquiler finca La Ceja, casa campestre La Ceja, arriendo Las Lomitas La Ceja, casa finca amoblada Oriente Antioqueño, alquiler directo propietario La Ceja, finca pet friendly La Ceja, casa de descanso Antioquia, arriendo amoblado La Ceja",
+      },
+      { name: "author", content: "Finca La Isabelita" },
+      { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" },
+      { name: "geo.region", content: "CO-ANT" },
+      { name: "geo.placename", content: "La Ceja, Antioquia, Colombia" },
+      { name: "geo.position", content: "6.0270;-75.4260" },
+      { name: "ICBM", content: "6.0270, -75.4260" },
       { property: "og:type", content: "website" },
-      { property: "og:title", content: "Finca La Isabelita | Casa Campestre en La Ceja" },
+      { property: "og:site_name", content: "Finca La Isabelita" },
+      { property: "og:locale", content: "es_CO" },
+      { property: "og:locale:alternate", content: "en_US" },
+      { property: "og:title", content: "Finca La Isabelita | Casa Campestre Amoblada en La Ceja (Las Lomitas)" },
       {
         property: "og:description",
         content:
-          "Finca La Isabelita en Las Lomitas, La Ceja. 3 alcobas, 4 camas, 1 baño, cocina, comedor, pórtico, lavandería, parqueadero y lote de 500 m². Trato directo sin intermediarios.",
+          "Casa campestre amoblada en arriendo directo en Las Lomitas, La Ceja. 3 habitaciones, 4 camas, pórtico con vista a montañas, 500 m² de prado, 100% Pet Friendly y anfitrión bilingüe. $2.9M COP/mes.",
       },
+      { property: "og:image", content: "https://kmilo1978.github.io/Garces/hero-finca.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Finca La Isabelita | Casa Campestre en La Ceja" },
       {
         name: "twitter:description",
         content:
-          "Finca La Isabelita en La Ceja: 3 habitaciones, 4 camas, 1 baño, pórtico, lavandería y parqueadero en lote privado de 500 m².",
+          "Finca amoblada en Las Lomitas, La Ceja: 3 habitaciones, 4 camas, pórtico, lote de 500 m², pet friendly y trato directo. $2.9M COP.",
       },
+      { name: "twitter:image", content: "https://kmilo1978.github.io/Garces/hero-finca.jpg" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://kmilo1978.github.io/Garces/" },
     ],
   }),
   component: Index,
@@ -464,6 +483,8 @@ const ofertasPrincipales = [
     descEs: "Espacios acogedores con techo de madera, ventanas con vista a la naturaleza y 4 camas confortables listas para habitar.",
     descEn: "Cozy rooms featuring rustic wood ceilings, nature-view windows, and 4 comfortable beds ready from day one.",
     img: habitacionReal,
+    altEs: "Habitación principal amoblada con cama doble vestida, techo rústico de madera y ventana campestre en Finca La Isabelita La Ceja",
+    altEn: "Furnished master bedroom with comfortable double bed, rustic wood ceiling, and scenic window at Finca La Isabelita in La Ceja",
   },
   {
     number: "02",
@@ -472,6 +493,8 @@ const ofertasPrincipales = [
     descEs: "Hermoso pórtico de madera cubierto con sillas campestres, mesa de centro y vista abierta a los árboles y prados verdes.",
     descEn: "Stunning covered wood deck with Adirondack chairs, coffee table, and direct views over lush greenery.",
     img: porticoDeck,
+    altEs: "Pórtico campestre cubierto en madera con sillas de descanso Adirondack y flores veraneras con vista a la arboleda en La Ceja",
+    altEn: "Covered rustic wooden porch with outdoor Adirondack lounge chairs and bougainvillea flowers overlooking greenery in La Ceja",
   },
   {
     number: "03",
@@ -480,6 +503,8 @@ const ofertasPrincipales = [
     descEs: "Terreno privado cerrado, fachada rústica con letrero La Isabela, jardines nativos, lavandería y parqueadero de vehículos.",
     descEn: "Private gated 500 m² lot, rustic entrance with signature sign, native gardens, laundry, and vehicle parking.",
     img: exteriorIsabelita,
+    altEs: "Entrada campestre privada con letrero tradicional en madera La Isabela y lote cerrado de 500 m² en Las Lomitas La Ceja",
+    altEn: "Private gated countryside entrance with signature wood sign and 500 m² private fenced lot in Las Lomitas, La Ceja",
   },
 ];
 
@@ -535,7 +560,8 @@ const galeria = [
     titleEn: "Main Facade & Front Porch",
     tagEs: "Exterior",
     tagEn: "Exterior",
-    alt: "Foto real de la fachada de Finca La Isabelita en Las Lomitas",
+    altEs: "Fotografía real de la fachada principal de Finca La Isabelita con pórtico de madera, flores y prados en Las Lomitas, La Ceja",
+    altEn: "Real photo of main facade at Finca La Isabelita with wooden porch, flowers, and green lawns in Las Lomitas, La Ceja",
   },
   {
     src: habitacionReal,
@@ -543,7 +569,8 @@ const galeria = [
     titleEn: "Master Bedroom & Double Bed",
     tagEs: "Habitación",
     tagEn: "Bedroom",
-    alt: "Foto real de habitación con cama vestida, techo rústico de madera y ventana",
+    altEs: "Dormitorio principal amoblado con cama doble vestida, techo rústico de madera y ventanal campestre en Finca La Isabelita",
+    altEn: "Furnished master bedroom with comfortable double bed, rustic wood ceiling, and scenic window at Finca La Isabelita",
   },
   {
     src: porticoDeck,
@@ -551,7 +578,8 @@ const galeria = [
     titleEn: "Covered Porch & Wood Deck",
     tagEs: "Pórtico",
     tagEn: "Porch Deck",
-    alt: "Foto real del pórtico con sillas de madera y vista a los árboles",
+    altEs: "Pórtico campestre cubierto en madera con sillas de descanso Adirondack y vista a los árboles nativos en La Ceja, Antioquia",
+    altEn: "Covered rustic wooden porch with outdoor Adirondack chairs and tree canopy view in La Ceja, Antioquia",
   },
   {
     src: vistaPorticoJardin,
@@ -559,7 +587,8 @@ const galeria = [
     titleEn: "Lawn & Garden View from Deck",
     tagEs: "Vistas & Jardín",
     tagEn: "Lawn & View",
-    alt: "Foto real de los prados verdes y flores desde el pórtico",
+    altEs: "Panorámica de los prados verdes privados de 500 m² y jardines floridos desde la terraza de Finca La Isabelita en Las Lomitas",
+    altEn: "Scenic view of 500 m² private green lawns and flowering gardens from the deck of Finca La Isabelita in Las Lomitas",
   },
   {
     src: cocinaReal,
@@ -567,7 +596,8 @@ const galeria = [
     titleEn: "Equipped Kitchen & Wood Ceiling",
     tagEs: "Cocina",
     tagEn: "Kitchen",
-    alt: "Foto real de cocina dotada con estufa de gas, mesón y estanterías",
+    altEs: "Cocina integral campestre amoblada y equipada con estufa de gas, mesón y estanterías en Finca La Isabelita",
+    altEn: "Fully equipped rustic country kitchen with gas stove, countertops, and wood ceiling at Finca La Isabelita",
   },
   {
     src: habitacionGemelas,
@@ -575,7 +605,8 @@ const galeria = [
     titleEn: "Bedroom with 2 Twin Beds",
     tagEs: "Habitación 2",
     tagEn: "Bedroom 2",
-    alt: "Foto real de habitación con 2 camas confortables y ventana con vista",
+    altEs: "Segunda habitación amoblada con dos camas confortables y ventana con vista a las montañas en La Ceja",
+    altEn: "Second furnished bedroom with two comfortable twin beds and mountain view window in La Ceja",
   },
   {
     src: banoReal,
@@ -583,7 +614,8 @@ const galeria = [
     titleEn: "Full Bathroom & Glass Shower",
     tagEs: "Baño",
     tagEn: "Bathroom",
-    alt: "Foto real del baño completo con ducha de vidrio, lavamanos y espejo",
+    altEs: "Baño completo moderno con ducha en cabina de vidrio templado, lavamanos y espejo en Finca La Isabelita",
+    altEn: "Modern full bathroom with glass shower enclosure, vanity sink, and mirror at Finca La Isabelita",
   },
   {
     src: exteriorIsabelita,
@@ -591,7 +623,8 @@ const galeria = [
     titleEn: "Facade & Entrance Sign",
     tagEs: "Entrada",
     tagEn: "Entrance",
-    alt: "Foto real de la entrada rústica con letrero de madera La Isabela",
+    altEs: "Entrada campestre privada con letrero tradicional en madera La Isabela y vegetación nativa en Las Lomitas La Ceja",
+    altEn: "Private gated countryside entrance with signature wood sign and lush greenery in Las Lomitas, La Ceja",
   },
   {
     src: costadoFincaPrados,
@@ -599,7 +632,8 @@ const galeria = [
     titleEn: "Side View & 500 m² Green Yard",
     tagEs: "Lote 500 m²",
     tagEn: "500 m² Lot",
-    alt: "Foto real de la casa finca con techo de teja, prados verdes y árboles",
+    altEs: "Costado de la casa finca con arquitectura tradicional, techo de teja de barro y lote privado de 500 m² pet friendly",
+    altEn: "Side view of traditional countryside home with clay tile roof and 500 m² private pet friendly yard in La Ceja",
   },
 ];
 
@@ -739,6 +773,56 @@ function Index() {
 
   return (
     <div className="min-h-screen bg-[#FAF8F5] font-sans text-[#1C261F] selection:bg-[#D5E3D8] selection:text-[#18281E]">
+      {/* Schema.org Structured Data: VacationRental / SingleFamilyResidence para SEO Rich Snippets */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VacationRental",
+            name: "Finca La Isabelita",
+            description:
+              "Casa campestre amoblada en alquiler directo con el propietario en Las Lomitas, La Ceja, Oriente Antioqueño. Cuenta con 3 habitaciones, 4 camas, 1 baño completo, cocina, comedor, pórtico exterior, zona de lavandería, parqueadero y lote privado de 500 m². 100% Pet Friendly.",
+            url: "https://kmilo1978.github.io/Garces/",
+            image: [
+              "https://kmilo1978.github.io/Garces/hero-finca.jpg",
+              "https://kmilo1978.github.io/Garces/portico-deck.jpg",
+              "https://kmilo1978.github.io/Garces/vista-portico-jardin.jpg",
+            ],
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Sector Las Lomitas, cerca a Casa de Oración La Providencia",
+              addressLocality: "La Ceja",
+              addressRegion: "Antioquia",
+              addressCountry: "CO",
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: 6.027,
+              longitude: -75.426,
+            },
+            priceRange: "$2.900.000 COP / mes",
+            numberOfBedrooms: 3,
+            numberOfBathroomsTotal: 1,
+            occupancy: {
+              "@type": "QuantitativeValue",
+              value: 5,
+            },
+            petsAllowed: true,
+            amenityFeature: [
+              { "@type": "LocationFeatureSpecification", name: "3 Habitaciones", value: true },
+              { "@type": "LocationFeatureSpecification", name: "4 Camas", value: true },
+              { "@type": "LocationFeatureSpecification", name: "Pórtico Campestre", value: true },
+              { "@type": "LocationFeatureSpecification", name: "Lote privado de 500 m²", value: true },
+              { "@type": "LocationFeatureSpecification", name: "Parqueadero privado de vehículos", value: true },
+              { "@type": "LocationFeatureSpecification", name: "Zona de lavandería", value: true },
+              { "@type": "LocationFeatureSpecification", name: "100% Pet Friendly", value: true },
+              { "@type": "LocationFeatureSpecification", name: "Cocina y comedor equipados", value: true },
+              { "@type": "LocationFeatureSpecification", name: "Trato directo sin comisiones", value: true },
+            ],
+          }),
+        }}
+      />
       {/* Top Announcement Bar: Sobrio, elegante y sin emoticones ni selector redundante de idioma */}
       <div className="bg-[#18281E] text-stone-200 text-xs py-2 px-4 border-b border-[#253D2F]">
         <div className="mx-auto max-w-7xl flex items-center justify-center text-center">
@@ -1034,9 +1118,10 @@ function Index() {
               <div className="relative h-64 w-full overflow-hidden">
                 <img
                   src={o.img}
-                  alt={lang === "es" ? o.titleEs : o.titleEn}
+                  alt={lang === "es" ? o.altEs : o.altEn}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute top-4 left-4 rounded-full bg-[#18281E]/85 backdrop-blur-sm px-4 py-1.5 text-xs font-bold text-[#FAF8F5]">
                   {o.number}
@@ -1199,8 +1284,9 @@ function Index() {
               <div className="relative h-72 w-full overflow-hidden">
                 <img
                   src={g.src}
-                  alt={g.alt}
+                  alt={lang === "es" ? g.altEs : g.altEn}
                   loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#142319]/80 via-[#142319]/25 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
@@ -1247,8 +1333,13 @@ function Index() {
           <div className="overflow-hidden rounded-3xl border border-[#E2DDD0] shadow-md">
             <img
               src={aboutImg}
-              alt="Conexión con la naturaleza en Las Lomitas"
+              alt={
+                lang === "es"
+                  ? "Pórtico de madera y entorno natural de Finca La Isabelita en Las Lomitas, La Ceja, Oriente Antioqueño"
+                  : "Rustic wooden porch and peaceful countryside surroundings at Finca La Isabelita in Las Lomitas, La Ceja"
+              }
               loading="lazy"
+              decoding="async"
               className="h-full w-full object-cover"
             />
           </div>
@@ -1293,9 +1384,14 @@ function Index() {
               <div className="mt-6 flex items-center gap-4 border-t border-[#E8E2D5] pt-5">
                 <img
                   src={item.avatar}
-                  alt={item.nameEs}
+                  alt={
+                    lang === "es"
+                      ? `Fotografía de ${item.nameEs}, ${item.roleEs} en Finca La Isabelita`
+                      : `Photo of ${item.nameEn}, ${item.roleEn} at Finca La Isabelita`
+                  }
                   className="h-14 w-14 rounded-full border-2 border-[#FAF8F5] object-cover shadow-sm"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="flex flex-col">
                   <div className="text-base font-bold text-[#1C261F] flex flex-wrap items-baseline gap-1.5">

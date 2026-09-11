@@ -77,14 +77,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Finca La Isabelita | Casa Campestre en La Ceja, Antioquia" },
+      {
+        name: "description",
+        content:
+          "Alquiler directo de casa campestre amoblada en Las Lomitas, La Ceja (Oriente Antioqueño). 3 habitaciones, 4 camas, 1 baño, pórtico, parqueadero y lote de 500 m². Pet Friendly.",
+      },
+      { name: "author", content: "Finca La Isabelita" },
+      { name: "robots", content: "index, follow, max-image-preview:large" },
+      { name: "theme-color", content: "#18281E" },
+      { property: "og:site_name", content: "Finca La Isabelita" },
+      { property: "og:title", content: "Finca La Isabelita | Casa Campestre en La Ceja, Antioquia" },
+      {
+        property: "og:description",
+        content:
+          "Casa campestre amoblada en alquiler directo con el dueño en Las Lomitas, La Ceja. 3 habitaciones, 4 camas, pórtico campestre, 500 m² privados y 100% Pet Friendly.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "es_CO" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
@@ -102,7 +113,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <HeadContent />
       </head>
