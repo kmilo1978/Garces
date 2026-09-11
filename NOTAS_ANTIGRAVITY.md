@@ -605,3 +605,20 @@
 - Resultado: Aprobado (score >= 10)
 - Resumen: Banner reubicado exitosamente hacia abajo; video de paisaje adquiere flujo visual prioritario antes del cierre de contacto.
 - Observaciones: Jerarquía visual equilibrada y óptima conversión de usuario.
+
+## Nueva sesión
+- Fecha: 2026-09-10 20:33
+- Solicitud: Agregar en el footer el crédito "Diseñado por LocalRank" con enlace a https://web.localrank.com.co/.
+- Decisiones clave:
+  - Se agregó el crédito en la barra inferior del pie de página (footer) de forma bilingüe ("Diseñado por LocalRank" / "Designed by LocalRank").
+  - Se configuró el enlace con apertura en pestaña nueva (`target="_blank"`), atributos de seguridad (`rel="noopener noreferrer"`) y estilos elegantes en color esmeralda con subrayado sutil al pasar el cursor.
+  - Se probó la compilación y respuesta local (HTTP 200 OK).
+  - Se sincronizó el repositorio en GitHub (`main`).
+- Pendientes:
+  - Ninguno.
+
+## Validación completada
+- Fecha: 2026-09-10 20:33
+- Resultado: Aprobado (score >= 10)
+- Resumen: Crédito de diseño a LocalRank integrado con éxito y validado en producción y GitHub.
+- Observaciones: Ubicación limpia, estética y profesional.
