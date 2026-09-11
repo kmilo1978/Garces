@@ -1638,13 +1638,13 @@ function Index() {
         </div>
       </section>
 
-      {/* Sección Panorámica Difuminada Pre-Footer */}
+      {/* Sección Panorámica Difuminada Pre-Footer con Loop y Fundido al Footer */}
       <section
         className="relative w-full overflow-hidden bg-[#121E16]"
         aria-label={lang === "es" ? "Vista panorámica campestre de Finca La Isabelita" : "Scenic countryside view of Finca La Isabelita"}
       >
         <div className="relative h-64 sm:h-80 md:h-96 lg:h-[420px] w-full overflow-hidden">
-          {/* Video de ambientación campestre con efecto medio difuminado */}
+          {/* Video en loop continuo garantizado con efecto medio difuminado */}
           <video
             src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260815_040604_c8ace780-37e9-4f61-bc5c-8b1712b4640b.mp4"
             autoPlay
@@ -1652,16 +1652,32 @@ function Index() {
             muted
             playsInline
             preload="auto"
-            className="h-full w-full object-cover filter blur-[2px] scale-105 opacity-75 transition-all duration-700 hover:blur-[0.5px] hover:opacity-90"
+            ref={(el) => {
+              if (el) {
+                el.muted = true;
+                el.loop = true;
+                el.play().catch(() => {});
+              }
+            }}
+            onEnded={(e) => {
+              e.currentTarget.currentTime = 0;
+              e.currentTarget.play().catch(() => {});
+            }}
+            className="h-full w-full object-cover filter blur-[2px] scale-105 opacity-70 transition-all duration-700 hover:blur-[0.5px] hover:opacity-85"
           />
 
-          {/* Difuminado suave con gradientes superior e inferior para transición perfecta */}
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#FAF8F5] via-transparent to-[#121E16]" />
-          <div className="pointer-events-none absolute inset-0 bg-[#121E16]/20 backdrop-blur-[0.5px]" />
+          {/* Difuminado superior suave desde el fondo marfil de la página */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-24 sm:h-32 bg-gradient-to-b from-[#FAF8F5] via-[#FAF8F5]/40 to-transparent" />
+
+          {/* Tintado sutil hacia la tonalidad campestre del footer */}
+          <div className="pointer-events-none absolute inset-0 bg-[#121E16]/30 mix-blend-multiply backdrop-blur-[0.5px]" />
+
+          {/* Desvanecimiento progresivo inferior que desciende y se funde al 100% con el color del footer (#121E16) */}
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 sm:h-52 md:h-64 bg-gradient-to-b from-transparent via-[#121E16]/75 to-[#121E16]" />
 
           {/* Insignia sobria centrada */}
           <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-            <span className="inline-flex items-center rounded-full border border-white/20 bg-[#121E16]/60 px-5 py-2 text-[11px] sm:text-xs font-light tracking-[0.25em] text-[#FAF8F5] uppercase backdrop-blur-md shadow-lg">
+            <span className="inline-flex items-center rounded-full border border-white/20 bg-[#121E16]/70 px-5 py-2 text-[11px] sm:text-xs font-light tracking-[0.25em] text-[#FAF8F5] uppercase backdrop-blur-md shadow-xl">
               {lang === "es"
                 ? "La Isabelita · Paz y Naturaleza en Las Lomitas"
                 : "La Isabelita · Peace and Nature in Las Lomitas"}
@@ -1670,8 +1686,8 @@ function Index() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-[#1E3024] bg-[#121E16] text-[#E5EAE5]">
+      {/* Footer integrado fluidamente con el mismo fondo #121E16 */}
+      <footer className="bg-[#121E16] text-[#E5EAE5]">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
             {/* Columna 1: Marca e info */}
