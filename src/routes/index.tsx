@@ -253,6 +253,7 @@ const translations = {
       directService: "Atención directa sin intermediarios",
       paymentsAccepted: "Pagos: COP, USD, USDT/Cripto",
       rights: "Finca La Isabelita · Todos los derechos reservados.",
+      designedBy: "Diseñado por",
     },
   },
   en: {
@@ -374,6 +375,7 @@ const translations = {
       directService: "Direct deal with owner (No broker fees)",
       paymentsAccepted: "Payments: COP, USD, USDT/Crypto",
       rights: "Finca La Isabelita · All rights reserved.",
+      designedBy: "Designed by",
     },
   },
 };
@@ -1848,6 +1850,17 @@ function Index() {
           {/* Barra inferior */}
           <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[#1C2B20] pt-8 text-xs text-stone-400 sm:flex-row">
             <p>© 2026 {t.footer.rights}</p>
+            <p className="flex items-center gap-1.5 text-stone-400">
+              <span>{t.footer.designedBy}</span>
+              <a
+                href="https://web.localrank.com.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-emerald-400 underline decoration-emerald-500/40 underline-offset-4 transition-colors hover:text-emerald-300 hover:decoration-emerald-300"
+              >
+                LocalRank
+              </a>
+            </p>
             <p className="uppercase tracking-widest text-[#829987]">
               La Ceja, Oriente Antioqueño · Colombia
             </p>
