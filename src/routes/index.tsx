@@ -1181,44 +1181,12 @@ function Index() {
               ))}
             </div>
           </div>
-          {/* Costado Izquierdo: Título y descripción elevados sobre el cielo abierto y despejado */}
-          <div className="relative z-10 flex w-full max-w-md flex-col items-start gap-3 sm:gap-3.5 lg:self-start lg:pt-1">
-            {/* Badges superiores: ubicación y trato directo */}
-            <div
-              className={cn(
-                "flex flex-wrap items-center gap-2.5 transition-all duration-700 ease-out",
-                heroTextVisible
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-5"
-              )}
-            >
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-[#142319]/70 px-3.5 py-1.5 text-xs font-light tracking-wide text-white backdrop-blur-md">
-                <MapPin className="h-3.5 w-3.5 text-emerald-300" />
-                <span>{t.hero.locationBadge}</span>
-              </div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-[#142319]/65 px-3.5 py-1.5 text-xs font-light text-white/90 backdrop-blur-md">
-                <span className="text-emerald-300 font-normal">5.0</span>
-                <span className="text-white/30">·</span>
-                <span>{t.hero.cornerBadgeSub}</span>
-              </div>
-            </div>
-
-            {/* Título con tipografía ligera y elegante */}
-            <h1
-              className={cn(
-                "text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white leading-[1.14] drop-shadow-md transition-all duration-700 ease-out delay-150",
-                heroTextVisible
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-5"
-              )}
-            >
-              <span className="font-light">Finca </span>
-              <span className="font-normal text-white">{lang === "es" ? "La Isabelita" : "La Isabelita"}</span>
-              <span className="block text-2xl sm:text-3xl md:text-4xl font-light text-white/90 mt-1">
-                {lang === "es" ? "en La Ceja, Antioquia" : "in La Ceja, Antioquia"}
-              </span>
-            </h1>
-          </div>
+          {/* Título semántico oculto para SEO y lectores de pantalla sin recargar visualmente la fotografía */}
+          <h1 className="sr-only">
+            {lang === "es"
+              ? "Finca La Isabelita | Casa Campestre Amoblada en La Ceja, Antioquia"
+              : "Finca La Isabelita | Furnished Country Home in La Ceja, Antioquia"}
+          </h1>
 
           {/* Costado Derecho: Información de características y botones distribuida sobre los árboles oscuros para dejar la casa 100% despejada */}
           <div
