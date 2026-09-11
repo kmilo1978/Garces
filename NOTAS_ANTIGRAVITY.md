@@ -570,3 +570,21 @@
 - Resultado: Aprobado (score >= 10)
 - Resumen: Bucle continuo garantizado y transición en gradiente descendente al tono exacto del footer sin cortes ni bordes. Cambios validados y publicados.
 - Observaciones: Fluidez visual continua y armonía estética de alto nivel.
+
+## Nueva sesión
+- Fecha: 2026-09-10 20:26
+- Solicitud: Darle más protagonismo al video/imagen para que se aprecie con claridad el paisaje.
+- Decisiones clave:
+  - Se eliminó el filtro de desenfoque general (`blur-[2px]`) y las capas de multiplicación oscura que tapaban los detalles del paisaje, dejándolo 100% nítido y con sus colores campestres naturales.
+  - Se aumentó significativamente la altura del contenedor panorámico (`h-[480px] sm:h-[580px] md:h-[680px] lg:h-[760px]`) para brindar una experiencia inmersiva a gran escala.
+  - Se reposicionó el distintivo visual hacia el borde inferior para despejar por completo el centro y cielo del paisaje.
+  - Se mantuvo la transición gradual hacia el pie de página mediante un desvanecimiento suave solo en la zona inferior, conectando con el fondo `#121E16`.
+  - Se validó con HTTP 200 OK y se sincronizó con GitHub (`main`).
+- Pendientes:
+  - Ninguno.
+
+## Validación completada
+- Fecha: 2026-09-10 20:26
+- Resultado: Aprobado (score >= 10)
+- Resumen: Máximo protagonismo y nitidez otorgados al paisaje en video con escala cinematográfica y transición limpia al footer.
+- Observaciones: El entorno campestre se visualiza de forma clara, atractiva y profesional.
