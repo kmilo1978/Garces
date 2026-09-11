@@ -747,3 +747,20 @@ pm run build), respuesta HTTP 200 OK en el servidor local y se sincronizó en Gi
 - Resultado: Aprobado (score >= 10)
 - Resumen: Imagen de la ardilla campestre integrada armónicamente en el espacio en blanco de la sección "La propiedad", con diseño responsivo, alta resolución y carga optimizada.
 - Observaciones: Aporte estético campestre y cálido que refuerza el concepto de naturaleza y tranquilidad de Finca La Isabelita.
+## Nueva sesión
+- Fecha: 2026-09-11 08:10
+- Solicitud: Dejar el cielo un poco más claro.
+- Decisiones clave:
+  - Se incrementó la luminosidad del cielo atmosférico de fondo (rightness-[1.12], contrast-[0.98], opacity-85).
+  - Se aclaró el degradado superior superpuesto (rom-white/20 via-white/40 via-35% to-white/95), permitiendo una transición suave hacia el blanco con un tono celeste pastel mucho más despejado, fresco y brillante.
+  - Se atenuó la sombra izquierda en la tarjeta del Hero (gba(16, 26, 19, 0.50) en vez de  .72), logrando que el cielo de la fotografía de la finca también se aprecie más despejado y luminoso sin comprometer la legibilidad del texto.
+  - Se verificó compilación exitosa (
+pm run build), servidor local respondiendo con HTTP 200 OK y sincronización en GitHub (main).
+- Pendientes:
+  - Ninguno.
+
+## Validación completada
+- Fecha: 2026-09-11 08:10
+- Resultado: Aprobado (score >= 10)
+- Resumen: Cielo de fondo y Hero calibrados con mayor luminosidad y claridad, conservando la legibilidad perfecta de la tipografía y los elementos del menú.
+- Observaciones: Sensación visual más limpia, diáfana y abierta de amanecer campestre en el Oriente antioqueño.
