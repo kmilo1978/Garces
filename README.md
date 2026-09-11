@@ -1,11 +1,12 @@
-# Finca La Isabelita | Casa Campestre en La Ceja, Antioquia
+# Casa Campestre La Isabela | La Ceja, Antioquia
 
-Sitio web oficial de Finca La Isabelita, una propiedad campestre amoblada ubicada en el sector Las Lomitas, La Ceja (Oriente Antioqueño). Alquiler directo con el propietario, sin intermediarios ni comisiones de agencia.
+Sitio web oficial de Casa Campestre La Isabela, una propiedad campestre amoblada ubicada en el sector Las Lomitas, La Ceja (Oriente Antioqueño). Alquiler formalizado mediante contrato con inmobiliaria (tiempo mínimo de 6 meses).
 
 ## Características de la Propiedad
-- **Distribución:** 3 habitaciones, 4 camas, 1 baño completo, cocina, comedor y pórtico campestre.
-- **Terreno:** Lote privado de 500 m² con prados verdes y vegetación nativa.
+- **Distribución:** 2 habitaciones, 3 camas, 1 baño completo, cocina, comedor y pórtico campestre.
+- **Terreno:** Lote privado de 1.500 m² con prados verdes y vegetación nativa.
 - **Servicios:** Parqueadero privado, zona de lavandería, agua continua, internet módem prepago.
+- **Contrato:** Formal con inmobiliaria (mínimo 6 meses).
 - **Políticas:** 100% Pet Friendly (mascotas bienvenidas).
 - **Pagos flexibles:** Pesos Colombianos (COP), Dólares (USD vía Zelle/wire) y Criptomonedas (USDT/BTC).
 - **Atención:** Anfitrión 100% bilingüe (Español & English).

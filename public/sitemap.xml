@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://kmilo1978.github.io/Garces/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://kmilo1978.github.io/Garces/og-image.jpg</image:loc>
+      <image:title>Casa Campestre La Isabela - Fachada y pórtico campestre</image:title>
+      <image:caption>Casa campestre amoblada en Las Lomitas, La Ceja, Antioquia</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kmilo1978.github.io/Garces/hero-finca.jpg</image:loc>
+      <image:title>Casa Campestre La Isabela - Vista exterior y prados verdes</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kmilo1978.github.io/Garces/hero-costado.jpg</image:loc>
+      <image:title>Casa Campestre La Isabela - Costado de la casa y lote privado de 1.500 m²</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kmilo1978.github.io/Garces/hero-portico-flores.jpg</image:loc>
+      <image:title>Casa Campestre La Isabela - Pórtico exterior y flores veraneras</image:title>
+    </image:image>
+  </url>
+</urlset>

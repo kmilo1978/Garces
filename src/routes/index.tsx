@@ -65,48 +65,48 @@ import aveHero from "@/assets/ave-hero.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Finca La Isabelita | Alquiler Casa Campestre Amoblada en La Ceja, Antioquia" },
+      { title: "Casa Campestre La Isabela | Alquiler Casa Campestre Amoblada en La Ceja, Antioquia" },
       {
         name: "description",
         content:
-          "Arriendo de Finca La Isabelita en Las Lomitas, La Ceja (Oriente Antioqueño). Casa campestre amoblada de 3 habitaciones, 4 camas, pórtico, lote privado de 500 m², 100% Pet Friendly y parqueadero. Trato directo con el propietario por $2.900.000 COP/mes.",
+          "Casa campestre en arriendo en La Ceja, amoblada y rodeada de naturaleza. 2 habitaciones, 3 camas y lote de 1.500 m². ¡Agenda tu visita!",
       },
       {
         name: "keywords",
         content:
-          "Finca La Isabelita, alquiler finca La Ceja, casa campestre La Ceja, arriendo Las Lomitas La Ceja, casa finca amoblada Oriente Antioqueño, alquiler directo propietario La Ceja, finca pet friendly La Ceja, casa de descanso Antioquia, arriendo amoblado La Ceja",
+          "Casa Campestre La Isabela, alquiler casa campestre La Ceja, arriendo casa campestre La Ceja, arriendo Las Lomitas La Ceja, casa campestre amoblada Oriente Antioqueño, arriendo inmobiliaria La Ceja, casa campestre pet friendly La Ceja, arriendo amoblado La Ceja Antioquia, casa de descanso La Ceja, arriendo casa campestre 2 habitaciones La Ceja, alquiler amoblado Las Lomitas, alquiler finca La Ceja",
       },
-      { name: "author", content: "Finca La Isabelita" },
+      { name: "author", content: "Casa Campestre La Isabela" },
       { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" },
       { name: "geo.region", content: "CO-ANT" },
       { name: "geo.placename", content: "La Ceja, Antioquia, Colombia" },
       { name: "geo.position", content: "6.0270;-75.4260" },
       { name: "ICBM", content: "6.0270, -75.4260" },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Finca La Isabelita" },
+      { property: "og:site_name", content: "Casa Campestre La Isabela" },
       { property: "og:locale", content: "es_CO" },
       { property: "og:locale:alternate", content: "en_US" },
-      { property: "og:title", content: "Finca La Isabelita | Casa Campestre Amoblada en La Ceja (Las Lomitas)" },
+      { property: "og:title", content: "Casa Campestre La Isabela | Casa Campestre Amoblada en La Ceja (Las Lomitas)" },
       {
         property: "og:description",
         content:
-          "Casa campestre amoblada en arriendo directo en Las Lomitas, La Ceja. 3 habitaciones, 4 camas, pórtico con vista a montañas, 500 m² de prado, 100% Pet Friendly y anfitrión bilingüe. $2.9M COP/mes.",
+          "Casa campestre en arriendo en La Ceja, amoblada y rodeada de naturaleza. 2 habitaciones, 3 camas y lote de 1.500 m². ¡Agenda tu visita!",
       },
       { property: "og:image", content: "https://kmilo1978.github.io/Garces/og-image.jpg" },
       { property: "og:image:secure_url", content: "https://kmilo1978.github.io/Garces/og-image.jpg" },
       { property: "og:image:type", content: "image/jpeg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "Finca La Isabelita - Casa Campestre Amoblada en Las Lomitas, La Ceja, Antioquia" },
+      { property: "og:image:alt", content: "Casa Campestre La Isabela - Casa Campestre Amoblada en Las Lomitas, La Ceja, Antioquia" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Finca La Isabelita | Casa Campestre en La Ceja" },
+      { name: "twitter:title", content: "Casa Campestre La Isabela | Casa Campestre en La Ceja" },
       {
         name: "twitter:description",
         content:
-          "Finca amoblada en Las Lomitas, La Ceja: 3 habitaciones, 4 camas, pórtico, lote de 500 m², pet friendly y trato directo. $2.9M COP.",
+          "Casa campestre en arriendo en La Ceja, amoblada y rodeada de naturaleza. 2 habitaciones, 3 camas y lote de 1.500 m². ¡Agenda tu visita!",
       },
       { name: "twitter:image", content: "https://kmilo1978.github.io/Garces/og-image.jpg" },
-      { name: "twitter:image:alt", content: "Finca La Isabelita en La Ceja, Antioquia" },
+      { name: "twitter:image:alt", content: "Casa Campestre La Isabela en La Ceja, Antioquia" },
     ],
     links: [
       { rel: "canonical", href: "https://kmilo1978.github.io/Garces/" },
@@ -156,7 +156,7 @@ const translations = {
   es: {
     topBar: {
       availability: "Disponibilidad Inmediata",
-      noBroker: "Finca La Isabelita · Trato directo sin intermediarios",
+      noBroker: "Casa Campestre La Isabela · Contrato formal con inmobiliaria (Mínimo 6 meses)",
       bilingual: "Anfitrión 100% bilingüe (Español & English)",
       payments: "Pagos: Pesos (COP) · Dólares (USD) · Cripto (USDT/BTC)",
     },
@@ -170,30 +170,30 @@ const translations = {
       bookVisit: "Agendar visita",
     },
     hero: {
-      locationBadge: "Finca La Isabelita · Las Lomitas, La Ceja",
-      title: "Finca La Isabelita en La Ceja",
+      locationBadge: "Casa Campestre La Isabela · Las Lomitas, La Ceja",
+      title: "Casa Campestre La Isabela en La Ceja",
       subtitle:
-        "Disfruta del encanto campestre en una propiedad amoblada de 3 habitaciones, 4 camas, 1 baño, cocina, comedor, pórtico exterior, zona de lavandería y parqueadero privado en un lote de 500 m². Trato directo con el propietario, agua lista, internet prepago y a 5 minutos del pueblo.",
-      btnPrimary: "Agendar Mi Visita Directa",
+        "Disfruta del encanto campestre en una propiedad amoblada de 2 habitaciones, 3 camas, 1 baño, cocina, comedor, pórtico exterior, zona de lavandería y parqueadero privado en un lote de 1.500 m². Contrato con inmobiliaria (mínimo 6 meses), agua lista, internet prepago y a aproximadamente 10–12 minutos de Viva La Ceja y Éxito.",
+      btnPrimary: "Agendar Mi Visita",
       btnSecondary: "Ver lo que ofrecemos",
       stats: [
-        { num: "3", unit: "hab", label: "Habitaciones" },
-        { num: "4", unit: "camas", label: "Camas" },
+        { num: "2", unit: "hab", label: "Habitaciones" },
+        { num: "3", unit: "", label: "Camas" },
         { num: "1", unit: "baño", label: "Baño Completo" },
-        { num: "500", unit: "m²", label: "Lote Privado" },
+        { num: "1.500", unit: "m²", label: "Lote Privado" },
         { num: "$2.9", unit: "M", label: "COP / Mes" },
       ],
-      cornerBadgeTitle: "Finca La Isabelita",
-      cornerBadgeSub: "Trato directo sin intermediarios",
+      cornerBadgeTitle: "Casa Campestre La Isabela",
+      cornerBadgeSub: "Contrato con inmobiliaria · Mín. 6 meses",
     },
     trust: {
-      tag: "Trato Directo & Ventajas",
-      title: "Beneficios de Alquilar en Finca La Isabelita",
+      tag: "Contrato Seguro & Ventajas",
+      title: "Beneficios de Alquilar en Casa Campestre La Isabela",
       cards: [
         {
-          title: "Sin Intermediarios",
-          subtitle: "Trato directo con el propietario",
-          desc: "Negocia y habla directamente con el dueño. Cero comisiones de agencia, sin trámites burocráticos y respuesta inmediata.",
+          title: "Contrato con Inmobiliaria",
+          subtitle: "Respaldo y Seguridad Jurídica",
+          desc: "Arriendo formalizado a través de inmobiliaria (mínimo 6 meses). Cuentas con total claridad contractual, soporte legal y acompañamiento profesional durante toda tu estancia.",
         },
         {
           title: "Anfitrión 100% Bilingüe",
@@ -209,10 +209,10 @@ const translations = {
     },
     offer: {
       tag: "What We Offer · Lo Que Ofrecemos",
-      title: "Comodidades de Finca La Isabelita",
+      title: "Comodidades de Casa Campestre La Isabela",
       subtitle:
-        "Diseñada con 3 habitaciones, 4 camas, cocina equipada, comedor, pórtico campestre, lavandería y parqueadero de vehículos, rodeada de 500 m² de prados verdes en Las Lomitas.",
-      whyTitle: "¿Por qué elegir Finca La Isabelita?",
+        "Diseñada con 2 habitaciones, 3 camas, cocina equipada, comedor, pórtico campestre, lavandería y parqueadero de vehículos, rodeada de 1.500 m² de prados verdes en Las Lomitas.",
+      whyTitle: "¿Por qué elegir Casa Campestre La Isabela?",
       whySubtitle: "Todo lo que necesitas para una estadía cómoda, independiente y en total contacto con la naturaleza.",
     },
     features: {
@@ -226,73 +226,74 @@ const translations = {
     },
     gallery: {
       tag: "Recorrido Visual",
-      title: "Galería de Finca La Isabelita",
-      subtitle: "9 perspectivas seleccionadas de las habitaciones, pórtico, áreas sociales y lote verde.",
+      title: "Galería de Casa Campestre La Isabela",
+      subtitle: "9 perspectivas seleccionadas de las 2 habitaciones, 3 camas, pórtico, áreas sociales y lote verde de 1.500 m².",
       pill: "9 Fotografías Exclusivas",
     },
     testimonials: {
       tag: "What Our Clients Say · Testimonios",
-      title: "Historias Reales en La Isabelita",
-      subtitle: "Huéspedes, familias y profesionales que han disfrutado de la paz rural, el pórtico y la comodidad de esta finca.",
+      title: "Historias Reales en La Isabela",
+      subtitle: "Huéspedes, familias y profesionales que han disfrutado de la paz rural, el pórtico y la comodidad de esta casa campestre.",
     },
     ctaFeatures: {
-      tag: "Agenda tu visita directa",
-      title: "¿Listo para conocer Finca La Isabelita en persona?",
-      desc: "Coordina una visita personalizada sin intermediarios. Recorre los 500 m² de prados privados, el acogedor pórtico con flores y sus 3 habitaciones amobladas listas para habitar.",
-      btnWhatsapp: "Agendar visita por WhatsApp",
-      btnCall: "Llamar al propietario",
+      tag: "Ubicación estratégica",
+      title: "Cerca de todo, en plena tranquilidad",
+      time1: "10–12 min",
+      card1Title: "CC Viva La Ceja y Éxito",
+      card1Desc: "Aproximadamente a 10–12 minutos de Viva La Ceja y Éxito. Compras, bancos, restaurantes y entretenimiento.",
+      time2: "15 min",
+      card2Title: "Hospital y Casco Urbano",
+      card2Desc: "A 15 minutos del Hospital de La Ceja, droguerías, supermercados y todos los servicios esenciales.",
+      ctaTitle: "¿Te gustaría visitar Casa Campestre La Isabela?",
+      ctaDesc: "Agenda tu visita con la inmobiliaria y conoce esta casa campestre en Las Lomitas.",
+      btnWhatsapp: "Agendar por WhatsApp",
+      btnCall: "Llamar",
       phone: "+57 310 446 8056",
-      perks: [
-        "Trato directo con el propietario (Cero comisión)",
-        "Disponibilidad inmediata para mudanza",
-        "A 10–12 min de Viva La Ceja y Éxito",
-        "Atención 100% personalizada y bilingüe",
-      ],
     },
     location: {
-      tag: "Ubicación privilegiada",
-      title: "Cómo llegar a Finca La Isabelita",
+      tag: "Ubicación estratégica",
+      title: "Cómo llegar a Casa Campestre La Isabela",
       openMaps: "Abrir en Google Maps",
       refTitle: "Dirección de referencia",
       refDesc: "Sector Las Lomitas, La Ceja, Antioquia. En las inmediaciones de la Casa de Oración La Providencia.",
       timeTitle: "Ubicación estratégica",
-      timeDesc: "A tan solo 5 minutos del parque principal de La Ceja, a aproximadamente 10–12 minutos del Centro Comercial Viva La Ceja y Éxito, y a 15 minutos del Hospital de La Ceja, supermercados, droguerías y demás servicios del casco urbano.",
+      timeDesc: "A aproximadamente 10–12 minutos del Centro Comercial Viva La Ceja y Éxito, y a 15 minutos del Hospital de La Ceja, supermercados, droguerías y demás servicios del casco urbano (y a 5 minutos del parque principal de La Ceja).",
       quietTitle: "Tranquilidad & Entorno",
       quietDesc: "Zona campestre segura, con aire puro, hermosas vistas verdes y alta valorización en el Oriente Antioqueño.",
-      visitPrompt: "¿Planeas tu visita a La Isabelita?",
+      visitPrompt: "¿Planeas tu visita a La Isabela?",
       visitSub: "Te enviamos el punto exacto por WhatsApp o coordinamos para esperarte en la entrada.",
       requestWa: "Solicitar ubicación en WhatsApp",
     },
     faq: {
       tag: "Resolvemos tus dudas",
       title: "Preguntas Frecuentes",
-      subtitle: "Todo lo que necesitas saber sobre las instalaciones, camas, servicios y condiciones en Finca La Isabelita.",
+      subtitle: "Todo lo que necesitas saber sobre las instalaciones, habitaciones, camas, servicios y condiciones en Casa Campestre La Isabela.",
     },
     cta: {
-      title: "Asegura tu estadía en Finca La Isabelita",
-      desc: "Contáctanos hoy mismo para agendar tu visita directa a esta finca amoblada de 3 habitaciones, 4 camas, pórtico y parqueadero a 5 minutos de La Ceja.",
+      title: "Asegura tu estadía en Casa Campestre La Isabela",
+      desc: "Contáctanos hoy mismo para agendar tu visita a esta casa campestre amoblada de 2 habitaciones, 3 camas, pórtico y parqueadero en un lote privado de 1.500 m² en La Ceja. Contrato formal con inmobiliaria (mínimo 6 meses).",
       price: "$2.900.000",
       currency: "COP / mes",
-      paymentBadge: "Aceptamos Pesos (COP), Dólares (USD) y Cripto (USDT/BTC) · Trato directo con dueño",
-      btn: "Agendar mi visita directa",
+      paymentBadge: "Aceptamos Pesos (COP), Dólares (USD) y Cripto (USDT/BTC) · Contrato con inmobiliaria (mínimo 6 meses)",
+      btn: "Agendar mi visita",
     },
     footer: {
-      brandDesc: "Finca La Isabelita: Casa campestre en Las Lomitas, La Ceja (Oriente Antioqueño). 3 habitaciones, 4 camas, 1 baño, cocina, comedor, pórtico, lavandería y parqueadero. Trato directo con el propietario.",
+      brandDesc: "Casa Campestre La Isabela: Casa campestre en Las Lomitas, La Ceja (Oriente Antioqueño). 2 habitaciones, 3 camas, 1 baño, cocina, comedor, pórtico, lavandería y parqueadero en lote privado de 1.500 m². Contrato con inmobiliaria (mínimo 6 meses).",
       bilingualNotice: "We speak English & Spanish fluently.",
       navTitle: "Navegación",
       techTitle: "Ficha Técnica",
       contactTitle: "Atención y Visitas",
       hours: "Lunes a Domingo (con cita previa)",
-      directService: "Atención directa sin intermediarios",
+      directService: "Contrato formal con inmobiliaria (Mín. 6 meses)",
       paymentsAccepted: "Pagos: COP, USD, USDT/Cripto",
-      rights: "Finca La Isabelita · Todos los derechos reservados.",
+      rights: "Casa Campestre La Isabela · Todos los derechos reservados.",
       designedBy: "Diseñado por",
     },
   },
   en: {
     topBar: {
       availability: "Immediate Availability",
-      noBroker: "Finca La Isabelita · Direct deal with owner (Zero broker fees)",
+      noBroker: "Casa Campestre La Isabela · Real estate agency lease (Min. 6 months)",
       bilingual: "100% Bilingual host (English & Spanish spoken)",
       payments: "Payments: Pesos (COP) · US Dollars (USD) · Crypto (USDT/BTC)",
     },
@@ -306,30 +307,30 @@ const translations = {
       bookVisit: "Book a visit",
     },
     hero: {
-      locationBadge: "Finca La Isabelita · Las Lomitas, La Ceja",
-      title: "Finca La Isabelita in La Ceja",
+      locationBadge: "Casa Campestre La Isabela · Las Lomitas, La Ceja",
+      title: "Casa Campestre La Isabela in La Ceja",
       subtitle:
-        "Experience rural charm in a fully furnished countryside home featuring 3 bedrooms, 4 beds, 1 full bathroom, kitchen, dining area, front porch, laundry area, and vehicle parking on a private 500 m² green lot. Direct deal with owner, water ready, prepaid internet, and only 5 minutes from town.",
-      btnPrimary: "Book My Direct Tour",
+        "Experience rural charm in a fully furnished countryside home featuring 2 bedrooms, 3 beds, 1 full bathroom, kitchen, dining area, front porch, laundry area, and vehicle parking on a private 1,500 m² green lot. Verified lease via real estate agency (minimum 6 months), water ready, prepaid internet, and approx. 10–12 minutes from Viva La Ceja Mall & Éxito.",
+      btnPrimary: "Schedule My Tour",
       btnSecondary: "What We Offer",
       stats: [
-        { num: "3", unit: "beds", label: "Bedrooms" },
-        { num: "4", unit: "sleeps", label: "Beds" },
+        { num: "2", unit: "beds", label: "Bedrooms" },
+        { num: "3", unit: "", label: "Beds" },
         { num: "1", unit: "bath", label: "Full Bathroom" },
-        { num: "500", unit: "m²", label: "Private Lot" },
+        { num: "1,500", unit: "m²", label: "Private Lot" },
         { num: "$2.9", unit: "M", label: "COP / Month" },
       ],
-      cornerBadgeTitle: "Finca La Isabelita",
-      cornerBadgeSub: "Direct deal · Zero broker fees",
+      cornerBadgeTitle: "Casa Campestre La Isabela",
+      cornerBadgeSub: "Agency lease · Min 6 months",
     },
     trust: {
-      tag: "Direct Deal & Advantages",
-      title: "Benefits of Renting Finca La Isabelita",
+      tag: "Agency Lease & Advantages",
+      title: "Benefits of Renting Casa Campestre La Isabela",
       cards: [
         {
-          title: "Zero Intermediaries",
-          subtitle: "Direct deal with property owner",
-          desc: "Negotiate and coordinate directly with the owner. Zero broker fees, no administrative red tape, and fast direct answers.",
+          title: "Real Estate Agency Lease",
+          subtitle: "Legal security & peace of mind",
+          desc: "Formal lease managed through a real estate agency with a 6-month minimum term, guaranteeing full legal peace of mind, clear contractual terms, and ongoing support.",
         },
         {
           title: "100% Bilingual Host",
@@ -345,10 +346,10 @@ const translations = {
     },
     offer: {
       tag: "What We Offer · Amenities",
-      title: "Amenities at Finca La Isabelita",
+      title: "Amenities at Casa Campestre La Isabela",
       subtitle:
-        "Equipped with 3 bedrooms, 4 beds, full kitchen, dining area, outdoor porch, laundry zone, and vehicle parking, all nestled within 500 m² of green lawns in Las Lomitas.",
-      whyTitle: "Why Choose Finca La Isabelita?",
+        "Equipped with 2 bedrooms, 3 beds, full kitchen, dining area, outdoor porch, laundry zone, and vehicle parking, all nestled within 1,500 m² of green lawns in Las Lomitas.",
+      whyTitle: "Why Choose Casa Campestre La Isabela?",
       whySubtitle: "Everything you need for an independent, comfortable stay in close touch with nature.",
     },
     features: {
@@ -362,66 +363,67 @@ const translations = {
     },
     gallery: {
       tag: "Visual Tour",
-      title: "Finca La Isabelita Gallery",
-      subtitle: "9 selected perspectives of bedrooms, porch, social areas, and surrounding green lot.",
+      title: "Casa Campestre La Isabela Gallery",
+      subtitle: "9 selected perspectives of the 2 bedrooms, 3 beds, porch, social areas, and surrounding 1,500 m² green lot.",
       pill: "9 Exclusive Photos",
     },
     testimonials: {
       tag: "What Our Clients Say · Reviews",
-      title: "Real Stories at Finca La Isabelita",
-      subtitle: "Guests, families, and remote workers who have enjoyed the peaceful countryside and porch living at La Isabelita.",
+      title: "Real Stories at Casa Campestre La Isabela",
+      subtitle: "Guests, families, and remote workers who have enjoyed the peaceful countryside and porch living at La Isabela.",
     },
     ctaFeatures: {
-      tag: "Schedule Your Direct Tour",
-      title: "Ready to Experience Finca La Isabelita in Person?",
-      desc: "Book a private walkthrough directly with the owner. Tour the 500 m² private lawns, the scenic wooden porch with flowers, and the 3 fully furnished bedrooms ready for immediate move-in.",
-      btnWhatsapp: "Schedule Visit via WhatsApp",
-      btnCall: "Call Owner Directly",
+      tag: "Strategic Location",
+      title: "Close to Everything, Surrounded by Peace",
+      time1: "10–12 min",
+      card1Title: "Viva La Ceja Mall & Éxito",
+      card1Desc: "Approx. 10–12 minutes from Viva La Ceja Shopping Mall and Éxito supermarket, restaurants, and banking.",
+      time2: "15 min",
+      card2Title: "Hospital & Urban Services",
+      card2Desc: "15 minutes from La Ceja Hospital, pharmacies, supermarkets, and essential municipal services.",
+      ctaTitle: "Would you like to tour Casa Campestre La Isabela?",
+      ctaDesc: "Schedule your tour with the real estate agency and visit the property in Las Lomitas.",
+      btnWhatsapp: "Schedule via WhatsApp",
+      btnCall: "Call",
       phone: "+57 310 446 8056",
-      perks: [
-        "Direct deal with owner (Zero broker fee)",
-        "Immediate move-in availability",
-        "10–12 min from Viva La Ceja Mall & Éxito",
-        "100% bilingual communication (EN/ES)",
-      ],
     },
     location: {
       tag: "Prime Location",
-      title: "How to Get to Finca La Isabelita",
+      title: "How to Get to Casa Campestre La Isabela",
       openMaps: "Open in Google Maps",
       refTitle: "Reference Address",
       refDesc: "Las Lomitas sector, La Ceja, Antioquia. Near Casa de Oración La Providencia.",
       timeTitle: "Strategic Location",
-      timeDesc: "Just 5 minutes away from downtown La Ceja and main square, approx. 10–12 minutes from Viva La Ceja Shopping Mall & Éxito, and 15 minutes from La Ceja Hospital, supermarkets, pharmacies, and all urban amenities.",
+      timeDesc: "Strategic Location: approximately 10–12 minutes from Viva La Ceja Shopping Mall & Éxito, and 15 minutes from La Ceja Hospital, supermarkets, pharmacies, and all urban amenities (just 5 minutes from downtown La Ceja).",
       quietTitle: "Peaceful & Safe Setting",
       quietDesc: "Safe residential countryside neighborhood with crisp fresh air, mountain views, and high appreciation in Eastern Antioquia.",
-      visitPrompt: "Planning your tour to La Isabelita?",
+      visitPrompt: "Planning your tour to La Isabela?",
       visitSub: "We can send you the exact GPS pin on WhatsApp or coordinate to welcome you at the gate.",
       requestWa: "Request location on WhatsApp",
     },
     faq: {
       tag: "Got Questions?",
       title: "Frequently Asked Questions",
-      subtitle: "Everything you need to know regarding amenities, beds, utilities, payment methods, and your stay at Finca La Isabelita.",
+      subtitle: "Everything you need to know regarding amenities, bedrooms, beds, utilities, payment methods, and your stay at Casa Campestre La Isabela.",
     },
     cta: {
-      title: "Secure Your Country Retreat at Finca La Isabelita",
-      desc: "Contact us directly today to schedule your private tour to this furnished home with 3 bedrooms, 4 beds, porch, and parking just 5 minutes from town.",
+      title: "Secure Your Country Retreat at Casa Campestre La Isabela",
+      desc: "Contact us today to schedule your private tour to this furnished home with 2 bedrooms, 3 beds, porch, and parking on a 1,500 m² lot just 10–12 minutes from town. Real estate agency lease (minimum 6 months).",
       price: "$2,900,000",
       currency: "COP / month (~$750 USD)",
-      paymentBadge: "We accept Pesos (COP), US Dollars (USD), and Crypto (USDT/BTC) · Direct deal with owner",
-      btn: "Schedule My Direct Tour",
+      paymentBadge: "We accept Pesos (COP), US Dollars (USD), and Crypto (USDT/BTC) · Real estate agency lease (minimum 6 months)",
+      btn: "Schedule My Tour",
     },
     footer: {
-      brandDesc: "Finca La Isabelita: Furnished country home in Las Lomitas, La Ceja (Eastern Antioquia). 3 bedrooms, 4 beds, 1 bathroom, kitchen, dining area, porch, laundry, and parking. Direct deal with owner.",
+      brandDesc: "Casa Campestre La Isabela: Furnished country home in Las Lomitas, La Ceja (Eastern Antioquia). 2 bedrooms, 3 beds, 1 bathroom, kitchen, dining area, porch, laundry, and parking on a 1,500 m² private lot. Real estate agency lease (minimum 6 months).",
       bilingualNotice: "Hablamos inglés y español con fluidez.",
       navTitle: "Navigation",
       techTitle: "Property Specs",
       contactTitle: "Contact & Visits",
       hours: "Monday to Sunday (by appointment)",
-      directService: "Direct deal with owner (No broker fees)",
+      directService: "Real estate agency lease (Min. 6 months)",
       paymentsAccepted: "Payments: COP, USD, USDT/Crypto",
-      rights: "Finca La Isabelita · All rights reserved.",
+      rights: "Casa Campestre La Isabela · All rights reserved.",
       designedBy: "Designed by",
     },
   },
@@ -430,16 +432,16 @@ const translations = {
 const caracteristicasData = [
   {
     icon: BedDouble,
-    titleEs: "3 Habitaciones & 4 Camas",
-    titleEn: "3 Bedrooms & 4 Beds",
-    textEs: "Equipada con 4 camas confortables, perfecta para descanso en familia o con invitados.",
-    textEn: "Equipped with 4 comfortable beds, ideal for family retreats or visiting guests.",
+    titleEs: "2 Habitaciones & 3 Camas",
+    titleEn: "2 Bedrooms & 3 Beds",
+    textEs: "Equipada con 3 camas confortables, perfecta para descanso en familia o con invitados.",
+    textEn: "Equipped with 3 comfortable beds, ideal for family retreats or visiting guests.",
   },
   {
     icon: Bath,
     titleEs: "1 Baño Completo",
     titleEn: "1 Full Bathroom",
-    textEs: "Baño privado completo, cómodo y funcional para todos los residentes de la finca.",
+    textEs: "Baño privado completo, cómodo y funcional para todos los residentes de la propiedad.",
     textEn: "Complete private bathroom, clean and functional for all guests and residents.",
   },
   {
@@ -460,8 +462,8 @@ const caracteristicasData = [
     icon: Dog,
     titleEs: "100% Pet Friendly",
     titleEn: "100% Pet Friendly",
-    textEs: "Tus peludos son bienvenidos. El lote cerrado de 500 m² y los prados verdes son el paraíso para su libertad y juego.",
-    textEn: "Pets are warmly welcome. The 500 m² enclosed yard and lush lawns are paradise for your furry family members.",
+    textEs: "Tus peludos son bienvenidos. El lote cerrado de 1.500 m² y los prados verdes son el paraíso para su libertad y juego.",
+    textEn: "Pets are warmly welcome. The 1,500 m² enclosed yard and lush lawns are paradise for your furry family members.",
   },
   {
     icon: WashingMachine,
@@ -479,10 +481,10 @@ const caracteristicasData = [
   },
   {
     icon: Ruler,
-    titleEs: "Lote Privado de 500 m²",
-    titleEn: "500 m² Private Green Lot",
-    textEs: "Gran terreno cerrado y seguro con prados verdes, ideal para mascotas y actividades al aire libre.",
-    textEn: "Fenced private lot with lush green lawns, perfect for pets and outdoor living.",
+    titleEs: "Lote Privado de 1.500 m²",
+    titleEn: "1,500 m² Private Green Lot",
+    textEs: "Gran terreno cerrado y seguro de 1.500 m² con prados verdes, ideal para mascotas y actividades al aire libre.",
+    textEn: "Fenced private lot of 1,500 m² with lush green lawns, perfect for pets and outdoor living.",
   },
   {
     icon: Wifi,
@@ -498,42 +500,42 @@ const razonesData = [
     icon: CheckCircle2,
     titleEs: "Disponibilidad Inmediata",
     titleEn: "Immediate Availability",
-    textEs: "Propiedad amoblada y lista para entrega inmediata. Trato directo con el propietario, sin intermediarios ni demoras de agencia.",
-    textEn: "Fully furnished property ready for immediate move-in. Direct deal with owner, zero broker fees, and no agency delays.",
+    textEs: "Propiedad amoblada y lista para entrega inmediata. Contrato formal con inmobiliaria (mínimo 6 meses) con total respaldo legal.",
+    textEn: "Fully furnished property ready for immediate move-in. Formal real estate agency lease (minimum 6 months) with full legal backing.",
   },
   {
     icon: Leaf,
     titleEs: "Conexión natural",
     titleEn: "Natural Connection",
-    textEs: "Amplio lote de 500 m² con prados verdes y pórtico exterior para disfrutar el aire puro.",
-    textEn: "Spacious 500 m² lot with lush green lawns and a country porch to breathe fresh mountain air.",
+    textEs: "Amplio lote de 1.500 m² con prados verdes y pórtico exterior para disfrutar el aire puro.",
+    textEn: "Spacious 1,500 m² lot with lush green lawns and a country porch to breathe fresh mountain air.",
   },
   {
     icon: Clock3,
     titleEs: "Ubicación estratégica",
     titleEn: "Strategic Location",
-    textEs: "En Las Lomitas, a tan solo 5 minutos del parque principal, a aproximadamente 10–12 minutos del Centro Comercial Viva La Ceja y Éxito, y a 15 minutos del Hospital de La Ceja, supermercados, droguerías y demás servicios del casco urbano.",
-    textEn: "In Las Lomitas, just 5 minutes from the main town square, approx. 10–12 minutes from Viva La Ceja Shopping Mall & Éxito, and 15 minutes from La Ceja Hospital, supermarkets, pharmacies, and all urban amenities.",
+    textEs: "En Las Lomitas, a aproximadamente 10–12 minutos del Centro Comercial Viva La Ceja y Éxito, a 15 minutos del Hospital de La Ceja, supermercados, droguerías y demás servicios del casco urbano, y a tan solo 5 minutos del parque principal.",
+    textEn: "In Las Lomitas, approx. 10–12 minutes from Viva La Ceja Shopping Mall & Éxito, 15 minutes from La Ceja Hospital, supermarkets and pharmacies, and just 5 minutes from town square.",
   },
   {
     icon: Briefcase,
     titleEs: "Flexibilidad y Confort",
     titleEn: "Flexibility & Comfort",
-    textEs: "3 habitaciones con 4 camas, cocina, comedor, lavandería y parqueadero con trato directo con el dueño.",
-    textEn: "3 bedrooms with 4 beds, kitchen, dining, laundry, and parking with direct owner communication.",
+    textEs: "2 habitaciones con 3 camas, cocina, comedor, lavandería y parqueadero con contrato con inmobiliaria.",
+    textEn: "2 bedrooms with 3 beds, kitchen, dining, laundry, and parking with a real estate agency lease.",
   },
 ];
 
 const ofertasPrincipales = [
   {
     number: "01",
-    titleEs: "3 Habitaciones & 4 Camas",
-    titleEn: "3 Bedrooms & 4 Beds",
-    descEs: "Espacios acogedores con techo de madera, ventanas con vista a la naturaleza y 4 camas confortables listas para habitar.",
-    descEn: "Cozy rooms featuring rustic wood ceilings, nature-view windows, and 4 comfortable beds ready from day one.",
+    titleEs: "2 Habitaciones & 3 Camas",
+    titleEn: "2 Bedrooms & 3 Beds",
+    descEs: "Espacios acogedores con techo de madera, ventanas con vista a la naturaleza y 3 camas confortables listas para habitar.",
+    descEn: "Cozy rooms featuring rustic wood ceilings, nature-view windows, and 3 comfortable beds ready from day one.",
     img: habitacionReal,
-    altEs: "Habitación principal amoblada con cama doble vestida, techo rústico de madera y ventana campestre en Finca La Isabelita La Ceja",
-    altEn: "Furnished master bedroom with comfortable double bed, rustic wood ceiling, and scenic window at Finca La Isabelita in La Ceja",
+    altEs: "Habitación principal amoblada con cama vestida, techo rústico de madera y ventana campestre en Casa Campestre La Isabela La Ceja",
+    altEn: "Furnished master bedroom with comfortable bed, rustic wood ceiling, and scenic window at Casa Campestre La Isabela in La Ceja",
   },
   {
     number: "02",
@@ -542,27 +544,27 @@ const ofertasPrincipales = [
     descEs: "Hermoso pórtico de madera cubierto con sillas campestres, mesa de centro y vista abierta a los árboles y prados verdes.",
     descEn: "Stunning covered wood deck with Adirondack chairs, coffee table, and direct views over lush greenery.",
     img: porticoDeck,
-    altEs: "Pórtico campestre cubierto en madera con sillas de descanso Adirondack y flores veraneras con vista a la arboleda en La Ceja",
-    altEn: "Covered rustic wooden porch with outdoor Adirondack lounge chairs and bougainvillea flowers overlooking greenery in La Ceja",
+    altEs: "Pórtico campestre cubierto en madera con sillas de descanso Adirondack y flores veraneras con vista a la arboleda en Casa Campestre La Isabela La Ceja",
+    altEn: "Covered rustic wooden porch with outdoor Adirondack lounge chairs and bougainvillea flowers overlooking greenery at Casa Campestre La Isabela La Ceja",
   },
   {
     number: "03",
-    titleEs: "Lote de 500 m² & Entrada La Isabelita",
-    titleEn: "500 m² Yard & La Isabelita Entrance",
-    descEs: "Terreno privado cerrado, fachada rústica con letrero La Isabela, jardines nativos, lavandería y parqueadero de vehículos.",
-    descEn: "Private gated 500 m² lot, rustic entrance with signature sign, native gardens, laundry, and vehicle parking.",
+    titleEs: "Lote de 1.500 m² & Entrada La Isabela",
+    titleEn: "1,500 m² Yard & La Isabela Entrance",
+    descEs: "Terreno privado cerrado de 1.500 m², fachada rústica con letrero tradicional La Isabela, jardines nativos, lavandería y parqueadero de vehículos.",
+    descEn: "Private gated 1,500 m² lot, rustic entrance with signature La Isabela sign, native gardens, laundry, and vehicle parking.",
     img: exteriorIsabelita,
-    altEs: "Entrada campestre privada con letrero tradicional en madera La Isabela y lote cerrado de 500 m² en Las Lomitas La Ceja",
-    altEn: "Private gated countryside entrance with signature wood sign and 500 m² private fenced lot in Las Lomitas, La Ceja",
+    altEs: "Entrada campestre privada con letrero tradicional en madera La Isabela y lote cerrado de 1.500 m² en Las Lomitas La Ceja",
+    altEn: "Private gated countryside entrance with signature wood sign and 1,500 m² private fenced lot in Las Lomitas, La Ceja",
   },
 ];
 
 const beneficiosOfrecidos = [
   {
-    titleEs: "3 Habitaciones & 4 Camas",
-    titleEn: "3 Bedrooms & 4 Beds",
-    descEs: "Capacidad ideal con 4 camas confortables, amoblada y lista para ti y tu familia.",
-    descEn: "Generous capacity with 4 comfortable beds, fully furnished and move-in ready.",
+    titleEs: "2 Habitaciones & 3 Camas",
+    titleEn: "2 Bedrooms & 3 Beds",
+    descEs: "Capacidad ideal con 3 camas confortables, amoblada y lista para ti y tu familia.",
+    descEn: "Generous capacity with 3 comfortable beds, fully furnished and move-in ready.",
     icon: BedDouble,
   },
   {
@@ -587,11 +589,11 @@ const beneficiosOfrecidos = [
     icon: WashingMachine,
   },
   {
-    titleEs: "Trato Directo con Propietario",
-    titleEn: "Direct Deal (No Brokers)",
-    descEs: "Sin agencias ni intermediarios. Ahorra comisiones y resuelve cualquier duda de inmediato.",
-    descEn: "No real estate agency fees. Save commissions and enjoy immediate direct assistance.",
-    icon: UserCheck,
+    titleEs: "Contrato con Inmobiliaria",
+    titleEn: "Lease Through Agency",
+    descEs: "Arriendo formalizado a través de inmobiliaria (mínimo 6 meses), garantizando total transparencia y seguridad jurídica.",
+    descEn: "Formalized lease managed through a real estate agency (minimum 6 months), ensuring total transparency and legal security.",
+    icon: ShieldCheck,
   },
   {
     titleEs: "Pagos: COP, USD & Cripto",
@@ -609,17 +611,17 @@ const galeria = [
     titleEn: "Main Facade & Front Porch",
     tagEs: "Exterior",
     tagEn: "Exterior",
-    altEs: "Fotografía real de la fachada principal de Finca La Isabelita con pórtico de madera, flores y prados en Las Lomitas, La Ceja",
-    altEn: "Real photo of main facade at Finca La Isabelita with wooden porch, flowers, and green lawns in Las Lomitas, La Ceja",
+    altEs: "Fotografía real de la fachada principal de Casa Campestre La Isabela con pórtico de madera, flores y prados en Las Lomitas, La Ceja",
+    altEn: "Real photo of main facade at Casa Campestre La Isabela with wooden porch, flowers, and green lawns in Las Lomitas, La Ceja",
   },
   {
     src: habitacionReal,
-    titleEs: "Habitación Principal & Cama Doble",
-    titleEn: "Master Bedroom & Double Bed",
+    titleEs: "Habitación Principal & Cama Confortable",
+    titleEn: "Master Bedroom & Comfortable Bed",
     tagEs: "Habitación",
     tagEn: "Bedroom",
-    altEs: "Dormitorio principal amoblado con cama doble vestida, techo rústico de madera y ventanal campestre en Finca La Isabelita",
-    altEn: "Furnished master bedroom with comfortable double bed, rustic wood ceiling, and scenic window at Finca La Isabelita",
+    altEs: "Dormitorio principal amoblado con cama vestida, techo rústico de madera y ventanal campestre en Casa Campestre La Isabela",
+    altEn: "Furnished master bedroom with comfortable bed, rustic wood ceiling, and scenic window at Casa Campestre La Isabela",
   },
   {
     src: porticoDeck,
@@ -632,12 +634,12 @@ const galeria = [
   },
   {
     src: vistaPorticoJardin,
-    titleEs: "Vista al Jardín desde el Pórtico",
-    titleEn: "Lawn & Garden View from Deck",
-    tagEs: "Vistas & Jardín",
-    tagEn: "Lawn & View",
-    altEs: "Panorámica de los prados verdes privados de 500 m² y jardines floridos desde la terraza de Finca La Isabelita en Las Lomitas",
-    altEn: "Scenic view of 500 m² private green lawns and flowering gardens from the deck of Finca La Isabelita in Las Lomitas",
+    titleEs: "Vista al Jardín & Lote de 1.500 m²",
+    titleEn: "Lawn & 1,500 m² Lot View",
+    tagEs: "Lote 1.500 m²",
+    tagEn: "1,500 m² Lot",
+    altEs: "Panorámica de los prados verdes privados de 1.500 m² y jardines floridos desde la terraza de Casa Campestre La Isabela en Las Lomitas",
+    altEn: "Scenic view of 1,500 m² private green lawns and flowering gardens from the deck of Casa Campestre La Isabela in Las Lomitas",
   },
   {
     src: cocinaReal,
@@ -645,17 +647,17 @@ const galeria = [
     titleEn: "Equipped Kitchen & Wood Ceiling",
     tagEs: "Cocina",
     tagEn: "Kitchen",
-    altEs: "Cocina integral campestre amoblada y equipada con estufa de gas, mesón y estanterías en Finca La Isabelita",
-    altEn: "Fully equipped rustic country kitchen with gas stove, countertops, and wood ceiling at Finca La Isabelita",
+    altEs: "Cocina integral campestre amoblada y equipada con estufa de gas, mesón y estanterías en Casa Campestre La Isabela",
+    altEn: "Fully equipped rustic country kitchen with gas stove, countertops, and wood ceiling at Casa Campestre La Isabela",
   },
   {
     src: habitacionGemelas,
-    titleEs: "Habitación 2 Camas & Ventana Verde",
-    titleEn: "Bedroom with 2 Twin Beds",
+    titleEs: "Habitación Camas & Ventana Verde",
+    titleEn: "Bedroom with Beds & Mountain View",
     tagEs: "Habitación 2",
     tagEn: "Bedroom 2",
-    altEs: "Segunda habitación amoblada con dos camas confortables y ventana con vista a las montañas en La Ceja",
-    altEn: "Second furnished bedroom with two comfortable twin beds and mountain view window in La Ceja",
+    altEs: "Segunda habitación amoblada con camas confortables y ventana con vista a las montañas en La Ceja",
+    altEn: "Second furnished bedroom with comfortable beds and mountain view window in La Ceja",
   },
   {
     src: banoReal,
@@ -663,12 +665,12 @@ const galeria = [
     titleEn: "Full Bathroom & Glass Shower",
     tagEs: "Baño",
     tagEn: "Bathroom",
-    altEs: "Baño completo moderno con ducha en cabina de vidrio templado, lavamanos y espejo en Finca La Isabelita",
-    altEn: "Modern full bathroom with glass shower enclosure, vanity sink, and mirror at Finca La Isabelita",
+    altEs: "Baño completo moderno con ducha en cabina de vidrio templado, lavamanos y espejo en Casa Campestre La Isabela",
+    altEn: "Modern full bathroom with glass shower enclosure, vanity sink, and mirror at Casa Campestre La Isabela",
   },
   {
     src: exteriorIsabelita,
-    titleEs: "Fachada & Entrada La Isabelita",
+    titleEs: "Fachada & Entrada La Isabela",
     titleEn: "Facade & Entrance Sign",
     tagEs: "Entrada",
     tagEn: "Entrance",
@@ -677,12 +679,12 @@ const galeria = [
   },
   {
     src: costadoFincaPrados,
-    titleEs: "Costado de la Finca & Lote de 500 m²",
-    titleEn: "Side View & 500 m² Green Yard",
-    tagEs: "Lote 500 m²",
-    tagEn: "500 m² Lot",
-    altEs: "Costado de la casa finca con arquitectura tradicional, techo de teja de barro y lote privado de 500 m² pet friendly",
-    altEn: "Side view of traditional countryside home with clay tile roof and 500 m² private pet friendly yard in La Ceja",
+    titleEs: "Costado de la Casa & Lote de 1.500 m²",
+    titleEn: "Side View & 1,500 m² Green Yard",
+    tagEs: "Lote 1.500 m²",
+    tagEn: "1,500 m² Lot",
+    altEs: "Costado de la casa campestre con arquitectura tradicional, techo de teja de barro y lote privado de 1.500 m² pet friendly",
+    altEn: "Side view of traditional countryside home with clay tile roof and 1,500 m² private pet friendly yard in La Ceja",
   },
 ];
 
@@ -694,9 +696,9 @@ const testimonios = [
     roleEn: "Long-Term Tenant",
     avatar: "https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6784c71887e2ed9af8f9a10e_reviewer-10.jpg",
     quoteEs:
-      "La casa finca está perfectamente amoblada y lista para habitar. El lote de 500 m² fue el paraíso para mis perros, el trato con el anfitrión fue directo sin intermediarios y pude pagar cómodamente.",
+      "La casa campestre está perfectamente amoblada y lista para habitar. El lote de 1.500 m² fue el paraíso para mis perros, el trámite con la inmobiliaria fue muy seguro y la experiencia ha sido impecable.",
     quoteEn:
-      "The country home is fully furnished and truly move-in ready. The 500 m² yard was paradise for my dogs, communication with the owner was direct with zero broker fees, and payment was completely seamless.",
+      "The country home is fully furnished and truly move-in ready. The 1,500 m² yard was paradise for my dogs, the real estate agency lease gave us total security, and the stay has been wonderful.",
   },
   {
     nameEs: "Valentina Gómez",
@@ -716,9 +718,9 @@ const testimonios = [
     roleEn: "Nature Enthusiast",
     avatar: "https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6784cf95c71e1da0073c2240_team-4.jpg",
     quoteEs:
-      "Buscaba salir del ruido de Medellín sin quedar aislado. La tranquilidad de Las Lomitas, el trato directo sin papeleos innecesarios y la cercanía a La Ceja superaron todas mis expectativas.",
+      "Buscaba salir del ruido de Medellín sin quedar aislado. La tranquilidad de Las Lomitas, la formalidad del contrato con inmobiliaria y la cercanía a Viva La Ceja superaron todas mis expectativas.",
     quoteEn:
-      "I was looking to escape Medellín's noise without being isolated. The peace of Las Lomitas, direct deal with no bureaucratic paperwork, and quick access to town exceeded all my expectations.",
+      "I was looking to escape Medellín's noise without being isolated. The peace of Las Lomitas, the formal real estate agency lease, and quick access to town exceeded all my expectations.",
   },
   {
     nameEs: "Sofía Salazar",
@@ -727,9 +729,9 @@ const testimonios = [
     roleEn: "Family & Pet Stay",
     avatar: "https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6784c7160b1fd1a669fc2501_reviewer-3.jpg",
     quoteEs:
-      "El contrato mínimo de 3 meses fue justo lo que necesitábamos. La casa es acogedora, amoblada con buen gusto y el anfitrión bilingüe resolvió todas nuestras dudas de inmediato.",
+      "El contrato de 6 meses con inmobiliaria nos brindó total seriedad y tranquilidad. La casa es acogedora, amoblada con buen gusto y el anfitrión bilingüe resolvió todas nuestras dudas de inmediato.",
     quoteEn:
-      "The 3-month lease was exactly what we needed. The home is cozy, tastefully furnished, and the bilingual host answered all our questions immediately.",
+      "The 6-month lease through the real estate agency gave us complete peace of mind. The home is cozy, tastefully furnished, and the bilingual host answered all our questions immediately.",
   },
   {
     nameEs: "Alejandro Silva",
@@ -738,9 +740,9 @@ const testimonios = [
     roleEn: "Remote Developer",
     avatar: "https://cdn.prod.website-files.com/6784794885cc7b8dbfb185e2/6789052eb36498c29a93edf7_reviewer-4.jpg",
     quoteEs:
-      "Excelente relación calidad-precio por $2.900.000 COP al mes. Un lote independiente donde se respira paz, trato directo con el dueño y pagos en dólares sin complicaciones.",
+      "Excelente relación calidad-precio por $2.900.000 COP al mes. Un lote independiente de 1.500 m² donde se respira paz, con contrato formal con inmobiliaria y pagos en dólares sin complicaciones.",
     quoteEn:
-      "Outstanding value for $2,900,000 COP per month. An independent lot where you breathe clean air, dealing directly with the owner, and paying easily in US Dollars.",
+      "Outstanding value for $2,900,000 COP per month. An independent 1,500 m² lot where you breathe clean air, backed by a real estate agency lease, and paying easily in US Dollars.",
   },
   {
     nameEs: "Mariana Ortiz",
@@ -757,27 +759,27 @@ const testimonios = [
 
 const faqsData = [
   {
-    qEs: "¿Cómo está distribuida y equipada Finca La Isabelita?",
-    qEn: "What is the layout and equipment at Finca La Isabelita?",
-    aEs: "Finca La Isabelita se entrega totalmente amoblada. Cuenta con 3 habitaciones, 4 camas, 1 baño completo, cocina dotada, comedor, un acogedor pórtico exterior, zona de lavandería independiente y parqueadero privado para carros dentro del lote cerrado de 500 m².",
-    aEn: "Finca La Isabelita is delivered fully furnished. It features 3 bedrooms, 4 beds, 1 full bathroom, equipped kitchen, dining area, a cozy front country porch, dedicated laundry area, and on-site private vehicle parking on a 500 m² green lot.",
+    qEs: "¿Cómo está distribuida y equipada Casa Campestre La Isabela?",
+    qEn: "What is the layout and equipment at Casa Campestre La Isabela?",
+    aEs: "Casa Campestre La Isabela se entrega totalmente amoblada. Cuenta con 2 habitaciones, 3 camas, 1 baño completo, cocina dotada, comedor, un acogedor pórtico exterior, zona de lavandería independiente y parqueadero privado para carros dentro del lote cerrado de 1.500 m².",
+    aEn: "Casa Campestre La Isabela is delivered fully furnished. It features 2 bedrooms, 3 beds, 1 full bathroom, equipped kitchen, dining area, a cozy front country porch, dedicated laundry area, and on-site private vehicle parking on a 1,500 m² green lot.",
   },
   {
-    qEs: "¿Cuál es el tiempo mínimo de arrendamiento?",
-    qEn: "What is the minimum lease term?",
-    aEs: "El tiempo mínimo de arrendamiento es de 3 meses.",
-    aEn: "The minimum lease term is 3 months.",
+    qEs: "¿Cuál es el tiempo mínimo de arrendamiento y cómo se formaliza el contrato?",
+    qEn: "What is the minimum lease term and how is the contract formalized?",
+    aEs: "El tiempo mínimo de arrendamiento es de 6 meses. El contrato se celebra formalmente a través de inmobiliaria, lo que garantiza respaldo legal, transparencia y seguridad jurídica para ambas partes.",
+    aEn: "The minimum lease term is 6 months. The lease is formalized through a recognized real estate agency, guaranteeing legal backing, transparency, and peace of mind for both parties.",
   },
   {
     qEs: "¿Se permiten mascotas?",
     qEn: "Are pets allowed?",
-    aEs: "Sí, se permiten mascotas, siempre que el arrendatario se haga responsable de su cuidado y de cualquier daño que puedan ocasionar.",
-    aEn: "Yes, pets are warmly allowed, provided the tenant is responsible for their care and any damage they may cause.",
+    aEs: "Sí, es 100% Pet Friendly. Se permiten mascotas en sus 1.500 m² de prado verde privado, siempre que el arrendatario se haga responsable de su cuidado y de cualquier daño que puedan ocasionar.",
+    aEn: "Yes, it is 100% Pet Friendly. Pets are warmly welcome across its 1,500 m² private lawn, provided the tenant is responsible for their care and any damage they may cause.",
   },
   {
     qEs: "¿Los servicios están incluidos?",
     qEn: "Are utilities included in the rent?",
-    aEs: "No. Los servicios públicos se pagan por separado, según el consumo.",
+    aEs: "No. Los servicios públicos se pagan por separado, según el consumo real.",
     aEn: "No. Public utilities are billed separately based on actual consumption.",
   },
   {
@@ -789,14 +791,14 @@ const faqsData = [
   {
     qEs: "¿Qué pasa si necesito cancelar antes de terminar el tiempo acordado?",
     qEn: "What happens if I need to cancel before the agreed term ends?",
-    aEs: "La cancelación anticipada estará sujeta a las condiciones establecidas en el contrato de arrendamiento y al aviso previo acordado.",
-    aEn: "Early cancellation is subject to the conditions established in the lease agreement and the agreed prior notice.",
+    aEs: "La cancelación anticipada estará sujeta a las condiciones estipuladas en el contrato formal de arrendamiento con la inmobiliaria y al preaviso correspondiente.",
+    aEn: "Early cancellation is governed by the terms specified in the formal real estate agency lease agreement and the agreed notice period.",
   },
   {
-    qEs: "¿Hay intermediarios y qué métodos de pago aceptan?",
-    qEn: "Are there brokers involved and what payment methods do you accept?",
-    aEs: "No hay intermediarios; el trato es directo con el propietario sin comisiones de agencia. El anfitrión habla español e inglés con fluidez. Aceptamos pagos en Pesos Colombianos (COP), Dólares Americanos (USD vía Zelle o transferencia) y Criptomonedas (USDT, Bitcoin, etc.).",
-    aEn: "There are zero brokers or intermediaries; you deal directly with the owner with no agency fees. The host speaks fluent English and Spanish. We accept Colombian Pesos (COP), US Dollars (USD via Zelle or wire), and Cryptocurrencies (USDT, Bitcoin, etc.).",
+    qEs: "¿Cómo es el contrato con inmobiliaria y qué métodos de pago aceptan?",
+    qEn: "How is the agency lease handled and what payment methods do you accept?",
+    aEs: "El contrato se gestiona con inmobiliaria con un plazo mínimo de 6 meses, brindando máxima seguridad. El anfitrión habla español e inglés con fluidez (100% bilingüe). Se aceptan pagos en Pesos Colombianos (COP), Dólares Americanos (USD vía Zelle o transferencia) y Criptomonedas (USDT, Bitcoin, etc.).",
+    aEn: "The contract is handled through a real estate agency with a 6-month minimum lease, providing complete security. The host speaks fluent English and Spanish. Payments are accepted in Colombian Pesos (COP), US Dollars (USD via Zelle or wire), and Cryptocurrencies (USDT, Bitcoin, etc.).",
   },
 ];
 
@@ -813,8 +815,8 @@ function Index() {
       src: heroImg,
       alt:
         lang === "es"
-          ? "Fotografía real de la fachada principal de Finca La Isabelita con pórtico de madera, flores y prados en Las Lomitas, La Ceja"
-          : "Real photograph of the main facade of Finca La Isabelita with wooden porch, flowers, and open lawn in Las Lomitas, La Ceja",
+          ? "Fotografía real de la fachada principal de Casa Campestre La Isabela con pórtico de madera, flores y prados en Las Lomitas, La Ceja"
+          : "Real photograph of the main facade of Casa Campestre La Isabela with wooden porch, flowers, and open lawn in Las Lomitas, La Ceja",
       titleEs: "Fachada & Pórtico",
       titleEn: "Facade & Porch",
     },
@@ -822,8 +824,8 @@ function Index() {
       src: heroCostado,
       alt:
         lang === "es"
-          ? "Costado de la casa finca campestre, tejado tradicional en teja de barro y prados verdes de 500 m²"
-          : "Side view of the countryside house, traditional clay-tiled roof, and 500 m² green lawns",
+          ? "Costado de la casa campestre, tejado tradicional en teja de barro y prados verdes de 1.500 m²"
+          : "Side view of the countryside house, traditional clay-tiled roof, and 1,500 m² green lawns",
       titleEs: "Costado & Prados",
       titleEn: "Side & Lawns",
     },
@@ -831,8 +833,8 @@ function Index() {
       src: heroPorticoFlores,
       alt:
         lang === "es"
-          ? "Vista panorámica al jardín, flores veraneras y montañas desde el pórtico de madera en La Ceja"
-          : "Panoramic view of the garden, bougainvillea flowers, and mountains from the wooden deck in La Ceja",
+          ? "Vista panorámica al jardín, flores veraneras y montañas desde el pórtico de madera en Casa Campestre La Isabela La Ceja"
+          : "Panoramic view of the garden, bougainvillea flowers, and mountains from the wooden deck at Casa Campestre La Isabela La Ceja",
       titleEs: "Pórtico & Jardín",
       titleEn: "Porch & Garden",
     },
@@ -848,7 +850,7 @@ function Index() {
   }, [heroPaused, heroSlides.length]);
 
   useEffect(() => {
-    // Permite que la imagen de la finca se aprecie primero y luego entra suavemente el texto
+    // Permite que la imagen de la casa campestre se aprecie primero y luego entra suavemente el texto
     const timer = setTimeout(() => {
       setHeroTextVisible(true);
     }, 350);
@@ -857,8 +859,8 @@ function Index() {
 
   const waCustomMessage =
     lang === "es"
-      ? "Hola, estoy interesado en la Casa Finca La Isabelita en La Ceja. ¿Me podrías brindar más información y disponibilidad?"
-      : "Hello, I am interested in Casa Finca La Isabelita in La Ceja. Could you please provide more information and availability?";
+      ? "Hola, estoy interesado en la Casa Campestre La Isabela en La Ceja. ¿Me podrías brindar más información y disponibilidad?"
+      : "Hello, I am interested in Casa Campestre La Isabela in La Ceja. Could you please provide more information and availability?";
 
   const waCustomLink = `https://wa.me/?text=${encodeURIComponent(waCustomMessage)}`;
 
@@ -883,53 +885,163 @@ function Index() {
         <div className="absolute inset-x-0 bottom-0 h-64 sm:h-80 md:h-96 bg-gradient-to-b from-transparent via-white/85 to-[#FAF8F5]" />
       </div>
 
-      {/* Schema.org Structured Data: VacationRental / SingleFamilyResidence para SEO Rich Snippets */}
+      {/* Schema.org Structured Data: Multi-Entity @graph con VacationRental, SingleFamilyResidence, FAQPage y BreadcrumbList para Google Rich Snippets y LLMs */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "VacationRental",
-            name: "Finca La Isabelita",
-            description:
-              "Casa campestre amoblada en alquiler directo con el propietario en Las Lomitas, La Ceja, Oriente Antioqueño. Cuenta con 3 habitaciones, 4 camas, 1 baño completo, cocina, comedor, pórtico exterior, zona de lavandería, parqueadero y lote privado de 500 m². 100% Pet Friendly.",
-            url: "https://kmilo1978.github.io/Garces/",
-            image: [
-              "https://kmilo1978.github.io/Garces/og-image.jpg",
-              "https://kmilo1978.github.io/Garces/hero-finca.jpg",
-              "https://kmilo1978.github.io/Garces/portico-deck.jpg",
-              "https://kmilo1978.github.io/Garces/vista-portico-jardin.jpg",
-            ],
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Sector Las Lomitas, cerca a Casa de Oración La Providencia",
-              addressLocality: "La Ceja",
-              addressRegion: "Antioquia",
-              addressCountry: "CO",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 6.027,
-              longitude: -75.426,
-            },
-            priceRange: "$2.900.000 COP / mes",
-            numberOfBedrooms: 3,
-            numberOfBathroomsTotal: 1,
-            occupancy: {
-              "@type": "QuantitativeValue",
-              value: 5,
-            },
-            petsAllowed: true,
-            amenityFeature: [
-              { "@type": "LocationFeatureSpecification", name: "3 Habitaciones", value: true },
-              { "@type": "LocationFeatureSpecification", name: "4 Camas", value: true },
-              { "@type": "LocationFeatureSpecification", name: "Pórtico Campestre", value: true },
-              { "@type": "LocationFeatureSpecification", name: "Lote privado de 500 m²", value: true },
-              { "@type": "LocationFeatureSpecification", name: "Parqueadero privado de vehículos", value: true },
-              { "@type": "LocationFeatureSpecification", name: "Zona de lavandería", value: true },
-              { "@type": "LocationFeatureSpecification", name: "100% Pet Friendly", value: true },
-              { "@type": "LocationFeatureSpecification", name: "Cocina y comedor equipados", value: true },
-              { "@type": "LocationFeatureSpecification", name: "Trato directo sin comisiones", value: true },
+            "@graph": [
+              {
+                "@type": ["VacationRental", "SingleFamilyResidence"],
+                "@id": "https://kmilo1978.github.io/Garces/#property",
+                name: "Casa Campestre La Isabela",
+                description:
+                  "Casa campestre amoblada en alquiler formal con inmobiliaria en Las Lomitas, La Ceja, Oriente Antioqueño. Cuenta con 2 habitaciones, 3 camas, 1 baño completo, cocina dotada, comedor, pórtico exterior, zona de lavandería independiente, parqueadero y lote privado cerrado de 1.500 m². Contrato mínimo de 6 meses. 100% Pet Friendly. Canon mensual: $2.900.000 COP.",
+                url: "https://kmilo1978.github.io/Garces/",
+                telephone: "+57 310 446 8056",
+                image: [
+                  "https://kmilo1978.github.io/Garces/og-image.jpg",
+                  "https://kmilo1978.github.io/Garces/hero-finca.jpg",
+                  "https://kmilo1978.github.io/Garces/portico-deck.jpg",
+                  "https://kmilo1978.github.io/Garces/vista-portico-jardin.jpg",
+                ],
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Sector Las Lomitas, cerca a Casa de Oración La Providencia",
+                  addressLocality: "La Ceja",
+                  addressRegion: "Antioquia",
+                  postalCode: "055010",
+                  addressCountry: "CO",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 6.027,
+                  longitude: -75.426,
+                },
+                priceRange: "$2.900.000 COP / mes",
+                currenciesAccepted: "COP, USD",
+                paymentAccepted: "COP, USD, Criptomonedas (USDT, BTC)",
+                numberOfBedrooms: 2,
+                numberOfBeds: 3,
+                numberOfBathroomsTotal: 1,
+                occupancy: {
+                  "@type": "QuantitativeValue",
+                  value: 4,
+                },
+                floorSize: {
+                  "@type": "QuantitativeValue",
+                  value: 1500,
+                  unitCode: "MTK",
+                },
+                petsAllowed: true,
+                amenityFeature: [
+                  { "@type": "LocationFeatureSpecification", name: "2 Habitaciones", value: true },
+                  { "@type": "LocationFeatureSpecification", name: "3 Camas", value: true },
+                  { "@type": "LocationFeatureSpecification", name: "1 Baño Completo", value: true },
+                  { "@type": "LocationFeatureSpecification", name: "Pórtico Campestre", value: true },
+                  { "@type": "LocationFeatureSpecification", name: "Lote privado de 1.500 m²", value: true },
+                  { "@type": "LocationFeatureSpecification", name: "Parqueadero privado de vehículos", value: true },
+                  { "@type": "LocationFeatureSpecification", name: "Zona de lavandería independiente", value: true },
+                  { "@type": "LocationFeatureSpecification", name: "100% Pet Friendly", value: true },
+                  { "@type": "LocationFeatureSpecification", name: "Cocina y comedor equipados", value: true },
+                  { "@type": "LocationFeatureSpecification", name: "Contrato formal con inmobiliaria (mínimo 6 meses)", value: true },
+                  { "@type": "LocationFeatureSpecification", name: "Internet con módem prepago", value: true },
+                  { "@type": "LocationFeatureSpecification", name: "Servicio de agua continuo", value: true },
+                  { "@type": "LocationFeatureSpecification", name: "Anfitrión 100% bilingüe (Español & English)", value: true },
+                  { "@type": "LocationFeatureSpecification", name: "A 10–12 min de CC Viva La Ceja y Éxito", value: true },
+                  { "@type": "LocationFeatureSpecification", name: "A 15 min de Hospital de La Ceja y casco urbano", value: true },
+                ],
+              },
+              {
+                "@type": "FAQPage",
+                "@id": "https://kmilo1978.github.io/Garces/#faq",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "¿Cómo está distribuida y equipada Casa Campestre La Isabela?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Casa Campestre La Isabela se entrega totalmente amoblada. Cuenta con 2 habitaciones, 3 camas, 1 baño completo, cocina dotada, comedor, un acogedor pórtico exterior, zona de lavandería independiente y parqueadero privado para carros dentro del lote cerrado de 1.500 m².",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "¿Cuál es el tiempo mínimo de arrendamiento y cómo se formaliza el contrato?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "El tiempo mínimo de arrendamiento es de 6 meses. El contrato se celebra formalmente a través de inmobiliaria, lo que garantiza respaldo legal, transparencia y seguridad jurídica para ambas partes.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "¿Se permiten mascotas?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Sí, es 100% Pet Friendly. Se permiten mascotas en sus 1.500 m² de prado verde privado, siempre que el arrendatario se haga responsable de su cuidado y de cualquier daño que puedan ocasionar.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "¿Los servicios están incluidos?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "No. Los servicios públicos se pagan por separado, según el consumo real.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "¿La casa cuenta con internet?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Sí. Cuenta con internet mediante módem prepago o recargable, para que puedas conectarte según tus necesidades.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "¿Qué pasa si necesito cancelar antes de terminar el tiempo acordado?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "La cancelación anticipada estará sujeta a las condiciones estipuladas en el contrato formal de arrendamiento con la inmobiliaria y al preaviso correspondiente.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "¿Cómo es el contrato con inmobiliaria y qué métodos de pago aceptan?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "El contrato se gestiona con inmobiliaria con un plazo mínimo de 6 meses, brindando máxima seguridad. El anfitrión habla español e inglés con fluidez (100% bilingüe). Se aceptan pagos en Pesos Colombianos (COP), Dólares Americanos (USD vía Zelle o transferencia) y Criptomonedas (USDT, Bitcoin, etc.).",
+                    },
+                  },
+                ],
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://kmilo1978.github.io/Garces/#breadcrumb",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Inicio",
+                    item: "https://kmilo1978.github.io/Garces/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Casa Campestre La Isabela",
+                    item: "https://kmilo1978.github.io/Garces/#property",
+                  },
+                ],
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://kmilo1978.github.io/Garces/#website",
+                name: "Casa Campestre La Isabela",
+                url: "https://kmilo1978.github.io/Garces/",
+                inLanguage: ["es-CO", "en-US"],
+                description:
+                  "Sitio oficial de Casa Campestre La Isabela. Arriendo de casa campestre amoblada en Las Lomitas, La Ceja, Antioquia.",
+              },
             ],
           }),
         }}
@@ -956,75 +1068,75 @@ function Index() {
           src={aveHero}
           alt={
             lang === "es"
-              ? "Barranquero andino en pleno vuelo sobre el cielo campestre de Finca La Isabelita"
-              : "Andean motmot bird flying gracefully over the countryside sky at Finca La Isabelita"
+              ? "Barranquero andino en pleno vuelo sobre el cielo campestre de Casa Campestre La Isabela"
+              : "Andean motmot bird flying gracefully over the countryside sky at Casa Campestre La Isabela"
           }
           className="w-36 xl:w-44 2xl:w-52 h-auto object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.16)] select-none animate-float-bird"
         />
       </div>
 
       {/* Nav */}
-      <header className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-        <a href="#" className="flex items-center gap-3 group">
+      <header className="relative z-10 mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-6">
+        <a href="#" className="flex items-center gap-3.5 group flex-shrink-0">
           <img
             src="/colibri-logo.png"
             alt={
               lang === "es"
-                ? "Logotipo oficial de Finca La Isabelita con cabeza de colibrí"
-                : "Official Finca La Isabelita logo with hummingbird head"
+                ? "Logotipo oficial de Casa Campestre La Isabela con cabeza de colibrí"
+                : "Official Casa Campestre La Isabela logo with hummingbird head"
             }
-            className="h-12 w-12 sm:h-14 sm:w-14 object-contain drop-shadow-md transition-transform duration-300 group-hover:scale-110"
+            className="h-12 w-12 sm:h-14 sm:w-14 object-contain drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
           />
-          <div className="flex flex-col">
-            <span className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#243A2C]/85 drop-shadow-[0_1px_1px_rgba(255,255,255,0.7)]">
-              Casa Campestre
+          <div className="flex flex-col justify-center leading-tight">
+            <span className="text-2xl sm:text-[1.75rem] font-light tracking-tight text-[#1C261F] transition-colors duration-200 group-hover:text-emerald-950">
+              La Isabela
             </span>
-            <span className="text-xl sm:text-2xl font-black uppercase tracking-tight text-[#1C261F] transition-colors duration-200 group-hover:text-white group-hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)]">
-              Finca La Isabelita
+            <span className="text-[10px] sm:text-[11px] font-normal uppercase tracking-[0.28em] text-[#243A2C]/80">
+              Casa Campestre
             </span>
           </div>
         </a>
 
-        <nav className="hidden items-center gap-7 text-sm font-semibold uppercase tracking-wide text-[#1C261F] lg:flex">
+        <nav className="hidden items-center gap-3.5 xl:gap-6 text-xs xl:text-sm font-semibold uppercase tracking-wide text-[#1C261F] whitespace-nowrap lg:flex">
           <a
             href="#ofrecemos"
-            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
+            className="whitespace-nowrap transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
           >
             {t.nav.offer}
           </a>
           <a
             href="#caracteristicas"
-            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
+            className="whitespace-nowrap transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
           >
             {t.nav.details}
           </a>
           <a
             href="#galeria"
-            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
+            className="whitespace-nowrap transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
           >
             {t.nav.gallery}
           </a>
           <a
             href="#testimonios"
-            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
+            className="whitespace-nowrap transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
           >
             {t.nav.testimonials}
           </a>
           <a
             href="#ubicacion"
-            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
+            className="whitespace-nowrap transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
           >
             {t.nav.location}
           </a>
           <a
             href="#faq"
-            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
+            className="whitespace-nowrap transition-all duration-200 hover:text-white hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
           >
             {t.nav.faq}
           </a>
         </nav>
 
-        <div className="flex items-center gap-2.5 sm:gap-3">
+        <div className="flex items-center gap-2.5 sm:gap-3 flex-shrink-0">
           {/* Botón Switcher Idioma en Header */}
           <div className="inline-flex items-center rounded-full border border-[#DCD5C5] bg-[#EFEAE0] p-1 shadow-inner">
             <button
@@ -1175,7 +1287,7 @@ function Index() {
               setHeroSlide((prev) => (prev === 0 ? heroSlides.length - 1 : prev - 1));
             }}
             className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-black/40 hover:bg-black/70 text-white backdrop-blur-md border border-white/25 transition-all shadow-xl hover:scale-110 active:scale-95"
-            aria-label="Ver fotografía anterior de la finca"
+            aria-label="Ver fotografía anterior de la casa campestre"
           >
             <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
           </button>
@@ -1185,7 +1297,7 @@ function Index() {
               setHeroSlide((prev) => (prev + 1) % heroSlides.length);
             }}
             className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-black/40 hover:bg-black/70 text-white backdrop-blur-md border border-white/25 transition-all shadow-xl hover:scale-110 active:scale-95"
-            aria-label="Ver siguiente fotografía de la finca"
+            aria-label="Ver siguiente fotografía de la casa campestre"
           >
             <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
           </button>
@@ -1217,8 +1329,8 @@ function Index() {
           {/* Título semántico oculto para SEO y lectores de pantalla sin recargar visualmente la fotografía */}
           <h1 className="sr-only">
             {lang === "es"
-              ? "Finca La Isabelita | Casa Campestre Amoblada en La Ceja, Antioquia"
-              : "Finca La Isabelita | Furnished Country Home in La Ceja, Antioquia"}
+              ? "Casa Campestre La Isabela | Casa Campestre Amoblada en La Ceja, Antioquia"
+              : "Casa Campestre La Isabela | Furnished Country Home in La Ceja, Antioquia"}
           </h1>
 
           {/* Costado Derecho: Información de características y botones distribuida sobre los árboles oscuros para dejar la casa 100% despejada */}
@@ -1236,7 +1348,7 @@ function Index() {
                 {lang === "es" ? "Características Clave" : "Key Highlights"}
               </span>
               <span className="text-[11px] font-light text-stone-300">
-                {lang === "es" ? "Sin intermediarios" : "Direct with owner"}
+                {lang === "es" ? "Con inmobiliaria (Mín. 6 meses)" : "Agency lease (Min. 6 mos)"}
               </span>
             </div>
 
@@ -1288,16 +1400,16 @@ function Index() {
         </div>
       </section>
 
-      {/* Sección Especial: Trato Directo, Anfitrión Bilingüe & Cripto/USD con estética campestre */}
+      {/* Sección Especial: Contrato con Inmobiliaria, Anfitrión Bilingüe & Cripto/USD */}
       <section className="mx-auto max-w-7xl px-6 py-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Card 1: Sin intermediarios */}
+          {/* Card 1: Contrato con Inmobiliaria */}
           <div className="relative overflow-hidden rounded-3xl border border-[#2D4535] bg-[#1A2C20] p-8 text-[#FAF8F5] shadow-lg">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FAF8F5] text-[#1A2C20] mb-6 shadow-sm">
-              <UserCheck className="h-6 w-6" />
+              <ShieldCheck className="h-6 w-6" />
             </div>
             <div className="inline-block rounded-full bg-[#2D4D38] px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-emerald-200 mb-3">
-              100% Directo
+              {lang === "es" ? "100% Formal" : "100% Verified"}
             </div>
             <h3 className="text-2xl font-bold uppercase tracking-tight text-[#FAF8F5]">
               {t.trust.cards[0].title}
@@ -1449,14 +1561,14 @@ function Index() {
                   </span>{" "}
                   en{" "}
                   <span className="text-[#2D6A4F] font-semibold">
-                    Finca La Isabelita
+                    Casa Campestre La Isabela
                   </span>
                   , una propiedad que combina el{" "}
                   <span className="text-[#2D6A4F] font-semibold">encanto rural</span>{" "}
                   con la comodidad de estar cerca de todo. En el sector Las Lomitas, te
                   ofrece{" "}
                   <span className="text-[#2D6A4F] font-semibold">
-                    3 habitaciones, 4 camas, pórtico y parqueadero
+                    2 habitaciones, 3 camas, pórtico y lote de 1.500 m²
                   </span>{" "}
                   para descansar, teletrabajar o{" "}
                   <span className="text-[#2D6A4F] font-semibold">
@@ -1472,7 +1584,7 @@ function Index() {
                   </span>{" "}
                   at{" "}
                   <span className="text-[#2D6A4F] font-semibold">
-                    Finca La Isabelita
+                    Casa Campestre La Isabela
                   </span>
                   , combining{" "}
                   <span className="text-[#2D6A4F] font-semibold">
@@ -1480,7 +1592,7 @@ function Index() {
                   </span>{" "}
                   with close town proximity. Located in Las Lomitas, it offers{" "}
                   <span className="text-[#2D6A4F] font-semibold">
-                    3 bedrooms, 4 beds, porch, and parking
+                    2 bedrooms, 3 beds, porch, and 1,500 m² lot
                   </span>{" "}
                   to relax, work remotely, or{" "}
                   <span className="text-[#2D6A4F] font-semibold">
@@ -1496,8 +1608,8 @@ function Index() {
               src={ardillaCampo}
               alt={
                 lang === "es"
-                  ? "Ardilla campestre nativa observando el entorno natural en Finca La Isabelita, Las Lomitas, La Ceja"
-                  : "Native countryside squirrel enjoying the peaceful natural environment at Finca La Isabelita in Las Lomitas, La Ceja"
+                  ? "Ardilla campestre nativa observando el entorno natural en Casa Campestre La Isabela, Las Lomitas, La Ceja"
+                  : "Native countryside squirrel enjoying the peaceful natural environment at Casa Campestre La Isabela in Las Lomitas, La Ceja"
               }
               className="w-48 sm:w-56 md:w-64 lg:w-72 xl:w-80 h-auto object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-transform duration-500 hover:scale-105"
               loading="lazy"
@@ -1533,57 +1645,85 @@ function Index() {
         </div>
       </section>
 
-      {/* Bloque CTA tras Características */}
-      <section className="mx-auto max-w-7xl px-6 py-6">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#243A2C] via-[#1C2E23] to-[#14231A] p-8 md:p-12 text-[#FAF8F5] shadow-xl border border-[#3E5D47]/40">
-          {/* Acentos de luz sutil en fondo */}
-          <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-emerald-500/10 blur-3xl" />
-          <div className="pointer-events-none absolute -left-20 -bottom-20 h-72 w-72 rounded-full bg-[#4ADE80]/10 blur-3xl" />
+      {/* 1. Sección de Ubicación Estratégica (ligera, clara y campestre) */}
+      <section className="mx-auto max-w-7xl px-6 pt-2 pb-6">
+        <div className="mb-6">
+          <SectionLabel>{t.ctaFeatures.tag}</SectionLabel>
+          <h3 className="mt-3 text-2xl font-bold uppercase text-[#1C261F] md:text-3xl">
+            {t.ctaFeatures.title}
+          </h3>
+        </div>
 
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-7 space-y-4">
-              <div className="inline-flex items-center gap-2 rounded-full bg-emerald-900/60 border border-emerald-500/30 px-3.5 py-1 text-xs font-semibold uppercase tracking-widest text-emerald-300">
-                <Sparkles className="h-3.5 w-3.5 text-emerald-300" />
-                <span>{t.ctaFeatures.tag}</span>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="rounded-2xl bg-[#F4F0E6] p-6 border border-[#E2DDD0]/60 transition-colors hover:bg-[#EAE4D6]">
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#2D5039]/10 text-[#2D5039]">
+                <MapPin className="h-5 w-5" />
               </div>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight text-[#FAF8F5] leading-tight">
-                {t.ctaFeatures.title}
-              </h3>
-              <p className="text-sm sm:text-base leading-relaxed text-stone-200/90 max-w-2xl">
-                {t.ctaFeatures.desc}
+              <span className="rounded-full bg-[#2D5039] px-3 py-1 text-xs font-bold text-[#FAF8F5]">
+                {t.ctaFeatures.time1}
+              </span>
+            </div>
+            <h4 className="mt-4 text-lg font-bold uppercase text-[#1C261F]">
+              {t.ctaFeatures.card1Title}
+            </h4>
+            <p className="mt-2 text-sm leading-relaxed text-[#1C261F]/70">
+              {t.ctaFeatures.card1Desc}
+            </p>
+          </div>
+
+          <div className="rounded-2xl bg-[#F4F0E6] p-6 border border-[#E2DDD0]/60 transition-colors hover:bg-[#EAE4D6]">
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#2D5039]/10 text-[#2D5039]">
+                <Clock3 className="h-5 w-5" />
+              </div>
+              <span className="rounded-full bg-[#2D5039] px-3 py-1 text-xs font-bold text-[#FAF8F5]">
+                {t.ctaFeatures.time2}
+              </span>
+            </div>
+            <h4 className="mt-4 text-lg font-bold uppercase text-[#1C261F]">
+              {t.ctaFeatures.card2Title}
+            </h4>
+            <p className="mt-2 text-sm leading-relaxed text-[#1C261F]/70">
+              {t.ctaFeatures.card2Desc}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. Sección CTA de Agendamiento (delgada, sin exceso de texto) */}
+      <section className="mx-auto max-w-7xl px-6 pb-12">
+        <div className="rounded-2xl border border-[#2D5039]/20 bg-[#EBF1EB]/70 px-6 py-5 sm:px-8 sm:py-6 shadow-sm">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 text-center md:text-left">
+            <div className="space-y-1">
+              <h4 className="text-base sm:text-lg font-bold text-[#1C261F]">
+                {t.ctaFeatures.ctaTitle}
+              </h4>
+              <p className="text-xs sm:text-sm text-[#1C261F]/70">
+                {t.ctaFeatures.ctaDesc}
               </p>
-
-              {/* Lista de beneficios destacados */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
-                {t.ctaFeatures.perks.map((perk, idx) => (
-                  <div key={idx} className="flex items-center gap-2.5 text-xs sm:text-sm text-stone-200">
-                    <CheckCircle2 className="h-4 w-4 text-emerald-400 flex-shrink-0" />
-                    <span>{perk}</span>
-                  </div>
-                ))}
-              </div>
             </div>
 
-            <div className="lg:col-span-5 flex flex-col sm:flex-row lg:flex-col gap-3.5 justify-center lg:items-end">
+            <div className="flex flex-wrap items-center justify-center gap-3 flex-shrink-0">
               <a
                 href={
                   lang === "es"
-                    ? "https://wa.me/?text=Hola%2C%20quisiera%20agendar%20una%20visita%20para%20conocer%20Finca%20La%20Isabelita%20en%20Las%20Lomitas%2C%20La%20Ceja"
-                    : "https://wa.me/?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20visit%20to%20see%20Finca%20La%20Isabelita%20in%20Las%20Lomitas%2C%20La%20Ceja"
+                    ? "https://wa.me/?text=Hola%2C%20quisiera%20agendar%20una%20visita%20para%20conocer%20Casa%20Campestre%20La%20Isabela%20en%20Las%20Lomitas%2C%20La%20Ceja"
+                    : "https://wa.me/?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20visit%20to%20see%20Casa%20Campestre%20La%20Isabela%20in%20Las%20Lomitas%2C%20La%20Ceja"
                 }
                 target="_blank"
                 rel="noreferrer"
-                className="w-full sm:w-auto lg:w-full inline-flex items-center justify-center gap-3 rounded-full bg-[#25D366] px-6 py-4 text-sm font-bold uppercase tracking-wider text-white shadow-lg transition-all duration-300 hover:bg-[#20ba5a] hover:scale-[1.02]"
+                className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-white shadow-sm transition-all duration-300 hover:bg-[#20ba5a] hover:scale-[1.02]"
               >
-                <WhatsAppIcon className="h-5 w-5" />
+                <WhatsAppIcon className="h-4 w-4" />
                 <span>{t.ctaFeatures.btnWhatsapp}</span>
               </a>
 
               <a
                 href="tel:+573104468056"
-                className="w-full sm:w-auto lg:w-full inline-flex items-center justify-center gap-3 rounded-full border border-stone-400/40 bg-white/10 px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:bg-white/20"
+                className="inline-flex items-center gap-2 rounded-full border border-[#243A2C]/30 bg-white/70 px-4 py-2.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#1C261F] transition-all duration-300 hover:bg-[#243A2C] hover:text-[#FAF8F5]"
               >
-                <Phone className="h-4 w-4 text-emerald-300" />
+                <Phone className="h-3.5 w-3.5 text-[#2D5039]" />
                 <span>{t.ctaFeatures.btnCall}</span>
               </a>
             </div>
@@ -1695,8 +1835,8 @@ function Index() {
                   src={aboutImg}
                   alt={
                     lang === "es"
-                      ? "Pórtico de madera y entorno natural de Finca La Isabelita en Las Lomitas, La Ceja, Oriente Antioqueño"
-                      : "Rustic wooden porch and peaceful countryside surroundings at Finca La Isabelita in Las Lomitas, La Ceja"
+                      ? "Pórtico de madera y entorno natural de Casa Campestre La Isabela en Las Lomitas, La Ceja, Oriente Antioqueño"
+                      : "Rustic wooden porch and peaceful countryside surroundings at Casa Campestre La Isabela in Las Lomitas, La Ceja"
                   }
                   loading="lazy"
                   decoding="async"
@@ -1748,8 +1888,8 @@ function Index() {
                   src={item.avatar}
                   alt={
                     lang === "es"
-                      ? `Fotografía de ${item.nameEs}, ${item.roleEs} en Finca La Isabelita`
-                      : `Photo of ${item.nameEn}, ${item.roleEn} at Finca La Isabelita`
+                      ? `Fotografía de ${item.nameEs}, ${item.roleEs} en Casa Campestre La Isabela`
+                      : `Photo of ${item.nameEn}, ${item.roleEn} at Casa Campestre La Isabela`
                   }
                   className="h-14 w-14 rounded-full border-2 border-[#FAF8F5] object-cover shadow-sm"
                   loading="lazy"
@@ -1843,8 +1983,8 @@ function Index() {
               <a
                 href={
                   lang === "es"
-                    ? "https://wa.me/?text=Hola%2C%20quisiera%20recibir%20la%20ubicaci%C3%B3n%20exacta%20y%20coordinar%20visita%20en%20Las%20Lomitas%2C%20La%20Ceja"
-                    : "https://wa.me/?text=Hello%2C%20I%20would%20like%20to%20get%20the%20exact%20location%20and%20schedule%20a%20visit%20at%20Las%20Lomitas%2C%20La%20Ceja"
+                    ? "https://wa.me/?text=Hola%2C%20quisiera%20recibir%20la%20ubicaci%C3%B3n%20exacta%20y%20coordinar%20visita%20a%20Casa%20Campestre%20La%20Isabela%20en%20Las%20Lomitas%2C%20La%20Ceja"
+                    : "https://wa.me/?text=Hello%2C%20I%20would%20like%20to%20get%20the%20exact%20location%20and%20schedule%20a%20visit%20to%20Casa%20Campestre%20La%20Isabela%20in%20Las%20Lomitas%2C%20La%20Ceja"
                 }
                 target="_blank"
                 rel="noreferrer"
@@ -1866,7 +2006,7 @@ function Index() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="strict-origin-when-cross-origin"
-              title="Ubicación Casa Finca Las Lomitas - Casa de Oración La Providencia"
+              title="Ubicación Casa Campestre La Isabela Las Lomitas - Casa de Oración La Providencia"
               className="h-full w-full"
             />
           </div>
@@ -1930,7 +2070,7 @@ function Index() {
                 <>
                   ¿Listo para vivir la tranquilidad de{" "}
                   <span className="font-normal text-emerald-300">
-                    La Isabelita
+                    La Isabela
                   </span>
                   ?
                 </>
@@ -1938,7 +2078,7 @@ function Index() {
                 <>
                   Ready to experience the peace of{" "}
                   <span className="font-normal text-emerald-300">
-                    La Isabelita
+                    La Isabela
                   </span>
                   ?
                 </>
@@ -1948,8 +2088,8 @@ function Index() {
             {/* Subtítulo personalizado */}
             <p className="mt-4 max-w-2xl text-sm sm:text-base font-light leading-relaxed text-stone-200">
               {lang === "es"
-                ? "Disfruta de una casa amoblada con 3 habitaciones, 4 camas, pórtico con vista a las montañas, 500 m² de prado privado y parqueadero a solo 5 minutos del parque de La Ceja. Trato directo con el propietario, sin comisiones de agencia y con disponibilidad inmediata."
-                : "Enjoy a furnished home with 3 bedrooms, 4 beds, mountain-view porch, 500 m² private lot, and parking just 5 minutes from town. Direct deal with owner, zero broker fees, and immediate availability."}
+                ? "Disfruta de una casa campestre amoblada con 2 habitaciones, 3 camas, pórtico con vista a las montañas, 1.500 m² de prado privado y parqueadero a solo 10–12 minutos de Viva La Ceja y Éxito. Contrato formal con inmobiliaria (mínimo 6 meses) y disponibilidad inmediata."
+                : "Enjoy a furnished country home with 2 bedrooms, 3 beds, mountain-view porch, 1,500 m² private lot, and parking just 10–12 minutes from Viva La Ceja Mall & Éxito. Real estate agency lease (minimum 6 months) and immediate availability."}
             </p>
 
             {/* Píldoras de beneficios destacados */}
@@ -1961,7 +2101,7 @@ function Index() {
                 {lang === "es" ? "100% Pet Friendly" : "100% Pet Friendly"}
               </span>
               <span className="rounded-full bg-white/10 px-3.5 py-1 backdrop-blur-sm border border-white/15">
-                {lang === "es" ? "Pagos: COP · USD · Cripto" : "Payments: COP · USD · Crypto"}
+                {lang === "es" ? "Contrato con Inmobiliaria (Mín. 6 meses)" : "Real Estate Agency Lease (Min. 6 mos)"}
               </span>
             </div>
 
@@ -1985,8 +2125,8 @@ function Index() {
               >
                 <span>
                   {lang === "es"
-                    ? "Hablar con el Propietario por WhatsApp"
-                    : "Chat with the Owner on WhatsApp"}
+                    ? "Consultar Arriendo por WhatsApp"
+                    : "Inquire Lease on WhatsApp"}
                 </span>
                 <ArrowUpRight className="h-4 w-4" />
               </a>
@@ -1998,7 +2138,7 @@ function Index() {
       {/* Sección Panorámica del Paisaje: Ubicada inmediatamente debajo del banner y descendiendo al footer */}
       <section
         className="relative w-full overflow-hidden bg-[#121E16]"
-        aria-label={lang === "es" ? "Paisaje y entorno natural de Finca La Isabelita" : "Natural landscape and scenery of Finca La Isabelita"}
+        aria-label={lang === "es" ? "Paisaje y entorno natural de Casa Campestre La Isabela" : "Natural landscape and scenery of Casa Campestre La Isabela"}
       >
         <div className="relative min-h-[540px] sm:min-h-[620px] md:min-h-[700px] lg:min-h-[780px] w-full overflow-hidden flex flex-col justify-between">
           {/* Video en loop continuo con total nitidez y protagonismo del paisaje */}
@@ -2067,22 +2207,22 @@ function Index() {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
             {/* Columna 1: Marca e info */}
             <div className="space-y-4">
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3.5">
                 <img
                   src="/colibri-logo.png"
                   alt={
                     lang === "es"
-                      ? "Logotipo oficial de Finca La Isabelita con cabeza de colibrí"
-                      : "Official Finca La Isabelita logo with hummingbird head"
+                      ? "Logotipo oficial de Casa Campestre La Isabela con cabeza de colibrí"
+                      : "Official Casa Campestre La Isabela logo with hummingbird head"
                   }
-                  className="h-11 w-11 object-contain drop-shadow-md"
+                  className="h-11 w-11 sm:h-12 sm:w-12 object-contain drop-shadow-md flex-shrink-0"
                 />
-                <div className="flex flex-col">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.24em] text-emerald-400">
-                    Casa Campestre
+                <div className="flex flex-col justify-center leading-tight">
+                  <span className="text-2xl sm:text-[1.75rem] font-light tracking-tight text-[#FAF8F5]">
+                    La Isabela
                   </span>
-                  <span className="text-2xl font-black uppercase tracking-wider text-[#FAF8F5]">
-                    Finca La Isabelita
+                  <span className="text-[10px] sm:text-[11px] font-normal uppercase tracking-[0.28em] text-stone-300/85">
+                    Casa Campestre
                   </span>
                 </div>
               </div>
@@ -2160,7 +2300,7 @@ function Index() {
                   <span className="text-stone-400">
                     {lang === "es" ? "Habitaciones:" : "Bedrooms:"}
                   </span>{" "}
-                  3 {lang === "es" ? "habitaciones" : "bedrooms"} (4 {lang === "es" ? "camas" : "beds"})
+                  2 {lang === "es" ? "habitaciones" : "bedrooms"} (3 {lang === "es" ? "camas" : "beds"})
                 </li>
                 <li>
                   <span className="text-stone-400">
@@ -2184,7 +2324,13 @@ function Index() {
                   <span className="text-stone-400">
                     {lang === "es" ? "Lote privado:" : "Private Lot:"}
                   </span>{" "}
-                  500 m²
+                  1.500 m²
+                </li>
+                <li>
+                  <span className="text-stone-400">
+                    {lang === "es" ? "Contrato:" : "Lease:"}
+                  </span>{" "}
+                  {lang === "es" ? "Con inmobiliaria (mín. 6 meses)" : "Agency lease (min. 6 mos)"}
                 </li>
                 <li>
                   <span className="text-stone-400">
@@ -2230,7 +2376,7 @@ function Index() {
                   <span>{t.footer.hours}</span>
                 </p>
                 <p className="flex items-center gap-2">
-                  <UserCheck className="h-4 w-4 shrink-0 text-emerald-400" />
+                  <ShieldCheck className="h-4 w-4 shrink-0 text-emerald-400" />
                   <span>{t.footer.directService}</span>
                 </p>
                 <p className="flex items-center gap-2">
@@ -2262,7 +2408,7 @@ function Index() {
         </div>
       </footer>
 
-      {/* Burbujita flotante de WhatsApp con mensaje personalizado de interés en Casa Finca La Isabelita */}
+      {/* Burbujita flotante de WhatsApp con mensaje personalizado de interés en Casa Campestre La Isabela */}
       <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3">
         {/* Cartelito flotante descriptivo */}
         <a
@@ -2277,8 +2423,8 @@ function Index() {
           </span>
           <span className="text-stone-200 group-hover:text-white transition-colors">
             {lang === "es"
-              ? "¿Interesado en La Isabelita? ¡Escríbenos!"
-              : "Interested in La Isabelita? Chat with us!"}
+              ? "¿Interesado en La Isabela? ¡Escríbenos!"
+              : "Interested in La Isabela? Chat with us!"}
           </span>
         </a>
 
@@ -2289,8 +2435,8 @@ function Index() {
           rel="noreferrer"
           aria-label={
             lang === "es"
-              ? "Contactar por WhatsApp sobre Casa Finca La Isabelita"
-              : "Contact on WhatsApp about Casa Finca La Isabelita"
+              ? "Contactar por WhatsApp sobre Casa Campestre La Isabela"
+              : "Contact on WhatsApp about Casa Campestre La Isabela"
           }
           className="relative flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl transition-all duration-300 hover:scale-110 hover:bg-[#20bd5a] hover:shadow-[0_10px_25px_rgba(37,211,102,0.45)]"
         >
