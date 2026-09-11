@@ -876,3 +876,20 @@ pm run build), servidor respondiendo en HTTP 200 OK y sincronización en GitHub 
 - Resultado: Aprobado (score >= 10)
 - Resumen: Subtítulo complementario retirado, dejando exclusivamente la frase de paz esencial sobre el video panorámico.
 - Observaciones: Limpieza visual óptima y estética cinematográfica despejada.
+## Nueva sesión
+- Fecha: 2026-09-11 08:41
+- Solicitud: Centrar la frase de paz en el espacio blanco del paisaje y eliminar el párrafo descriptivo largo del Hero ("Disfruta del encanto campestre en una propiedad amoblada...").
+- Decisiones clave:
+  - Se configuró el contenedor de la frase de paz con altura dedicada (h-[220px] sm:h-[260px] md:h-[300px] lg:h-[330px] flex items-center justify-center text-center), logrando que la frase quede exactamente centrada tanto vertical como horizontalmente en la franja blanca entre el banner superior y el inicio de los árboles.
+  - Se eliminó del Hero principal el párrafo descriptivo largo de habitaciones, camas y servicios, dejando únicamente las insignias superiores de ubicación/calificación y el título editorial ("Finca La Isabelita en La Ceja, Antioquia").
+  - Con este cambio, el cielo y la fachada de la casa finca en el Hero quedan 100% despejados y limpios, con un impacto fotográfico mucho más potente.
+  - Se verificó compilación exitosa con Vite y Nitro (
+pm run build), servidor respondiendo en HTTP 200 OK y sincronización en GitHub (main).
+- Pendientes:
+  - Ninguno.
+
+## Validación completada
+- Fecha: 2026-09-11 08:41
+- Resultado: Aprobado (score >= 10)
+- Resumen: Frase de paz perfectamente centrada en el espacio blanco del paisaje y Hero simplificado para máxima pureza visual.
+- Observaciones: Limpieza visual y sofisticación estética de alto nivel en todo el recorrido de la página.
