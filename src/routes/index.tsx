@@ -1829,10 +1829,10 @@ function Index() {
           {/* Desvanecimiento inferior suave que desciende al color del footer (#121E16) */}
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-36 sm:h-52 md:h-64 bg-gradient-to-b from-transparent via-[#121E16]/65 to-[#121E16]" />
 
-          {/* Contenido en el espacio del cielo: Frase de paz con fuente elegante, limpia y fluida (no gruesa) + CTA */}
-          <div className="relative z-10 mx-auto max-w-4xl px-6 pt-10 sm:pt-14 md:pt-16 pb-8 text-center flex flex-col items-center">
-            {/* Frase de paz: Fuente editorial elegante, fluida y serena con palabras clave resaltadas en verde esmeralda */}
-            <h2 className="font-peace-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal tracking-wide text-[#1C261F] leading-[1.2] sm:leading-[1.18] max-w-3xl drop-shadow-sm">
+          {/* Contenido en el espacio del cielo: Frase de paz con fuente elegante, limpia y fluida en tamaño más discreto */}
+          <div className="relative z-10 mx-auto max-w-3xl px-6 pt-8 sm:pt-12 md:pt-14 pb-4 text-center flex flex-col items-center">
+            {/* Frase de paz: Tamaño más pequeño, refinado y poético */}
+            <h2 className="font-peace-heading text-xl sm:text-2xl md:text-3xl lg:text-[2.1rem] font-normal tracking-wide text-[#1C261F] leading-[1.3] sm:leading-[1.28] max-w-2xl drop-shadow-sm">
               {lang === "es" ? (
                 <>
                   Desconéctate del ruido y vive la{" "}
@@ -1858,8 +1858,8 @@ function Index() {
               )}
             </h2>
 
-            {/* Subtítulo complementario de tranquilidad: limpio, ligero y fluido */}
-            <p className="mt-4 sm:mt-5 text-base sm:text-lg md:text-xl font-light tracking-wide text-[#2B382E] max-w-2xl leading-relaxed">
+            {/* Subtítulo complementario de tranquilidad: limpio, ligero y sutil */}
+            <p className="mt-2.5 sm:mt-3 text-xs sm:text-sm md:text-base font-light tracking-wide text-[#2B382E]/90 max-w-xl leading-relaxed">
               {lang === "es" ? (
                 <>
                   Respira aire puro, contempla la naturaleza y dale a tu vida el descanso y la tranquilidad que mereces.
@@ -1870,25 +1870,6 @@ function Index() {
                 </>
               )}
             </p>
-
-            {/* Botón CTA con estilo elegante y armónico */}
-            <div className="mt-6 sm:mt-8">
-              <a
-                href={waCustomLink}
-                target="_blank"
-                rel="noreferrer"
-                className="group inline-flex items-center gap-3 rounded-full bg-[#1C261F] px-8 py-3.5 sm:py-4 text-xs sm:text-sm font-medium uppercase tracking-widest text-[#FAF8F5] shadow-lg transition-all duration-300 hover:bg-[#2D6A4F] hover:shadow-2xl hover:scale-105"
-              >
-                <span>
-                  {lang === "es"
-                    ? "Agendar mi visita y vivir la paz"
-                    : "Schedule my visit and experience the peace"}
-                </span>
-                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-[#FAF8F5]/15 text-[#FAF8F5] transition-transform group-hover:rotate-45">
-                  <ArrowUpRight className="h-4 w-4" />
-                </div>
-              </a>
-            </div>
           </div>
         </div>
       </section>
