@@ -930,3 +930,25 @@ pm run build), servidor respondiendo en HTTP 200 OK y sincronización en GitHub 
 - Resultado: Aprobado (score >= 10)
 - Resumen: Ave andina en vuelo integrada sobre el cielo campestre del Hero, con transparencia total, movimiento de planeo natural y cero obstrucción de elementos interactivos.
 - Observaciones: Aporta un toque orgánico, poético y vivo que conecta al visitante con la biodiversidad de La Ceja.
+
+## Nueva sesión
+- Fecha: 2026-09-11 11:22
+- Solicitud:
+  1. Cambiar el logotipo de La Isabelita por la cabeza de un pajarito a un solo color dentro de un círculo verde.
+  2. Actualizar el favicon en formato SVG, ICO multirresolución y PNG.
+  3. Actualizar la imagen de metadescription / Open Graph para redes sociales.
+  4. Organizar el correspondiente atributo alt para todas las imágenes de la página web.
+- Decisiones clave:
+  - Se diseñó el nuevo logotipo vectorial: un círculo verde bosque profundo (#1E3627 a #122217) con borde esmeralda y anillo interior marfil, conteniendo la silueta estilizada de la cabeza de un pajarito en un solo color blanco marfil (#FAF8F5) con pico cónico definido, ojo expresivo y cresta suave.
+  - Se actualizó public/favicon.svg, se generó public/favicon.ico multiplataforma (16x16, 32x32, 48x48, 64x64, 128x128, 256x256), apple-touch-icon.png (180x180) y favicon-32x32.png.
+  - Se creó la tarjeta de vista previa Open Graph en alta definición public/og-image.jpg (1200x630 px) con la fachada real de la finca, el nuevo logotipo, tipografía editorial y badges clave (3 habitaciones, 4 camas, 500 m², trato directo y calificación 5.0), enlazándola en og:image y twitter:image en index.tsx y __root.tsx.
+  - Se realizó una auditoría completa de todas las 11 etiquetas img asegurando que cada una posea un atributo alt descriptivo, contextual, bilingüe (español/inglés) y optimizado para accesibilidad (a11y) y SEO en Google Imágenes.
+  - Se comprobó compilación de producción con Vite y Nitro (npm run build) exitosa con código 0, servidor local respondiendo HTTP 200 OK y sincronización en GitHub (main).
+- Pendientes:
+  - Ninguno. Listo para visualización del usuario.
+
+## Validación completada
+- Fecha: 2026-09-11 11:22
+- Resultado: Aprobado (score >= 10)
+- Resumen: Logotipo con cabeza de pajarito en círculo verde integrado en cabecera, pie de página y favicons; tarjeta OG para compartir en WhatsApp/redes creada y atributos alt organizados al 100% de manera bilingüe.
+- Observaciones: Identidad gráfica campestre consolidada, máxima accesibilidad web (WCAG) y optimización SEO integral.
