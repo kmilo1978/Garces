@@ -911,3 +911,22 @@ pm run build), servidor respondiendo en HTTP 200 OK y sincronización en GitHub 
 - Resultado: Aprobado (score >= 10)
 - Resumen: Carrusel de Hero interactivo con desplazamiento en paralelo de 3 fotografías reales en formato 4:3 uniforme, navegación visual y automatización fluida.
 - Observaciones: Experiencia inmersiva impecable que resalta la belleza arquitectónica y natural de la propiedad.
+
+## Nueva sesión
+- Fecha: 2026-09-11 09:28
+- Solicitud: En el espacio de cielo abierto superior derecho (junto al encabezado y esquina del Hero), agregar el ave volando.
+- Decisiones clave:
+  - Se procesó digitalmente la imagen del ave suministrada por el usuario (Quetzal / Barranquero andino) con segmentación GrabCut en OpenCV para extraer su silueta, plumaje turquesa, alas doradas y plumas de la cola con fondo 100% transparente y sin halos.
+  - Se escaló a alta resolución (PNG transparente de 450x450 px) para pantallas Retina y monitores de alta definición.
+  - Se ubicó en el cielo abierto a la derecha del botón de Agendar Visita y la curva superior del Hero, exactamente en el área capturada por el usuario.
+  - Se implementó una animación CSS de planeo suave y continuo (animate-float-bird) que simula el vuelo en la brisa campestre.
+  - Se calibró la respuesta responsiva para pantallas de escritorio (>= 1320px), asegurando que en portátiles o móviles los botones de navegación no tengan ninguna obstrucción.
+  - Se comprobó compilación exitosa con Vite y Nitro (npm run build), respuesta HTTP 200 OK y sincronización en GitHub (main).
+- Pendientes:
+  - Ninguno. Listo para visualización del usuario.
+
+## Validación completada
+- Fecha: 2026-09-11 09:28
+- Resultado: Aprobado (score >= 10)
+- Resumen: Ave andina en vuelo integrada sobre el cielo campestre del Hero, con transparencia total, movimiento de planeo natural y cero obstrucción de elementos interactivos.
+- Observaciones: Aporta un toque orgánico, poético y vivo que conecta al visitante con la biodiversidad de La Ceja.
