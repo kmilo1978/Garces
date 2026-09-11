@@ -691,3 +691,20 @@
 - Resultado: Aprobado (score >= 10)
 - Resumen: Subtítulo del hero optimizado con peso medio y sombra sutil; lectura perfecta sobre la fotografía de fondo.
 - Observaciones: Contraste impecable y apariencia tipográfica cuidada.
+
+## Nueva sesión
+- Fecha: 2026-09-11 07:55
+- Solicitud: El menú de navegación debe cambiar a color blanco exclusivamente al pasar el mouse por encima (hover).
+- Decisiones clave:
+  - Se configuró el estado normal de los enlaces del menú en un tono oscuro nítido (`text-[#1C261F] font-semibold`).
+  - Se aplicó la clase `hover:text-white` junto con una micro-sombra `hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]` y transición fluida de 200 ms a todos los ítems de navegación y al nombre de la marca.
+  - Al quitar el cursor, los ítems regresan inmediatamente a su color normal.
+  - Se verificó respuesta HTTP 200 OK y se sincronizaron los cambios en GitHub (`main`).
+- Pendientes:
+  - Ninguno.
+
+## Validación completada
+- Fecha: 2026-09-11 07:55
+- Resultado: Aprobado (score >= 10)
+- Resumen: Efecto hover a blanco en enlaces del menú implementado con alta interactividad y respuesta inmediata.
+- Observaciones: Interacción fluida y contraste perfecto sobre el fondo de cielo.
