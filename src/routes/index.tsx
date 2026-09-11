@@ -1801,37 +1801,37 @@ function Index() {
           {/* Desvanecimiento inferior suave que desciende al color del footer (#121E16) */}
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-36 sm:h-52 md:h-64 bg-gradient-to-b from-transparent via-[#121E16]/65 to-[#121E16]" />
 
-          {/* Contenido en el espacio del cielo: Frase de paz con letras negras y palabras clave resaltadas en verde + CTA */}
+          {/* Contenido en el espacio del cielo: Frase de paz con fuente elegante, limpia y fluida (no gruesa) + CTA */}
           <div className="relative z-10 mx-auto max-w-4xl px-6 pt-10 sm:pt-14 md:pt-16 pb-8 text-center flex flex-col items-center">
-            {/* Frase de paz: Letras negras con lo más importante resaltado en verde */}
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#1C261F] leading-tight max-w-3xl drop-shadow-sm">
+            {/* Frase de paz: Fuente editorial elegante, fluida y serena con palabras clave resaltadas en verde esmeralda */}
+            <h2 className="font-peace-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal tracking-wide text-[#1C261F] leading-[1.2] sm:leading-[1.18] max-w-3xl drop-shadow-sm">
               {lang === "es" ? (
                 <>
                   Desconéctate del ruido y vive la{" "}
-                  <span className="text-[#2D6A4F] font-black">
+                  <span className="italic font-medium text-[#2D6A4F]">
                     verdadera paz
                   </span>{" "}
                   en tu propio{" "}
-                  <span className="text-[#2D6A4F] font-black">
+                  <span className="italic font-medium text-[#2D6A4F]">
                     refugio campestre
                   </span>
                 </>
               ) : (
                 <>
                   Disconnect from the noise and live{" "}
-                  <span className="text-[#2D6A4F] font-black">
+                  <span className="italic font-medium text-[#2D6A4F]">
                     true peace
                   </span>{" "}
                   in your own{" "}
-                  <span className="text-[#2D6A4F] font-black">
+                  <span className="italic font-medium text-[#2D6A4F]">
                     countryside sanctuary
                   </span>
                 </>
               )}
             </h2>
 
-            {/* Subtítulo complementario de tranquilidad */}
-            <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg font-medium text-[#263328] max-w-2xl leading-relaxed">
+            {/* Subtítulo complementario de tranquilidad: limpio, ligero y fluido */}
+            <p className="mt-4 sm:mt-5 text-base sm:text-lg md:text-xl font-light tracking-wide text-[#2B382E] max-w-2xl leading-relaxed">
               {lang === "es" ? (
                 <>
                   Respira aire puro, contempla la naturaleza y dale a tu vida el descanso y la tranquilidad que mereces.
@@ -1843,13 +1843,13 @@ function Index() {
               )}
             </p>
 
-            {/* Botón CTA */}
-            <div className="mt-6 sm:mt-7">
+            {/* Botón CTA con estilo elegante y armónico */}
+            <div className="mt-6 sm:mt-8">
               <a
                 href={waCustomLink}
                 target="_blank"
                 rel="noreferrer"
-                className="group inline-flex items-center gap-3 rounded-full bg-[#1C261F] px-8 py-3.5 sm:py-4 text-xs sm:text-sm font-bold uppercase tracking-widest text-[#FAF8F5] shadow-xl transition-all duration-300 hover:bg-[#2D6A4F] hover:shadow-2xl hover:scale-105"
+                className="group inline-flex items-center gap-3 rounded-full bg-[#1C261F] px-8 py-3.5 sm:py-4 text-xs sm:text-sm font-medium uppercase tracking-widest text-[#FAF8F5] shadow-lg transition-all duration-300 hover:bg-[#2D6A4F] hover:shadow-2xl hover:scale-105"
               >
                 <span>
                   {lang === "es"
