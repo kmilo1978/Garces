@@ -788,10 +788,10 @@ function Index() {
         <img
           src={cieloHero}
           alt=""
-          className="h-full w-full object-cover object-top brightness-[1.01] contrast-[1.02]"
+          className="h-full w-full object-cover object-top brightness-[1.12] contrast-[0.98] opacity-85"
         />
-        {/* Capa de difusión gradual para que parezca un cielo que se desvanece suavemente a blanco */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 via-40% to-white/95" />
+        {/* Capa de difusión gradual para que parezca un cielo más claro que se desvanece suavemente a blanco */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/40 via-35% to-white/95" />
         <div className="absolute inset-x-0 bottom-0 h-64 sm:h-80 md:h-96 bg-gradient-to-b from-transparent via-white/85 to-[#FAF8F5]" />
       </div>
 
@@ -1032,7 +1032,7 @@ function Index() {
         <div
           className="relative min-h-[620px] sm:min-h-[680px] lg:min-h-[720px] w-full overflow-hidden rounded-[2.5rem] bg-cover bg-[position:75%_center] lg:bg-center p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col lg:flex-row items-start justify-between gap-8 shadow-2xl"
           style={{
-            backgroundImage: `linear-gradient(to right, rgba(16, 26, 19, 0.72) 0%, rgba(16, 26, 19, 0.25) 28%, rgba(0, 0, 0, 0) 38%, rgba(0, 0, 0, 0) 62%, rgba(16, 26, 19, 0.40) 72%, rgba(16, 26, 19, 0.82) 100%), url(${heroImg})`,
+            backgroundImage: `linear-gradient(to right, rgba(16, 26, 19, 0.50) 0%, rgba(16, 26, 19, 0.16) 28%, rgba(0, 0, 0, 0) 38%, rgba(0, 0, 0, 0) 62%, rgba(16, 26, 19, 0.40) 72%, rgba(16, 26, 19, 0.82) 100%), url(${heroImg})`,
           }}
         >
           {/* Costado Izquierdo: Título y descripción elevados sobre el cielo abierto y despejado */}
