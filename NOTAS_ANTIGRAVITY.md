@@ -674,3 +674,20 @@
 - Resultado: Aprobado (score >= 10)
 - Resumen: Fondo de cielo difuminado a blanco detrás del Hero implementado exitosamente, compilado para producción y publicado en GitHub.
 - Observaciones: Aporta luminosidad, aire fresco y una atmósfera campestre inmersiva.
+
+## Nueva sesión
+- Fecha: 2026-09-11 07:48
+- Solicitud: Agregar efecto de sombra pequeña o mayor grosor al texto descriptivo del hero para evitar que se pierda con el fondo y maximizar legibilidad.
+- Decisiones clave:
+  - Se incrementó el grosor tipográfico del párrafo de `font-light` (300) a `font-normal sm:font-medium` (400-500).
+  - Se cambió el color de `text-white/85` a blanco 100% sólido (`text-white`).
+  - Se aplicó una sombra sutil y nítida combinando `drop-shadow-[0_2px_4px_rgba(0,0,0,0.85)]` y `text-shadow: 0 1px 2px rgba(0,0,0,0.9), 0 2px 6px rgba(0,0,0,0.7)`.
+  - Se verificó respuesta local HTTP 200 OK y se sincronizaron los cambios en GitHub (`main`).
+- Pendientes:
+  - Ninguno.
+
+## Validación completada
+- Fecha: 2026-09-11 07:48
+- Resultado: Aprobado (score >= 10)
+- Resumen: Subtítulo del hero optimizado con peso medio y sombra sutil; lectura perfecta sobre la fotografía de fondo.
+- Observaciones: Contraste impecable y apariencia tipográfica cuidada.
