@@ -1772,7 +1772,7 @@ function Index() {
         className="relative w-full overflow-hidden bg-[#121E16]"
         aria-label={lang === "es" ? "Paisaje y entorno natural de Finca La Isabelita" : "Natural landscape and scenery of Finca La Isabelita"}
       >
-        <div className="relative h-[480px] sm:h-[580px] md:h-[680px] lg:h-[780px] w-full overflow-hidden">
+        <div className="relative min-h-[540px] sm:min-h-[620px] md:min-h-[700px] lg:min-h-[780px] w-full overflow-hidden flex flex-col justify-between">
           {/* Video en loop continuo con total nitidez y protagonismo del paisaje */}
           <video
             src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260815_040604_c8ace780-37e9-4f61-bc5c-8b1712b4640b.mp4"
@@ -1792,14 +1792,76 @@ function Index() {
               e.currentTarget.currentTime = 0;
               e.currentTarget.play().catch(() => {});
             }}
-            className="h-full w-full object-cover object-[center_60%] brightness-[0.98] contrast-[1.02] transition-all duration-700"
+            className="absolute inset-0 h-full w-full object-cover object-[center_60%] brightness-[0.98] contrast-[1.02] transition-all duration-700 pointer-events-none"
           />
 
           {/* Transición superior suave desde el fondo marfil */}
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-16 sm:h-24 bg-gradient-to-b from-[#FAF8F5] via-[#FAF8F5]/30 to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-28 sm:h-36 bg-gradient-to-b from-[#FAF8F5] via-[#FAF8F5]/60 to-transparent" />
 
           {/* Desvanecimiento inferior suave que desciende al color del footer (#121E16) */}
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-36 sm:h-52 md:h-64 bg-gradient-to-b from-transparent via-[#121E16]/65 to-[#121E16]" />
+
+          {/* Contenido en el espacio del cielo: Frase de paz con letras negras y palabras clave resaltadas en verde + CTA */}
+          <div className="relative z-10 mx-auto max-w-4xl px-6 pt-10 sm:pt-14 md:pt-16 pb-8 text-center flex flex-col items-center">
+            {/* Frase de paz: Letras negras con lo más importante resaltado en verde */}
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#1C261F] leading-tight max-w-3xl drop-shadow-sm">
+              {lang === "es" ? (
+                <>
+                  Desconéctate del ruido y vive la{" "}
+                  <span className="text-[#2D6A4F] font-black">
+                    verdadera paz
+                  </span>{" "}
+                  en tu propio{" "}
+                  <span className="text-[#2D6A4F] font-black">
+                    refugio campestre
+                  </span>
+                </>
+              ) : (
+                <>
+                  Disconnect from the noise and live{" "}
+                  <span className="text-[#2D6A4F] font-black">
+                    true peace
+                  </span>{" "}
+                  in your own{" "}
+                  <span className="text-[#2D6A4F] font-black">
+                    countryside sanctuary
+                  </span>
+                </>
+              )}
+            </h2>
+
+            {/* Subtítulo complementario de tranquilidad */}
+            <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg font-medium text-[#263328] max-w-2xl leading-relaxed">
+              {lang === "es" ? (
+                <>
+                  Respira aire puro, contempla la naturaleza y dale a tu vida el descanso y la tranquilidad que mereces.
+                </>
+              ) : (
+                <>
+                  Breathe fresh air, embrace nature, and give your life the restful serenity you truly deserve.
+                </>
+              )}
+            </p>
+
+            {/* Botón CTA */}
+            <div className="mt-6 sm:mt-7">
+              <a
+                href={waCustomLink}
+                target="_blank"
+                rel="noreferrer"
+                className="group inline-flex items-center gap-3 rounded-full bg-[#1C261F] px-8 py-3.5 sm:py-4 text-xs sm:text-sm font-bold uppercase tracking-widest text-[#FAF8F5] shadow-xl transition-all duration-300 hover:bg-[#2D6A4F] hover:shadow-2xl hover:scale-105"
+              >
+                <span>
+                  {lang === "es"
+                    ? "Agendar mi visita y vivir la paz"
+                    : "Schedule my visit and experience the peace"}
+                </span>
+                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-[#FAF8F5]/15 text-[#FAF8F5] transition-transform group-hover:rotate-45">
+                  <ArrowUpRight className="h-4 w-4" />
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
