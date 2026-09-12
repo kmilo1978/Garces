@@ -658,8 +658,8 @@ const galeria = [
     titleEn: "Bedroom with Beds & Mountain View",
     tagEs: "Habitación 2",
     tagEn: "Bedroom 2",
-    altEs: "Segunda habitación amoblada con camas confortables y ventana con vista a las montañas en La Ceja",
-    altEn: "Second furnished bedroom with comfortable beds and mountain view window in La Ceja",
+    altEs: "Segunda habitación amoblada con 2 camas confortables y ventana con vista a las montañas en Casa Campestre La Isabela, La Ceja",
+    altEn: "Second furnished bedroom with 2 comfortable beds and mountain view window at Casa Campestre La Isabela, La Ceja",
   },
   {
     src: banoReal,
@@ -685,8 +685,8 @@ const galeria = [
     titleEn: "Side View & 1,500 m² Green Yard",
     tagEs: "Lote 1.500 m²",
     tagEn: "1,500 m² Lot",
-    altEs: "Costado de la casa campestre con arquitectura tradicional, techo de teja de barro y lote privado de 1.500 m² pet friendly",
-    altEn: "Side view of traditional countryside home with clay tile roof and 1,500 m² private pet friendly yard in La Ceja",
+    altEs: "Costado de la casa campestre con arquitectura tradicional, techo de teja de barro y lote privado cerrado de 1.500 m² pet friendly en Casa Campestre La Isabela, La Ceja",
+    altEn: "Side view of traditional countryside home with clay tile roof and 1,500 m² private fenced pet friendly yard at Casa Campestre La Isabela, La Ceja",
   },
 ];
 
@@ -826,8 +826,8 @@ function Index() {
       src: heroCostado,
       alt:
         lang === "es"
-          ? "Costado de la casa campestre, tejado tradicional en teja de barro y prados verdes de 1.500 m²"
-          : "Side view of the countryside house, traditional clay-tiled roof, and 1,500 m² green lawns",
+          ? "Costado de la casa campestre con tejado tradicional en teja de barro y prados verdes de 1.500 m² en Casa Campestre La Isabela, La Ceja"
+          : "Side view of the countryside house with traditional clay-tiled roof and 1,500 m² green lawns at Casa Campestre La Isabela, La Ceja",
       titleEs: "Costado & Prados",
       titleEn: "Side & Lawns",
     },
