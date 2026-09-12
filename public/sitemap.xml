@@ -24,4 +24,16 @@
       <image:title>Casa Campestre La Isabela - Pórtico exterior y flores veraneras</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://kmilo1978.github.io/Garces/politica-de-privacidad</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://kmilo1978.github.io/Garces/terminos-y-condiciones</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>

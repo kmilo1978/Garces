@@ -1193,6 +1193,25 @@ pm run build), servidor respondiendo en HTTP 200 OK y sincronización en GitHub 
 - Resumen: Teléfono +57 314 627 6298 y mensaje personalizado para la inmobiliaria integrados exitosamente en toda la plataforma web y archivos de IA.
 - Observaciones: Clic directo a chat verificado, enlaces de llamada activos y datos estructurados consistentes.
 
+## Nueva sesión
+- Fecha: 2026-09-11 20:28 (COT)
+- Solicitud: Crear página de error 404 personalizada y páginas legales de tratamiento de datos personales (Habeas Data) y términos y condiciones, optimizar archivos LLM y sincronizar todo con GitHub.
+- Decisiones clave:
+  - Se diseñó la página 404 personalizada en `src/routes/__root.tsx` (`NotFoundComponent`) con estética campestre acorde a la marca, logo del colibrí, mensaje empático, botón de retorno al inicio, botón de consulta directa por WhatsApp y accesos directos a secciones clave.
+  - Se implementó la página de Política de Privacidad y Tratamiento de Datos Personales en `src/routes/politica-de-privacidad.tsx` bajo estricto cumplimiento de la Ley Estatutaria 1581 de 2012 de Colombia (Habeas Data), regulando el tratamiento de datos para consultas de arriendo y agendamiento de visitas, canales de atención y tiempos de respuesta.
+  - Se implementó la página de Términos y Condiciones de Uso en `src/routes/terminos-y-condiciones.tsx` estableciendo las directrices del contrato de arriendo formal con inmobiliaria (mínimo 6 meses, canon de $2.900.000 COP), reglas de visita presencial, propiedad intelectual y jurisdicción aplicable (Colombia).
+  - Se integró la barra de navegación legal en el pie de página (footer) de `src/routes/index.tsx` y se actualizaron las rutas en `public/sitemap.xml`, `public/llms.txt` y `public/llms-full.txt`.
+  - Se verificó compilación de producción exitosa con Vite y Nitro (`bun run build`).
+- Pendientes:
+  - Realizar commit y sincronización con el repositorio remoto en GitHub.
+
+## Validación completada
+- Fecha: 2026-09-11 20:28 (COT)
+- Resultado: Aprobado (score: 10 / 10 >= 9)
+- Resumen: Página 404 personalizada, Política de Privacidad (Habeas Data) y Términos y Condiciones creados, vinculados en footer, mapa de sitio, dossier de IA y compilados exitosamente en SSR.
+- Observaciones: Cumplimiento total de la normativa legal colombiana y lineamientos de diseño de Casa Campestre La Isabela.
+
+
 
 
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowUpRight,
   Ruler,
@@ -2402,8 +2402,25 @@ function Index() {
             </div>
           </div>
 
+          {/* Enlaces legales (Habeas Data y Términos) */}
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-6 border-t border-[#1C2B20]/60 pt-6 text-xs text-stone-400">
+            <Link
+              to="/politica-de-privacidad"
+              className="transition-colors hover:text-emerald-300 underline-offset-4 hover:underline"
+            >
+              {lang === "es" ? "Política de Privacidad y Datos (Habeas Data)" : "Privacy Policy & Data"}
+            </Link>
+            <span className="text-white/20">·</span>
+            <Link
+              to="/terminos-y-condiciones"
+              className="transition-colors hover:text-emerald-300 underline-offset-4 hover:underline"
+            >
+              {lang === "es" ? "Términos y Condiciones de Uso" : "Terms & Conditions"}
+            </Link>
+          </div>
+
           {/* Barra inferior */}
-          <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[#1C2B20] pt-8 text-xs text-stone-400 sm:flex-row">
+          <div className="mt-6 flex flex-col items-center justify-between gap-4 border-t border-[#1C2B20] pt-6 text-xs text-stone-400 sm:flex-row">
             <p>© 2026 {t.footer.rights}</p>
             <p className="flex items-center gap-1.5 text-stone-400">
               <span>{t.footer.designedBy}</span>
