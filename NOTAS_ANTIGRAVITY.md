@@ -1231,6 +1231,24 @@ pm run build), servidor respondiendo en HTTP 200 OK y sincronización en GitHub 
 - Resumen: Auditoría On-Page concluida con éxito; estructura semántica, metadatos canónicos y rich snippets 100% optimizados.
 - Observaciones: Compatible con Google Core Web Vitals, rastreadores tradicionales y motores LLM.
 
+## Nueva sesión
+- Fecha: 2026-09-11 20:35 (COT)
+- Solicitud: Auditoría detallada de todos los textos alternativos (`alt`) de imágenes en el proyecto.
+- Decisiones clave:
+  - Se auditó el 100% de las etiquetas `<img>` del proyecto (logotipos, slider hero, ofertas principales, galería de 9 fotos, testimonios y fondos).
+  - Se verificó que todas cuentan con textos `alt` bilingües descriptivos, naturales y orientados a la búsqueda local.
+  - Se reforzaron 3 textos alternativos que tenían descripción genérica para incluir explícitamente el nombre de la propiedad ("Casa Campestre La Isabela") y la ubicación ("La Ceja, Antioquia"), eliminando cualquier ambigüedad en Google Imágenes.
+  - Se verificó compilación exitosa (`bun run build`) y se sincronizó con GitHub en el commit `b416949`.
+- Pendientes:
+  - Ninguno. Repositorio limpio y al día.
+
+## Validación completada
+- Fecha: 2026-09-11 20:35 (COT)
+- Resultado: Aprobado (score: 10 / 10 >= 9)
+- Resumen: Todos los textos alternativos (`alt`) verificados, perfeccionados y alineados con las mejores prácticas de accesibilidad WCAG y SEO de imágenes de Google.
+- Observaciones: Cobertura del 100%, bilingüe y sin redundancias.
+
+
 
 
 
