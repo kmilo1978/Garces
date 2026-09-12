@@ -25,6 +25,8 @@ function NotFoundComponent() {
           <Link to="/" className="flex items-center gap-3.5 group">
             <img
               src="/colibri-logo.png"
+              width={48}
+              height={48}
               alt="Logotipo oficial de Casa Campestre La Isabela con cabeza de colibrí"
               className="h-10 w-10 sm:h-12 sm:w-12 object-contain transition-transform duration-300 group-hover:scale-105"
             />
@@ -78,7 +80,7 @@ function NotFoundComponent() {
           <a
             href={waLink}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-xs sm:text-sm font-bold uppercase tracking-wider text-white shadow-md transition-all hover:bg-[#20ba5a] hover:scale-105"
           >
             <span>Consultar por WhatsApp</span>

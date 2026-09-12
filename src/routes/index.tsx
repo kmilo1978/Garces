@@ -111,6 +111,7 @@ export const Route = createFileRoute("/")({
       { name: "twitter:image:alt", content: "Casa Campestre La Isabela en La Ceja, Antioquia" },
     ],
     links: [
+      { rel: "preload", as: "image", href: heroImg, fetchPriority: "high" },
       { rel: "canonical", href: "https://kmilo1978.github.io/Garces/" },
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -536,6 +537,8 @@ const ofertasPrincipales = [
     descEs: "Espacios acogedores con techo de madera, ventanas con vista a la naturaleza y 3 camas confortables listas para habitar.",
     descEn: "Cozy rooms featuring rustic wood ceilings, nature-view windows, and 3 comfortable beds ready from day one.",
     img: habitacionReal,
+    width: 768,
+    height: 1024,
     altEs: "Habitación principal amoblada con cama vestida, techo rústico de madera y ventana campestre en Casa Campestre La Isabela La Ceja",
     altEn: "Furnished master bedroom with comfortable bed, rustic wood ceiling, and scenic window at Casa Campestre La Isabela in La Ceja",
   },
@@ -546,6 +549,8 @@ const ofertasPrincipales = [
     descEs: "Hermoso pórtico de madera cubierto con sillas campestres, mesa de centro y vista abierta a los árboles y prados verdes.",
     descEn: "Stunning covered wood deck with Adirondack chairs, coffee table, and direct views over lush greenery.",
     img: porticoDeck,
+    width: 768,
+    height: 1024,
     altEs: "Pórtico campestre cubierto en madera con sillas de descanso Adirondack y flores veraneras con vista a la arboleda en Casa Campestre La Isabela La Ceja",
     altEn: "Covered rustic wooden porch with outdoor Adirondack lounge chairs and bougainvillea flowers overlooking greenery at Casa Campestre La Isabela La Ceja",
   },
@@ -556,6 +561,8 @@ const ofertasPrincipales = [
     descEs: "Terreno privado cerrado de 1.500 m², fachada rústica con letrero tradicional La Isabela, jardines nativos, lavandería y parqueadero de vehículos.",
     descEn: "Private gated 1,500 m² lot, rustic entrance with signature La Isabela sign, native gardens, laundry, and vehicle parking.",
     img: exteriorIsabelita,
+    width: 1024,
+    height: 768,
     altEs: "Entrada campestre privada con letrero tradicional en madera La Isabela y lote cerrado de 1.500 m² en Las Lomitas La Ceja",
     altEn: "Private gated countryside entrance with signature wood sign and 1,500 m² private fenced lot in Las Lomitas, La Ceja",
   },
@@ -609,6 +616,8 @@ const beneficiosOfrecidos = [
 const galeria = [
   {
     src: house5,
+    width: 1024,
+    height: 768,
     titleEs: "Fachada Principal & Pórtico",
     titleEn: "Main Facade & Front Porch",
     tagEs: "Exterior",
@@ -618,6 +627,8 @@ const galeria = [
   },
   {
     src: habitacionReal,
+    width: 768,
+    height: 1024,
     titleEs: "Habitación Principal & Cama Confortable",
     titleEn: "Master Bedroom & Comfortable Bed",
     tagEs: "Habitación",
@@ -627,6 +638,8 @@ const galeria = [
   },
   {
     src: porticoDeck,
+    width: 768,
+    height: 1024,
     titleEs: "Pórtico Cubierto & Terraza Deck",
     titleEn: "Covered Porch & Wood Deck",
     tagEs: "Pórtico",
@@ -636,6 +649,8 @@ const galeria = [
   },
   {
     src: vistaPorticoJardin,
+    width: 1024,
+    height: 768,
     titleEs: "Vista al Jardín & Lote de 1.500 m²",
     titleEn: "Lawn & 1,500 m² Lot View",
     tagEs: "Lote 1.500 m²",
@@ -645,6 +660,8 @@ const galeria = [
   },
   {
     src: cocinaReal,
+    width: 768,
+    height: 1024,
     titleEs: "Cocina Integral & Techo en Madera",
     titleEn: "Equipped Kitchen & Wood Ceiling",
     tagEs: "Cocina",
@@ -654,6 +671,8 @@ const galeria = [
   },
   {
     src: habitacionGemelas,
+    width: 768,
+    height: 1024,
     titleEs: "Habitación Camas & Ventana Verde",
     titleEn: "Bedroom with Beds & Mountain View",
     tagEs: "Habitación 2",
@@ -663,6 +682,8 @@ const galeria = [
   },
   {
     src: banoReal,
+    width: 768,
+    height: 1024,
     titleEs: "Baño Completo & Cabina de Vidrio",
     titleEn: "Full Bathroom & Glass Shower",
     tagEs: "Baño",
@@ -672,6 +693,8 @@ const galeria = [
   },
   {
     src: exteriorIsabelita,
+    width: 1024,
+    height: 768,
     titleEs: "Fachada & Entrada La Isabela",
     titleEn: "Facade & Entrance Sign",
     tagEs: "Entrada",
@@ -681,6 +704,8 @@ const galeria = [
   },
   {
     src: costadoFincaPrados,
+    width: 1024,
+    height: 768,
     titleEs: "Costado de la Casa & Lote de 1.500 m²",
     titleEn: "Side View & 1,500 m² Green Yard",
     tagEs: "Lote 1.500 m²",
@@ -815,6 +840,8 @@ function Index() {
   const heroSlides = [
     {
       src: heroImg,
+      width: 1024,
+      height: 768,
       alt:
         lang === "es"
           ? "Fotografía real de la fachada principal de Casa Campestre La Isabela con pórtico de madera, flores y prados en Las Lomitas, La Ceja"
@@ -824,6 +851,8 @@ function Index() {
     },
     {
       src: heroCostado,
+      width: 1024,
+      height: 768,
       alt:
         lang === "es"
           ? "Costado de la casa campestre con tejado tradicional en teja de barro y prados verdes de 1.500 m² en Casa Campestre La Isabela, La Ceja"
@@ -833,6 +862,8 @@ function Index() {
     },
     {
       src: heroPorticoFlores,
+      width: 1024,
+      height: 768,
       alt:
         lang === "es"
           ? "Vista panorámica al jardín, flores veraneras y montañas desde el pórtico de madera en Casa Campestre La Isabela La Ceja"
@@ -876,6 +907,8 @@ function Index() {
       >
         <img
           src={cieloHero}
+          width={1024}
+          height={613}
           alt={
             lang === "es"
               ? "Cielo azul luminoso y despejado sobre el paisaje campestre de La Ceja, Antioquia"
@@ -1076,6 +1109,8 @@ function Index() {
       >
         <img
           src={aveHero}
+          width={500}
+          height={500}
           alt={
             lang === "es"
               ? "Barranquero andino en pleno vuelo sobre el cielo campestre de Casa Campestre La Isabela"
@@ -1087,9 +1122,11 @@ function Index() {
 
       {/* Nav */}
       <header className="relative z-10 mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-6">
-        <a href="#" className="flex items-center gap-3.5 group flex-shrink-0">
+        <a href="/" aria-label="Casa Campestre La Isabela - Ir al inicio" className="flex items-center gap-3.5 group flex-shrink-0">
           <img
             src="/colibri-logo.png"
+            width={56}
+            height={56}
             alt={
               lang === "es"
                 ? "Logotipo oficial de Casa Campestre La Isabela con cabeza de colibrí"
@@ -1179,7 +1216,7 @@ function Index() {
           <a
             href={waCustomLink}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="hidden sm:inline-flex group items-center gap-2 rounded-full bg-[#243A2C] px-5 sm:px-6 py-2.5 sm:py-3 text-xs font-semibold uppercase tracking-widest text-[#FAF8F5] transition-all hover:bg-[#1C2E23] shadow-sm"
           >
             <span>{t.nav.bookVisit}</span>
@@ -1252,7 +1289,7 @@ function Index() {
             <a
               href={waCustomLink}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
               className="flex w-full items-center justify-center gap-2 rounded-full bg-[#FAF8F5] py-3 text-xs font-bold uppercase tracking-widest text-[#18281E] shadow-lg transition-all hover:bg-white"
             >
@@ -1281,6 +1318,8 @@ function Index() {
               <div key={idx} className="relative h-full w-full shrink-0 overflow-hidden">
                 <img
                   src={slide.src}
+                  width={slide.width}
+                  height={slide.height}
                   alt={slide.alt}
                   className="h-full w-full object-cover object-[center_35%] lg:object-center transition-transform duration-1000"
                   loading={idx === 0 ? "eager" : "lazy"}
@@ -1450,10 +1489,10 @@ function Index() {
             <h3 className="text-2xl font-bold uppercase tracking-tight text-[#1C261F]">
               {t.trust.cards[1].title}
             </h3>
-            <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-stone-500">
+            <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-[#2D4535]">
               {t.trust.cards[1].subtitle}
             </p>
-            <p className="mt-3 text-sm leading-relaxed text-stone-600">
+            <p className="mt-3 text-sm leading-relaxed text-[#1C261F]/85">
               {t.trust.cards[1].desc}
             </p>
           </div>
@@ -1469,10 +1508,10 @@ function Index() {
             <h3 className="text-2xl font-bold uppercase tracking-tight text-[#1C261F]">
               {t.trust.cards[2].title}
             </h3>
-            <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-stone-500">
+            <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-[#2D4535]">
               {t.trust.cards[2].subtitle}
             </p>
-            <p className="mt-3 text-sm leading-relaxed text-stone-600">
+            <p className="mt-3 text-sm leading-relaxed text-[#1C261F]/85">
               {t.trust.cards[2].desc}
             </p>
           </div>
@@ -1503,6 +1542,8 @@ function Index() {
               <div className="relative h-64 w-full overflow-hidden">
                 <img
                   src={o.img}
+                  width={o.width}
+                  height={o.height}
                   alt={lang === "es" ? o.altEs : o.altEn}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
@@ -1623,6 +1664,8 @@ function Index() {
           <div className="relative shrink-0 flex items-center justify-center self-center lg:self-end">
             <img
               src={ardillaCampo}
+              width={417}
+              height={350}
               alt={
                 lang === "es"
                   ? "Ardilla campestre nativa observando el entorno natural en Casa Campestre La Isabela, Las Lomitas, La Ceja"
@@ -1733,7 +1776,7 @@ function Index() {
                       )}`
                 }
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-white shadow-sm transition-all duration-300 hover:bg-[#20ba5a] hover:scale-[1.02]"
               >
                 <WhatsAppIcon className="h-4 w-4" />
@@ -1776,6 +1819,8 @@ function Index() {
               <div className="relative h-72 w-full overflow-hidden">
                 <img
                   src={g.src}
+                  width={g.width}
+                  height={g.height}
                   alt={lang === "es" ? g.altEs : g.altEn}
                   loading="lazy"
                   decoding="async"
@@ -1805,6 +1850,8 @@ function Index() {
         >
           <img
             src={bosqueNiebla}
+            width={1024}
+            height={401}
             alt={
               lang === "es"
                 ? "Atmósfera campestre de bosque andino con niebla matutina en el Oriente Antioqueño"
@@ -1854,6 +1901,8 @@ function Index() {
               <div className="relative overflow-hidden rounded-3xl border border-white/80 bg-white/40 shadow-2xl backdrop-blur-[2px]">
                 <img
                   src={aboutImg}
+                  width={768}
+                  height={1024}
                   alt={
                     lang === "es"
                       ? "Pórtico de madera y entorno natural de Casa Campestre La Isabela en Las Lomitas, La Ceja, Oriente Antioqueño"
@@ -1907,6 +1956,8 @@ function Index() {
               <div className="mt-6 flex items-center gap-4 border-t border-[#E8E2D5] pt-5">
                 <img
                   src={item.avatar}
+                  width={56}
+                  height={56}
                   alt={
                     lang === "es"
                       ? `Fotografía de ${item.nameEs}, ${item.roleEs} en Casa Campestre La Isabela`
@@ -1945,7 +1996,7 @@ function Index() {
           <a
             href="https://maps.google.com/?q=Casa+de+Oraci%C3%B3n+La+Providencia+La+Ceja"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-[#243A2C] px-6 py-3 text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#243A2C] transition-colors hover:bg-[#243A2C] hover:text-[#FAF8F5]"
           >
             {t.location.openMaps}
@@ -2012,7 +2063,7 @@ function Index() {
                       )}`
                 }
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#2D5039] underline underline-offset-4 hover:opacity-80"
               >
                 {t.location.requestWa}
@@ -2145,7 +2196,7 @@ function Index() {
               <a
                 href={waCustomLink}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 rounded-full bg-[#FAF8F5] px-8 py-4 text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#18281E] transition-all hover:bg-white hover:shadow-2xl hover:scale-105"
               >
                 <span>
@@ -2236,6 +2287,8 @@ function Index() {
               <div className="flex items-center gap-3.5">
                 <img
                   src="/colibri-logo.png"
+                  width={48}
+                  height={48}
                   alt={
                     lang === "es"
                       ? "Logotipo oficial de Casa Campestre La Isabela con cabeza de colibrí"
@@ -2263,7 +2316,7 @@ function Index() {
                 <a
                   href={waCustomLink}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-[#243A2C] border border-[#355440] px-5 py-2.5 text-xs font-semibold uppercase tracking-widest text-[#FAF8F5] transition-colors hover:bg-[#2D4736]"
                 >
                   Contactar por WhatsApp
@@ -2463,7 +2516,7 @@ function Index() {
         <a
           href={waCustomLink}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="hidden sm:flex items-center gap-2.5 rounded-full bg-[#18281E]/95 hover:bg-[#18281E] text-[#FAF8F5] px-4 py-2.5 text-xs font-medium shadow-2xl border border-[#2D4D38] backdrop-blur-md transition-all group"
         >
           <span className="relative flex h-2 w-2">
@@ -2481,7 +2534,7 @@ function Index() {
         <a
           href={waCustomLink}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           aria-label={
             lang === "es"
               ? "Contactar por WhatsApp sobre Casa Campestre La Isabela"
