@@ -83,6 +83,7 @@ export const Route = createFileRoute("/")({
       { name: "geo.position", content: "6.0270;-75.4260" },
       { name: "ICBM", content: "6.0270, -75.4260" },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://kmilo1978.github.io/Garces/" },
       { property: "og:site_name", content: "Casa Campestre La Isabela" },
       { property: "og:locale", content: "es_CO" },
       { property: "og:locale:alternate", content: "en_US" },
@@ -99,6 +100,7 @@ export const Route = createFileRoute("/")({
       { property: "og:image:height", content: "630" },
       { property: "og:image:alt", content: "Casa Campestre La Isabela - Casa Campestre Amoblada en Las Lomitas, La Ceja, Antioquia" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:url", content: "https://kmilo1978.github.io/Garces/" },
       { name: "twitter:title", content: "Casa Campestre La Isabela | Casa Campestre en La Ceja" },
       {
         name: "twitter:description",
@@ -936,6 +938,13 @@ function Index() {
                   unitCode: "MTK",
                 },
                 petsAllowed: true,
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "5.0",
+                  reviewCount: "3",
+                  bestRating: "5",
+                  worstRating: "1",
+                },
                 amenityFeature: [
                   { "@type": "LocationFeatureSpecification", name: "2 Habitaciones", value: true },
                   { "@type": "LocationFeatureSpecification", name: "3 Camas", value: true },
@@ -1254,8 +1263,10 @@ function Index() {
         </div>
       )}
 
-      {/* Hero: Casa 100% despejada en el centro, título en el cielo izquierdo, y métricas/botones en los árboles oscuros de la derecha */}
-      <section className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-2 pb-12">
+      {/* Contenido Principal (Landmark Semántico para SEO y Accesibilidad) */}
+      <main id="main-content">
+        {/* Hero: Casa 100% despejada en el centro, título en el cielo izquierdo, y métricas/botones en los árboles oscuros de la derecha */}
+        <section className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-2 pb-12">
         <div
           className="group/hero relative min-h-[620px] sm:min-h-[680px] lg:min-h-[720px] w-full overflow-hidden rounded-[2.5rem] p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col lg:flex-row items-start justify-between gap-8 shadow-2xl select-none"
           onMouseEnter={() => setHeroPaused(true)}
@@ -1403,6 +1414,11 @@ function Index() {
 
       {/* Sección Especial: Contrato con Inmobiliaria, Anfitrión Bilingüe & Cripto/USD */}
       <section className="mx-auto max-w-7xl px-6 py-6">
+        <h2 className="sr-only">
+          {lang === "es"
+            ? "Garantías y Condiciones Principales del Arriendo"
+            : "Rental Guarantees and Key Lease Terms"}
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1: Contrato con Inmobiliaria */}
           <div className="relative overflow-hidden rounded-3xl border border-[#2D4535] bg-[#1A2C20] p-8 text-[#FAF8F5] shadow-lg">
@@ -2209,6 +2225,7 @@ function Index() {
           </div>
         </div>
       </section>
+      </main>
 
       {/* Footer integrado fluidamente con el mismo fondo #121E16 */}
       <footer className="bg-[#121E16] text-[#E5EAE5]">

@@ -179,6 +179,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Casa campestre en arriendo en La Ceja, amoblada y rodeada de naturaleza. 2 habitaciones, 3 camas y lote de 1.500 m². ¡Agenda tu visita!",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://kmilo1978.github.io/Garces/" },
       { property: "og:locale", content: "es_CO" },
       { property: "og:image", content: "https://kmilo1978.github.io/Garces/og-image.jpg" },
       { property: "og:image:secure_url", content: "https://kmilo1978.github.io/Garces/og-image.jpg" },
@@ -189,6 +190,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image", content: "https://kmilo1978.github.io/Garces/og-image.jpg" },
     ],
     links: [
+      { rel: "canonical", href: "https://kmilo1978.github.io/Garces/" },
       {
         rel: "preconnect",
         href: "https://fonts.googleapis.com",

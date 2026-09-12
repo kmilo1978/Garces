@@ -11,6 +11,19 @@ export const Route = createFileRoute("/politica-de-privacidad")({
           "Política de tratamiento de datos personales y Habeas Data de Casa Campestre La Isabela en La Ceja, Antioquia, conforme a la Ley Estatutaria 1581 de 2012 de Colombia.",
       },
       { name: "robots", content: "index, follow" },
+      { property: "og:title", content: "Política de Privacidad y Tratamiento de Datos | Casa Campestre La Isabela" },
+      {
+        property: "og:description",
+        content:
+          "Política de tratamiento de datos personales y Habeas Data conforme a la Ley 1581 de 2012 para el arriendo de Casa Campestre La Isabela.",
+      },
+      { property: "og:type", content: "article" },
+      { property: "og:url", content: "https://kmilo1978.github.io/Garces/politica-de-privacidad" },
+      { property: "og:image", content: "https://kmilo1978.github.io/Garces/og-image.jpg" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://kmilo1978.github.io/Garces/politica-de-privacidad" },
     ],
   }),
   component: PoliticaPrivacidadPage,

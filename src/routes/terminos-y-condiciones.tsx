@@ -11,6 +11,19 @@ export const Route = createFileRoute("/terminos-y-condiciones")({
           "Términos y condiciones de uso del sitio web informativo de Casa Campestre La Isabela en Las Lomitas, La Ceja, Antioquia. Condiciones de consulta, arrendamiento formal y derechos.",
       },
       { name: "robots", content: "index, follow" },
+      { property: "og:title", content: "Términos y Condiciones de Uso | Casa Campestre La Isabela" },
+      {
+        property: "og:description",
+        content:
+          "Condiciones del arrendamiento formal con inmobiliaria, normas de visita y uso del portal oficial de Casa Campestre La Isabela.",
+      },
+      { property: "og:type", content: "article" },
+      { property: "og:url", content: "https://kmilo1978.github.io/Garces/terminos-y-condiciones" },
+      { property: "og:image", content: "https://kmilo1978.github.io/Garces/og-image.jpg" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://kmilo1978.github.io/Garces/terminos-y-condiciones" },
     ],
   }),
   component: TerminosCondicionesPage,

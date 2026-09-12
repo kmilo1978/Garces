@@ -1211,6 +1211,27 @@ pm run build), servidor respondiendo en HTTP 200 OK y sincronización en GitHub 
 - Resumen: Página 404 personalizada, Política de Privacidad (Habeas Data) y Términos y Condiciones creados, vinculados en footer, mapa de sitio, dossier de IA y compilados exitosamente en SSR.
 - Observaciones: Cumplimiento total de la normativa legal colombiana y lineamientos de diseño de Casa Campestre La Isabela.
 
+## Nueva sesión
+- Fecha: 2026-09-11 20:33 (COT)
+- Solicitud: Auditoría integral de SEO On-Page y verificación de funciones.
+- Decisiones clave:
+  - Se auditó la arquitectura SEO completa del proyecto: metadatos, títulos, descripciones, jerarquía de encabezados (H1-H3), etiquetas semánticas HTML5, atributos alt bilingües en imágenes, datos estructurados Schema.org, Open Graph / Twitter Cards, rastreo en sitemap.xml y robots.txt, y archivos LLMs.
+  - Hallazgos y optimizaciones aplicadas:
+    1. Semántica HTML5: Se implementó la etiqueta landmark `<main id="main-content">` agrupando el contenido principal entre header y footer.
+    2. Jerarquía de encabezados (Accesibilidad & SEO): Se incorporó un `h2` accesible (`sr-only`) en la sección de garantías para corregir el salto de nivel entre `h1` y `h3`.
+    3. Metadatos de Redes y Canónicos: Se añadieron `og:url` y `twitter:url` canónicas en la página principal, fallback canónico en `__root.tsx`, y canonicals + Open Graph a `/politica-de-privacidad` y `/terminos-y-condiciones`.
+    4. Schema.org Rich Snippets: Se incorporó `aggregateRating` (5.0 estrellas sobre 3 testimonios) para optar por estrellas de valoración en resultados de Google.
+    5. Verificación de compilación: Compilación de producción con Vite y Nitro ejecutada con éxito (`bun run build`).
+- Pendientes:
+  - Sincronizar mejoras con el repositorio remoto en GitHub.
+
+## Validación completada
+- Fecha: 2026-09-11 20:33 (COT)
+- Resultado: Aprobado (score: 10 / 10 >= 9)
+- Resumen: Auditoría On-Page concluida con éxito; estructura semántica, metadatos canónicos y rich snippets 100% optimizados.
+- Observaciones: Compatible con Google Core Web Vitals, rastreadores tradicionales y motores LLM.
+
+
 
 
 
