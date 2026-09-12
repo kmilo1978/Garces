@@ -31,3 +31,8 @@ El servidor estará disponible en `http://localhost:8080/`.
 
 ## Despliegue
 Listo para desplegar en cualquier plataforma moderna (Vercel, Netlify, Cloudflare Pages o VPS).
+
+## Contacto & Asistentes de IA
+- **Teléfono / WhatsApp:** [+57 314 627 6298](https://wa.me/573146276298)
+- **Ficha para LLMs (ChatGPT / Perplexity):** `public/llms.txt` y `public/llms-full.txt`
+- **Sitemap:** `public/sitemap.xml`

@@ -248,7 +248,7 @@ const translations = {
       ctaDesc: "Agenda tu visita con la inmobiliaria y conoce esta casa campestre en Las Lomitas.",
       btnWhatsapp: "Agendar por WhatsApp",
       btnCall: "Llamar",
-      phone: "+57 310 446 8056",
+      phone: "+57 314 627 6298",
     },
     location: {
       tag: "Ubicación estratégica",
@@ -385,7 +385,7 @@ const translations = {
       ctaDesc: "Schedule your tour with the real estate agency and visit the property in Las Lomitas.",
       btnWhatsapp: "Schedule via WhatsApp",
       btnCall: "Call",
-      phone: "+57 310 446 8056",
+      phone: "+57 314 627 6298",
     },
     location: {
       tag: "Prime Location",
@@ -857,12 +857,13 @@ function Index() {
     return () => clearTimeout(timer);
   }, []);
 
+  const waPhone = "573146276298";
   const waCustomMessage =
     lang === "es"
-      ? "Hola, estoy interesado en la Casa Campestre La Isabela en La Ceja. ¿Me podrías brindar más información y disponibilidad?"
-      : "Hello, I am interested in Casa Campestre La Isabela in La Ceja. Could you please provide more information and availability?";
+      ? "Hola, estoy interesado en el arriendo de Casa Campestre La Isabela en La Ceja. ¿Me podrían brindar más información sobre los requisitos y agendar una visita con la inmobiliaria?"
+      : "Hello, I am interested in leasing Casa Campestre La Isabela in La Ceja. Could you please provide more information regarding requirements and schedule a visit with the real estate agency?";
 
-  const waCustomLink = `https://wa.me/?text=${encodeURIComponent(waCustomMessage)}`;
+  const waCustomLink = `https://wa.me/${waPhone}?text=${encodeURIComponent(waCustomMessage)}`;
 
   return (
     <div className="relative min-h-screen bg-[#FAF8F5] font-sans text-[#1C261F] selection:bg-[#D5E3D8] selection:text-[#18281E] overflow-x-hidden">
@@ -899,7 +900,7 @@ function Index() {
                 description:
                   "Casa campestre amoblada en alquiler formal con inmobiliaria en Las Lomitas, La Ceja, Oriente Antioqueño. Cuenta con 2 habitaciones, 3 camas, 1 baño completo, cocina dotada, comedor, pórtico exterior, zona de lavandería independiente, parqueadero y lote privado cerrado de 1.500 m². Contrato mínimo de 6 meses. 100% Pet Friendly. Canon mensual: $2.900.000 COP.",
                 url: "https://kmilo1978.github.io/Garces/",
-                telephone: "+57 310 446 8056",
+                telephone: "+57 314 627 6298",
                 image: [
                   "https://kmilo1978.github.io/Garces/og-image.jpg",
                   "https://kmilo1978.github.io/Garces/hero-finca.jpg",
@@ -1708,8 +1709,12 @@ function Index() {
               <a
                 href={
                   lang === "es"
-                    ? "https://wa.me/?text=Hola%2C%20quisiera%20agendar%20una%20visita%20para%20conocer%20Casa%20Campestre%20La%20Isabela%20en%20Las%20Lomitas%2C%20La%20Ceja"
-                    : "https://wa.me/?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20visit%20to%20see%20Casa%20Campestre%20La%20Isabela%20in%20Las%20Lomitas%2C%20La%20Ceja"
+                    ? `https://wa.me/${waPhone}?text=${encodeURIComponent(
+                        "Hola, quisiera agendar una visita para conocer Casa Campestre La Isabela en Las Lomitas, La Ceja con la inmobiliaria"
+                      )}`
+                    : `https://wa.me/${waPhone}?text=${encodeURIComponent(
+                        "Hello, I would like to schedule a visit to see Casa Campestre La Isabela in Las Lomitas, La Ceja with the real estate agency"
+                      )}`
                 }
                 target="_blank"
                 rel="noreferrer"
@@ -1720,7 +1725,7 @@ function Index() {
               </a>
 
               <a
-                href="tel:+573104468056"
+                href={`tel:+${waPhone}`}
                 className="inline-flex items-center gap-2 rounded-full border border-[#243A2C]/30 bg-white/70 px-4 py-2.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#1C261F] transition-all duration-300 hover:bg-[#243A2C] hover:text-[#FAF8F5]"
               >
                 <Phone className="h-3.5 w-3.5 text-[#2D5039]" />
@@ -1983,8 +1988,12 @@ function Index() {
               <a
                 href={
                   lang === "es"
-                    ? "https://wa.me/?text=Hola%2C%20quisiera%20recibir%20la%20ubicaci%C3%B3n%20exacta%20y%20coordinar%20visita%20a%20Casa%20Campestre%20La%20Isabela%20en%20Las%20Lomitas%2C%20La%20Ceja"
-                    : "https://wa.me/?text=Hello%2C%20I%20would%20like%20to%20get%20the%20exact%20location%20and%20schedule%20a%20visit%20to%20Casa%20Campestre%20La%20Isabela%20in%20Las%20Lomitas%2C%20La%20Ceja"
+                    ? `https://wa.me/${waPhone}?text=${encodeURIComponent(
+                        "Hola, quisiera recibir la ubicación exacta y coordinar visita a Casa Campestre La Isabela en Las Lomitas, La Ceja con la inmobiliaria"
+                      )}`
+                    : `https://wa.me/${waPhone}?text=${encodeURIComponent(
+                        "Hello, I would like to get the exact location and schedule a visit to Casa Campestre La Isabela in Las Lomitas, La Ceja with the real estate agency"
+                      )}`
                 }
                 target="_blank"
                 rel="noreferrer"
@@ -2382,6 +2391,12 @@ function Index() {
                 <p className="flex items-center gap-2">
                   <Coins className="h-4 w-4 shrink-0 text-amber-400" />
                   <span>{t.footer.paymentsAccepted}</span>
+                </p>
+                <p className="flex items-center gap-2">
+                  <Phone className="h-4 w-4 shrink-0 text-emerald-400" />
+                  <a href={`tel:+${waPhone}`} className="hover:text-emerald-300 transition-colors">
+                    +57 314 627 6298
+                  </a>
                 </p>
               </div>
             </div>
